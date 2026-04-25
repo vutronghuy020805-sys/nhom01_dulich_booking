@@ -38,5 +38,15 @@ VieGo là nền tảng booking du lịch với các chức năng:
 
 ## 7. Hướng dẫn chạy local
 ```bash
+## 8. Ảnh chụp màn hình giao diện
+
+### Trang chủ
+![Trang chủ](./docs/homepage.png)
+
+### Trang vé xe khách
+![Vé xe khách](./docs/bus-page.png)
+
+### Trang hoạt động
+![Hoạt động](./docs/activity-page.png)
 npm install
 npm run dev
