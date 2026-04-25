@@ -1,35 +1,20 @@
 /** @type {import('next').NextConfig} */
+const repoName = 'nhom01_dulich_booking';
+
 const nextConfig = {
+  output: 'export',
+  basePath: `/${repoName}`,
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "plus.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "upload.wikimedia.org",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.pixabay.com",
-      },
-      {
-        protocol: "https",
-        hostname: "ik.imagekit.io",
-      },
-      {
-        protocol: "https",
-        hostname: "api.qrserver.com",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.simpleicons.org",
-      },
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "plus.unsplash.com" },
+      { protocol: "https", hostname: "upload.wikimedia.org" },
+      { protocol: "https", hostname: "cdn.pixabay.com" },
+      { protocol: "https", hostname: "ik.imagekit.io" },
+      { protocol: "https", hostname: "api.qrserver.com" },
+      { protocol: "https", hostname: "cdn.simpleicons.org" },
       { protocol: "https", hostname: "toplist.vn" },
       { protocol: "https", hostname: "ticotravel.com.vn" },
       { protocol: "https", hostname: "lavyon.com" },

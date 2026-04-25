@@ -98,6 +98,10 @@ const tours = [
   },
 ];
 
+export function generateStaticParams() {
+  return tours.map((tour) => ({ id: tour.id }));
+}
+
 export default async function TourDetailPage({ params }) {
   const { id } = await params;
   const tour = tours.find((t) => t.id === id);

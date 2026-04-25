@@ -11,6 +11,10 @@ import { getActivityDetailBySlug } from "@/data/activityDetailsData";
 import { enrichedActivities } from "@/data/activitiesData";
 import { generateMockReviews, summarizeReviews } from "@/lib/mockReviews";
 
+export function generateStaticParams() {
+  return enrichedActivities.map((activity) => ({ slug: activity.id }));
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const activity = getActivityDetailBySlug(slug);
