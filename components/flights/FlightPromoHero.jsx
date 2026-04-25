@@ -4,7 +4,7 @@ export default function FlightPromoHero() {
       <div className="flex items-stretch gap-4">
         <div className="flex-1 rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-900 to-emerald-700 min-h-60">
           <img
-            src="/assets/flight-page/flight-banner.png"
+            src="/nhom01_dulich_booking/assets/flight-page/flight-banner.png"
             alt="VieGo × VinWonders - Giảm đến 30%"
             className="w-full h-full object-cover aspect-[3/1]"
           />

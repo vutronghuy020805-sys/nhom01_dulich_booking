@@ -6,7 +6,7 @@ import Image from "next/image";
 const offers = [
   {
     id: 1,
-    image: "/assets/vouchers/voucher-1.svg",
+    image: "/nhom01_dulich_booking/assets/vouchers/voucher-1.svg",
     title: "Sale Hoa Anh Đào",
     subtitle: "Vé tham quan & Trải nghiệm",
     tag: "Sale Hoa Anh Đào",
@@ -14,7 +14,7 @@ const offers = [
   },
   {
     id: 2,
-    image: "/assets/vouchers/voucher-2.svg",
+    image: "/nhom01_dulich_booking/assets/vouchers/voucher-2.svg",
     title: "Siêu hội thành viên",
     subtitle: "Ngày 20 - 25 hàng tháng",
     tag: "Ưu đãi thành viên",
@@ -22,7 +22,7 @@ const offers = [
   },
   {
     id: 3,
-    image: "/assets/vouchers/voucher-3.svg",
+    image: "/nhom01_dulich_booking/assets/vouchers/voucher-3.svg",
     title: "Sống trọn đam mê K-Culture",
     subtitle: "Du lịch cùng VieGo",
     tag: "Hàn Quốc",
@@ -30,7 +30,7 @@ const offers = [
   },
   {
     id: 4,
-    image: "/assets/vouchers/voucher-4.svg",
+    image: "/nhom01_dulich_booking/assets/vouchers/voucher-4.svg",
     title: "Ưu đãi 4",
     subtitle: "Mô tả voucher 4",
     tag: "Ưu đãi",
@@ -38,7 +38,7 @@ const offers = [
   },
   {
     id: 5,
-    image: "/assets/vouchers/voucher-5.svg",
+    image: "/nhom01_dulich_booking/assets/vouchers/voucher-5.svg",
     title: "Ưu đãi 5",
     subtitle: "Mô tả voucher 5",
     tag: "Ưu đãi",
@@ -46,7 +46,7 @@ const offers = [
   },
   {
     id: 6,
-    image: "/assets/vouchers/voucher-6.svg",
+    image: "/nhom01_dulich_booking/assets/vouchers/voucher-6.svg",
     title: "Ưu đãi 6",
     subtitle: "Mô tả voucher 6",
     tag: "Ưu đãi",

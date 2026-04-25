@@ -20,7 +20,7 @@ export default function ArticleCard({ article }) {
         <div className="flex items-center gap-2 mt-auto">
           <span className="inline-flex items-center justify-center w-7 h-7 rounded-full overflow-hidden">
             <img
-              src="/assets/logo-viego.png"
+              src="/nhom01_dulich_booking/assets/logo-viego.png"
               alt={article.brand}
               className="w-full h-full object-cover brightness-0"
             />

@@ -140,17 +140,17 @@ export const TRUSTED_PARTNERS = [
   {
     id: "viego-express",
     label: "VieGo Express",
-    src: "/assets/airport-transfer/partners/viego-express.jpg",
+    src: "/nhom01_dulich_booking/assets/airport-transfer/partners/viego-express.jpg",
   },
   {
     id: "kila-airport",
     label: "Kila Airport",
-    src: "/assets/airport-transfer/partners/kila-airport.jpg",
+    src: "/nhom01_dulich_booking/assets/airport-transfer/partners/kila-airport.jpg",
   },
   {
     id: "xanhsm",
     label: "Xanh SM",
-    src: "/assets/airport-transfer/partners/xanhsm.png",
+    src: "/nhom01_dulich_booking/assets/airport-transfer/partners/xanhsm.png",
   },
 ];
 

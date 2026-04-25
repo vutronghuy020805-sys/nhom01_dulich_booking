@@ -24,7 +24,7 @@ export const busDestinationArticles = {
     },
     {
       type: "image",
-      src: "/assets/bus-destination-article/vung-tau/vung-tau-overview-1.webp",
+      src: "/nhom01_dulich_booking/assets/bus-destination-article/vung-tau/vung-tau-overview-1.webp",
       alt: "Toàn cảnh biển Vũng Tàu",
     },
     {
@@ -34,7 +34,7 @@ export const busDestinationArticles = {
     },
     {
       type: "image",
-      src: "/assets/bus-destination-article/vung-tau/vung-tau-kito.jpg",
+      src: "/nhom01_dulich_booking/assets/bus-destination-article/vung-tau/vung-tau-kito.jpg",
       alt: "Tượng Chúa Kitô Vũng Tàu",
     },
     {
@@ -52,7 +52,7 @@ export const busDestinationArticles = {
     },
     {
       type: "image",
-      src: "/assets/bus-destination-article/vung-tau/vung-tau-bus-operator.jpg",
+      src: "/nhom01_dulich_booking/assets/bus-destination-article/vung-tau/vung-tau-bus-operator.jpg",
       alt: "Nhà xe Huy Hoàng Vũng Tàu",
     },
     {
@@ -81,7 +81,7 @@ export const busDestinationArticles = {
     },
     {
       type: "image",
-      src: "/assets/bus-destination-article/vung-tau/limousine-9-seat-1.jpg",
+      src: "/nhom01_dulich_booking/assets/bus-destination-article/vung-tau/limousine-9-seat-1.jpg",
       alt: "Nội thất xe Limousine 9 chỗ nhà xe Hoa Mai",
     },
     {
@@ -91,7 +91,7 @@ export const busDestinationArticles = {
     },
     {
       type: "image",
-      src: "/assets/bus-destination-article/vung-tau/limousine-9-seat-2.webp",
+      src: "/nhom01_dulich_booking/assets/bus-destination-article/vung-tau/limousine-9-seat-2.webp",
       alt: "Nội thất xe Limousine 9 chỗ nhà xe Huy Hoàng",
     },
     {
@@ -113,7 +113,7 @@ export const busDestinationArticles = {
     },
     {
       type: "image",
-      src: "/assets/bus-destination-article/vung-tau/limousine-34-bed.jpg",
+      src: "/nhom01_dulich_booking/assets/bus-destination-article/vung-tau/limousine-34-bed.jpg",
       alt: "Nội thất xe Limousine 34 giường",
     },
     {
@@ -128,7 +128,7 @@ export const busDestinationArticles = {
     },
     {
       type: "image",
-      src: "/assets/bus-destination-article/vung-tau/limousine-vip-22-room.jpg",
+      src: "/nhom01_dulich_booking/assets/bus-destination-article/vung-tau/limousine-vip-22-room.jpg",
       alt: "Phòng xe Limousine VIP 22 phòng",
     },
     {

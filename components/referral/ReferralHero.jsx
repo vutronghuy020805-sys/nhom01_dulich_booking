@@ -21,7 +21,7 @@ export default function ReferralHero() {
     <section className="relative isolate overflow-hidden">
       {/* Ảnh nền local */}
       <Image
-        src="/images/referral/banner.jpg"
+        src="/nhom01_dulich_booking/images/referral/banner.jpg"
         alt=""
         fill
         sizes="100vw"
@@ -70,7 +70,7 @@ export default function ReferralHero() {
             <div className="flex items-center gap-3">
               <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 flex items-center justify-center shrink-0">
                 <Image
-                  src="/assets/logo-viego.png"
+                  src="/nhom01_dulich_booking/assets/logo-viego.png"
                   alt="VieGo"
                   width={48}
                   height={48}

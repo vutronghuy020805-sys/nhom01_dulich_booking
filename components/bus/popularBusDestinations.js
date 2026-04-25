@@ -4,7 +4,7 @@ export const popularBusDestinations = [
     title: "Vé Xe Đi Vũng Tàu",
     slug: "vung-tau",
     destination: "Vũng Tàu",
-    image: "/assets/hotels/vungtau-1.jpg",
+    image: "/nhom01_dulich_booking/assets/hotels/vungtau-1.jpg",
     href: "/bus/destination/vung-tau",
   },
   {
@@ -12,7 +12,7 @@ export const popularBusDestinations = [
     title: "Vé Xe Đi Đà Lạt",
     slug: "da-lat",
     destination: "Đà Lạt",
-    image: "/assets/destinations/dalat.jpg",
+    image: "/nhom01_dulich_booking/assets/destinations/dalat.jpg",
     href: "/bus/destination/da-lat",
   },
   {
@@ -20,7 +20,7 @@ export const popularBusDestinations = [
     title: "Vé Xe Đi Nha Trang",
     slug: "nha-trang",
     destination: "Nha Trang",
-    image: "/assets/destinations/nhatrang.jpg",
+    image: "/nhom01_dulich_booking/assets/destinations/nhatrang.jpg",
     href: "/bus/destination/nha-trang",
   },
   {
@@ -28,7 +28,7 @@ export const popularBusDestinations = [
     title: "Vé Xe Đi Phan Thiết",
     slug: "phan-thiet",
     destination: "Phan Thiết",
-    image: "/assets/hotels/phanthiet-1.jpg",
+    image: "/nhom01_dulich_booking/assets/hotels/phanthiet-1.jpg",
     href: "/bus/destination/phan-thiet",
   },
   {
@@ -36,7 +36,7 @@ export const popularBusDestinations = [
     title: "Vé Xe Đi Sài Gòn",
     slug: "sai-gon",
     destination: "Sài Gòn",
-    image: "/assets/destinations/hcm.jpeg",
+    image: "/nhom01_dulich_booking/assets/destinations/hcm.jpeg",
     href: "/bus/destination/sai-gon",
   },
   {
@@ -44,7 +44,7 @@ export const popularBusDestinations = [
     title: "Vé Xe Đi Đà Nẵng",
     slug: "da-nang",
     destination: "Đà Nẵng",
-    image: "/assets/destinations/danang.jpg",
+    image: "/nhom01_dulich_booking/assets/destinations/danang.jpg",
     href: "/bus/destination/da-nang",
   },
 ];

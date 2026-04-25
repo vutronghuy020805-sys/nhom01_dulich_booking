@@ -19,31 +19,31 @@ import {
 } from "./shared/hotelSearchData";
 
 const serviceTabs = [
-  { label: "Khách sạn", icon: "/assets/icons/hotel.png" },
+  { label: "Khách sạn", icon: "/nhom01_dulich_booking/assets/icons/hotel.png" },
   {
     label: "Vé máy bay",
-    icon: "/assets/icons/plane.png",
-    activeIcon: "/assets/icons/plane-active.png",
+    icon: "/nhom01_dulich_booking/assets/icons/plane.png",
+    activeIcon: "/nhom01_dulich_booking/assets/icons/plane-active.png",
   },
   {
     label: "Vé xe khách",
-    icon: "/assets/icons/bus.png",
-    activeIcon: "/assets/icons/bus-active.png",
+    icon: "/nhom01_dulich_booking/assets/icons/bus.png",
+    activeIcon: "/nhom01_dulich_booking/assets/icons/bus-active.png",
   },
   {
     label: "Thuê xe",
-    icon: "/assets/icons/car.png",
-    activeIcon: "/assets/icons/car-active.png",
+    icon: "/nhom01_dulich_booking/assets/icons/car.png",
+    activeIcon: "/nhom01_dulich_booking/assets/icons/car-active.png",
   },
   {
     label: "Hoạt động",
-    icon: "/assets/icons/activity.png",
-    activeIcon: "/assets/icons/activity-active.png",
+    icon: "/nhom01_dulich_booking/assets/icons/activity.png",
+    activeIcon: "/nhom01_dulich_booking/assets/icons/activity-active.png",
   },
   {
     label: "Đưa đón sân bay",
-    icon: "/assets/icons/airport-transfer.png",
-    activeIcon: "/assets/icons/airport-transfer-active.png",
+    icon: "/nhom01_dulich_booking/assets/icons/airport-transfer.png",
+    activeIcon: "/nhom01_dulich_booking/assets/icons/airport-transfer-active.png",
   },
 ];
 
@@ -167,7 +167,7 @@ function HotelSearchForm() {
         {/* Location with dropdown */}
         <div className="flex-1 relative" ref={locationWrapperRef}>
           <div className="flex items-center gap-3 px-6 py-4 border-r border-gray-200 rounded-l-full">
-            <img src="/assets/icons/location.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/location.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <input
               type="text"
               value={locationQuery}
@@ -249,7 +249,7 @@ function HotelSearchForm() {
             onClick={() => setIsDatePickerOpen((v) => !v)}
             className="w-full flex items-center gap-3 px-6 py-4 border-r border-gray-200 cursor-pointer text-left"
           >
-            <img src="/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-gray-800 text-[15px] truncate">{dateLabel}</span>
           </button>
 
@@ -274,7 +274,7 @@ function HotelSearchForm() {
             onClick={() => setIsGuestOpen((v) => !v)}
             className="w-full flex items-center gap-3 px-6 py-4 cursor-pointer text-left"
           >
-            <img src="/assets/icons/guest-room.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/guest-room.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-gray-800 text-[15px] truncate">{guestLabel}</span>
           </button>
 
@@ -296,7 +296,7 @@ function HotelSearchForm() {
           aria-label="Tìm kiếm"
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-12 flex items-center justify-center shrink-0 rounded-r-full"
         >
-          <img src="/assets/icons/search.png" alt="" className="w-8 h-8 object-contain" />
+          <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-8 h-8 object-contain" />
         </button>
       </div>
     </>
@@ -439,7 +439,7 @@ function FlightMultiCityRows() {
                 }}
                 className="flex-1 flex items-center gap-3 px-6 py-3 text-left rounded-l-full hover:bg-gray-50 transition-colors min-w-0"
               >
-                <img src="/assets/icons/plane-depart.png" alt="" className="w-7 h-7 object-contain shrink-0" />
+                <img src="/nhom01_dulich_booking/assets/icons/plane-depart.png" alt="" className="w-7 h-7 object-contain shrink-0" />
                 {activeField === "from" ? (
                   <input
                     autoFocus
@@ -486,7 +486,7 @@ function FlightMultiCityRows() {
                 }}
                 className="flex-1 flex items-center gap-3 px-6 py-3 text-left rounded-r-full hover:bg-gray-50 transition-colors min-w-0"
               >
-                <img src="/assets/icons/plane-arrive.png" alt="" className="w-7 h-7 object-contain shrink-0" />
+                <img src="/nhom01_dulich_booking/assets/icons/plane-arrive.png" alt="" className="w-7 h-7 object-contain shrink-0" />
                 {activeField === "to" ? (
                   <input
                     autoFocus
@@ -540,7 +540,7 @@ function FlightMultiCityRows() {
                 isCalendarOpen ? "ring-2 ring-sky-400" : ""
               }`}
             >
-              <img src="/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+              <img src="/nhom01_dulich_booking/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
               <span className="text-gray-800 font-semibold text-[15px]">
                 {fmt(row.date)}
               </span>
@@ -857,7 +857,7 @@ function FlightSearchForm() {
               className="flex-1 flex items-center gap-3 px-6 py-3 text-left rounded-l-full hover:bg-gray-50 transition-colors"
             >
               <img
-                src="/assets/icons/plane-depart.png"
+                src="/nhom01_dulich_booking/assets/icons/plane-depart.png"
                 alt=""
                 className="w-7 h-7 object-contain shrink-0"
               />
@@ -906,7 +906,7 @@ function FlightSearchForm() {
               className="flex-1 flex items-center gap-3 px-6 py-3 text-left rounded-r-full hover:bg-gray-50 transition-colors"
             >
               <img
-                src="/assets/icons/plane-arrive.png"
+                src="/nhom01_dulich_booking/assets/icons/plane-arrive.png"
                 alt=""
                 className="w-7 h-7 object-contain shrink-0"
               />
@@ -957,7 +957,7 @@ function FlightSearchForm() {
               openCalendarFor === "departure" ? "ring-2 ring-sky-400" : ""
             }`}
           >
-            <img src="/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-gray-800 font-semibold text-[15px]">
               {fmt(departureDate)}
             </span>
@@ -972,7 +972,7 @@ function FlightSearchForm() {
             } ${!isRoundTrip ? "opacity-60" : ""}`}
           >
             <img
-              src="/assets/icons/calendar.png"
+              src="/nhom01_dulich_booking/assets/icons/calendar.png"
               alt=""
               className={`w-6 h-6 object-contain shrink-0 ${!isRoundTrip ? "opacity-60" : ""}`}
             />
@@ -1009,7 +1009,7 @@ function FlightSearchForm() {
           aria-label="Tìm kiếm"
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors w-16 h-16 rounded-full flex items-center justify-center shrink-0 self-center shadow-2xl"
         >
-          <img src="/assets/icons/search.png" alt="" className="w-8 h-8 object-contain" />
+          <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-8 h-8 object-contain" />
         </button>
       </div>
         </>
@@ -1191,7 +1191,7 @@ function BusTicketForm() {
             }}
             className="flex-1 flex items-center gap-3 px-6 py-4 rounded-l-full text-left hover:bg-gray-50 transition-colors min-w-0"
           >
-            <img src="/assets/icons/bus-active.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/bus-active.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             {renderLocationContent("from", from)}
           </button>
 
@@ -1218,7 +1218,7 @@ function BusTicketForm() {
             }}
             className="flex-1 flex items-center gap-3 px-6 py-4 border-r border-gray-200 text-left hover:bg-gray-50 transition-colors min-w-0"
           >
-            <img src="/assets/icons/bus-active.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/bus-active.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             {renderLocationContent("to", to)}
           </button>
 
@@ -1244,7 +1244,7 @@ function BusTicketForm() {
               openCalendarFor === "departure" ? "bg-sky-50" : ""
             }`}
           >
-            <img src="/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-gray-800 text-[15px]">{fmt(busDepartureDate)}</span>
           </button>
 
@@ -1257,7 +1257,7 @@ function BusTicketForm() {
             } ${openCalendarFor === "return" ? "bg-sky-50" : ""}`}
           >
             <img
-              src="/assets/icons/calendar.png"
+              src="/nhom01_dulich_booking/assets/icons/calendar.png"
               alt=""
               className={`w-6 h-6 object-contain shrink-0 ${!busIsRoundTrip ? "opacity-60" : ""}`}
             />
@@ -1329,7 +1329,7 @@ function BusTicketForm() {
           aria-label="Tìm kiếm"
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-10 flex items-center justify-center shrink-0 rounded-r-full"
         >
-          <img src="/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
+          <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
       </div>
     </>
@@ -1491,7 +1491,7 @@ function CarRentalForm() {
         {/* Location — wrapped for dropdown anchoring */}
         <div className="flex-[2] flex items-stretch relative" ref={locationWrapperRef}>
           <div className="flex-1 flex items-center gap-3 px-6 py-4 border-r border-gray-200 rounded-l-full">
-            <img src="/assets/icons/location.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/location.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <input
               type="text"
               value={location}
@@ -1525,7 +1525,7 @@ function CarRentalForm() {
               openCalendarFor === "start" ? "bg-sky-50" : ""
             }`}
           >
-            <img src="/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-gray-800 text-[15px]">{fmtDate(rentalStartDate)}</span>
           </button>
 
@@ -1576,7 +1576,7 @@ function CarRentalForm() {
               openCalendarFor === "end" ? "bg-sky-50" : ""
             }`}
           >
-            <img src="/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-gray-800 text-[15px]">{fmtDate(rentalEndDate)}</span>
           </button>
 
@@ -1625,7 +1625,7 @@ function CarRentalForm() {
           aria-label="Tìm kiếm"
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
         >
-          <img src="/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
+          <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
       </div>
     </>
@@ -1639,11 +1639,11 @@ function ActivitiesForm() {
   const [query, setQuery] = useState("");
 
   const categories = [
-    { label: "Điểm tham quan", icon: "/assets/icons/activity-sight.png" },
-    { label: "Trải nghiệm ẩm thực", icon: "/assets/icons/activity-food.png" },
-    { label: "Trải nghiệm văn hóa", icon: "/assets/icons/activity-culture.png" },
-    { label: "Trò chơi", icon: "/assets/icons/activity-games.png" },
-    { label: "Tour", icon: "/assets/icons/activity-tour.png" },
+    { label: "Điểm tham quan", icon: "/nhom01_dulich_booking/assets/icons/activity-sight.png" },
+    { label: "Trải nghiệm ẩm thực", icon: "/nhom01_dulich_booking/assets/icons/activity-food.png" },
+    { label: "Trải nghiệm văn hóa", icon: "/nhom01_dulich_booking/assets/icons/activity-culture.png" },
+    { label: "Trò chơi", icon: "/nhom01_dulich_booking/assets/icons/activity-games.png" },
+    { label: "Tour", icon: "/nhom01_dulich_booking/assets/icons/activity-tour.png" },
   ];
 
   return (
@@ -1664,7 +1664,7 @@ function ActivitiesForm() {
           aria-label="Tìm kiếm"
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
         >
-          <img src="/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
+          <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
       </div>
 
@@ -1850,7 +1850,7 @@ function AirportTransferForm() {
             }}
             className="flex-1 flex items-center gap-3 px-6 py-4 rounded-l-full text-left hover:bg-gray-50 transition-colors min-w-0"
           >
-            <img src="/assets/icons/plane-depart.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/plane-depart.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             {renderFieldContent("from", fromAirport, "Ví dụ Sân bay quốc tế Nội Bài")}
           </button>
 
@@ -1877,7 +1877,7 @@ function AirportTransferForm() {
             }}
             className="flex-1 flex items-center gap-3 px-6 py-4 border-r border-gray-200 text-left hover:bg-gray-50 transition-colors min-w-0"
           >
-            <img src="/assets/icons/location.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/location.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             {renderFieldContent("to", toLocation, "Ví dụ Chợ Bến Thành")}
           </button>
 
@@ -1913,7 +1913,7 @@ function AirportTransferForm() {
               isDateOpen ? "bg-sky-50" : ""
             }`}
           >
-            <img src="/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
+            <img src="/nhom01_dulich_booking/assets/icons/calendar.png" alt="" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-gray-800 text-[15px]">{fmtDate(pickupDate)}</span>
           </button>
 
@@ -1958,7 +1958,7 @@ function AirportTransferForm() {
           aria-label="Tìm kiếm"
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
         >
-          <img src="/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
+          <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
       </div>
     </>
