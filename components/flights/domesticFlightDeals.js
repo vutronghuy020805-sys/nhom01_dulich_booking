@@ -17,7 +17,7 @@ const DATE = "16 thg 4 2026";
 export const domesticFlightDeals = {
   "ha-noi": {
     label: "Hà Nội",
-    destinationImage: "/assets/destinations/hanoi.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/hanoi.jpg",
     cards: [
       { id: "hn-1", route: "TP HCM - Hà Nội", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
       { id: "hn-2", route: "Đà Nẵng - Hà Nội", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
@@ -29,7 +29,7 @@ export const domesticFlightDeals = {
   },
   "tp-ho-chi-minh": {
     label: "TP. Hồ Chí Minh",
-    destinationImage: "/assets/destinations/hcm.jpeg",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/hcm.jpeg",
     cards: [
       { id: "hcm-1", route: "Hà Nội - TP HCM", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
       { id: "hcm-2", route: "Đà Nẵng - TP HCM", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
@@ -41,7 +41,7 @@ export const domesticFlightDeals = {
   },
   "da-nang": {
     label: "Đà Nẵng",
-    destinationImage: "/assets/destinations/danang.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/danang.jpg",
     cards: [
       { id: "dn-1", route: "Hà Nội - Đà Nẵng", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
       { id: "dn-2", route: "TP HCM - Đà Nẵng", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
@@ -53,7 +53,7 @@ export const domesticFlightDeals = {
   },
   "hue": {
     label: "Huế",
-    destinationImage: "/assets/destinations/hue.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/hue.jpg",
     cards: [
       { id: "hue-1", route: "Hà Nội - Huế", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
       { id: "hue-2", route: "TP HCM - Huế", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
@@ -64,7 +64,7 @@ export const domesticFlightDeals = {
   },
   "phu-quoc": {
     label: "Phú Quốc",
-    destinationImage: "/assets/destinations/phuquoc.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/phuquoc.jpg",
     cards: [
       { id: "pq-1", route: "Hà Nội - Phú Quốc", date: DATE, price: 1399000, tripType: "MỘT CHIỀU" },
       { id: "pq-2", route: "TP HCM - Phú Quốc", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
@@ -76,7 +76,7 @@ export const domesticFlightDeals = {
   },
   "nha-trang": {
     label: "Nha Trang",
-    destinationImage: "/assets/destinations/nhatrang.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/nhatrang.jpg",
     cards: [
       { id: "nt-1", route: "Hà Nội - Nha Trang", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
       { id: "nt-2", route: "TP HCM - Nha Trang", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
@@ -87,7 +87,7 @@ export const domesticFlightDeals = {
   },
   "quy-nhon": {
     label: "Quy Nhơn",
-    destinationImage: "/assets/flight-destinations/quy-nhon.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/flight-destinations/quy-nhon.jpg",
     cards: [
       { id: "qn-1", route: "Hà Nội - Quy Nhơn", date: DATE, price: 999000, tripType: "MỘT CHIỀU" },
       { id: "qn-2", route: "TP HCM - Quy Nhơn", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
@@ -98,7 +98,7 @@ export const domesticFlightDeals = {
   },
   "phu-yen": {
     label: "Phú Yên",
-    destinationImage: "/assets/flight-destinations/phu-yen.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/flight-destinations/phu-yen.jpg",
     cards: [
       { id: "py-1", route: "Hà Nội - Phú Yên", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
       { id: "py-2", route: "TP HCM - Phú Yên", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
@@ -109,7 +109,7 @@ export const domesticFlightDeals = {
   },
   "hai-phong": {
     label: "Hải Phòng",
-    destinationImage: "/assets/flight-destinations/hai-phong.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/flight-destinations/hai-phong.jpg",
     cards: [
       { id: "hp-1", route: "TP HCM - Hải Phòng", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
       { id: "hp-2", route: "Đà Nẵng - Hải Phòng", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
@@ -120,7 +120,7 @@ export const domesticFlightDeals = {
   },
   "can-tho": {
     label: "Cần Thơ",
-    destinationImage: "/assets/flight-destinations/can-tho.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/flight-destinations/can-tho.jpg",
     cards: [
       { id: "ct-1", route: "Hà Nội - Cần Thơ", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
       { id: "ct-2", route: "Đà Nẵng - Cần Thơ", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
@@ -131,7 +131,7 @@ export const domesticFlightDeals = {
   },
   "diem-den-khac": {
     label: "Điểm đến khác",
-    destinationImage: "/assets/destinations/dalat.jpg",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/dalat.jpg",
     cards: [
       {
         id: "other-1",
@@ -139,7 +139,7 @@ export const domesticFlightDeals = {
         date: DATE,
         price: 899000,
         tripType: "MỘT CHIỀU",
-        image: "/assets/destinations/dalat.jpg",
+        image: "/nhom01_dulich_booking/assets/destinations/dalat.jpg",
       },
       {
         id: "other-2",
@@ -147,7 +147,7 @@ export const domesticFlightDeals = {
         date: DATE,
         price: 1199000,
         tripType: "MỘT CHIỀU",
-        image: "/assets/flight-destinations/dien-bien.jpg",
+        image: "/nhom01_dulich_booking/assets/flight-destinations/dien-bien.jpg",
       },
       {
         id: "other-3",
@@ -155,7 +155,7 @@ export const domesticFlightDeals = {
         date: DATE,
         price: 1299000,
         tripType: "MỘT CHIỀU",
-        image: "/assets/flight-destinations/pleiku.jpg",
+        image: "/nhom01_dulich_booking/assets/flight-destinations/pleiku.jpg",
       },
       {
         id: "other-4",
@@ -163,7 +163,7 @@ export const domesticFlightDeals = {
         date: DATE,
         price: 799000,
         tripType: "MỘT CHIỀU",
-        image: "/assets/flight-destinations/buon-ma-thuot.jpg",
+        image: "/nhom01_dulich_booking/assets/flight-destinations/buon-ma-thuot.jpg",
       },
       {
         id: "other-5",
@@ -171,7 +171,7 @@ export const domesticFlightDeals = {
         date: DATE,
         price: 1699000,
         tripType: "MỘT CHIỀU",
-        image: "/assets/flight-destinations/con-dao.jpg",
+        image: "/nhom01_dulich_booking/assets/flight-destinations/con-dao.jpg",
       },
     ],
   },

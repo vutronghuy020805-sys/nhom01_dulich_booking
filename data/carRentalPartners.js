@@ -1,4 +1,4 @@
-const BASE = "/assets/car-rental/partners";
+const BASE = "/nhom01_dulich_booking/assets/car-rental/partners";
 
 export const carRentalPartners = [
   { id: "hoang-gia", name: "Hoàng Gia Rent A Car", logo: `${BASE}/hoang-gia.svg` },

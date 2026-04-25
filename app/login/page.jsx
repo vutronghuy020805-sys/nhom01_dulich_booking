@@ -10,7 +10,7 @@ export default function LoginPage() {
       {/* Watermark logo giữa nền */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
         <img
-          src="/assets/logo-viego.png"
+          src="/nhom01_dulich_booking/assets/logo-viego.png"
           alt=""
           className="w-[640px] h-[640px] object-contain opacity-[0.12] mix-blend-screen"
         />
@@ -23,7 +23,7 @@ export default function LoginPage() {
           {/* Header: logo + Welcome text */}
           <div className="flex items-center gap-3 mb-6 lg:mb-8">
             <img
-              src="/assets/logo-viego.png"
+              src="/nhom01_dulich_booking/assets/logo-viego.png"
               alt="VieGo Travel"
               className="w-16 h-16 object-contain mix-blend-screen shrink-0"
             />
@@ -42,7 +42,7 @@ export default function LoginPage() {
               lộ viền xanh của panel bao quanh.
             */}
             <img
-              src="/assets/login-banner.png"
+              src="/nhom01_dulich_booking/assets/login-banner.png"
               alt="VieGo travel"
               className="w-full h-[440px] lg:h-[480px] object-cover"
             />

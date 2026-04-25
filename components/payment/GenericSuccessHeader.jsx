@@ -7,7 +7,7 @@ export default function GenericSuccessHeader({ badgeLabel = "Đặt chỗ hoàn 
         <Link href="/" className="inline-flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/logo-viego.png"
+            src="/nhom01_dulich_booking/assets/logo-viego.png"
             alt="VieGo Travel"
             className="w-12 h-12 object-contain brightness-0"
           />

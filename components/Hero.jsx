@@ -49,7 +49,7 @@ export default function Hero() {
                 tự nhiên hơn.
               */}
               <img
-                src="/assets/logo-viego.png"
+                src="/nhom01_dulich_booking/assets/logo-viego.png"
                 alt="VieGo Travel"
                 className="w-28 h-28 object-contain mix-blend-screen"
               />

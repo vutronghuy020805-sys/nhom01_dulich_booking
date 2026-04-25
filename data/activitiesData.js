@@ -2,27 +2,27 @@ export const ACTIVITY_CATEGORIES = [
   {
     id: "diem-tham-quan",
     label: "Điểm tham quan",
-    icon: "/assets/icons/activity-sight.png",
+    icon: "/nhom01_dulich_booking/assets/icons/activity-sight.png",
   },
   {
     id: "trai-nghiem-am-thuc",
     label: "Trải nghiệm ẩm thực",
-    icon: "/assets/icons/activity-food.png",
+    icon: "/nhom01_dulich_booking/assets/icons/activity-food.png",
   },
   {
     id: "trai-nghiem-van-hoa",
     label: "Trải nghiệm văn hóa",
-    icon: "/assets/icons/activity-culture.png",
+    icon: "/nhom01_dulich_booking/assets/icons/activity-culture.png",
   },
   {
     id: "tro-choi",
     label: "Trò chơi",
-    icon: "/assets/icons/activity-games.png",
+    icon: "/nhom01_dulich_booking/assets/icons/activity-games.png",
   },
   {
     id: "tour",
     label: "Tour",
-    icon: "/assets/icons/activity-tour.png",
+    icon: "/nhom01_dulich_booking/assets/icons/activity-tour.png",
   },
 ];
 
@@ -48,7 +48,7 @@ export const activitiesData = [
     destination: "Nha Trang",
     category: "diem-tham-quan",
     location: "Đảo Hòn Tre, phường Nha Trang",
-    image: "/assets/activities/attractions/vinwonders-nha-trang.jpg",
+    image: "/nhom01_dulich_booking/assets/activities/attractions/vinwonders-nha-trang.jpg",
   },
   {
     id: "sun-world-nui-ba-den",
@@ -56,7 +56,7 @@ export const activitiesData = [
     destination: "Tây Ninh",
     category: "diem-tham-quan",
     location: "Phường Bình Minh, tỉnh Tây Ninh",
-    image: "/assets/activities/attractions/sun-world-nui-ba-den.jpg",
+    image: "/nhom01_dulich_booking/assets/activities/attractions/sun-world-nui-ba-den.jpg",
   },
   {
     id: "thao-cam-vien",
@@ -64,7 +64,7 @@ export const activitiesData = [
     destination: "TP. Hồ Chí Minh",
     category: "diem-tham-quan",
     location: "Phường Sài Gòn, TP. Hồ Chí Minh",
-    image: "/assets/activities/attractions/thao-cam-vien.jpg",
+    image: "/nhom01_dulich_booking/assets/activities/attractions/thao-cam-vien.jpg",
   },
   {
     id: "sun-world-ba-na-hills",
@@ -72,7 +72,7 @@ export const activitiesData = [
     destination: "Đà Nẵng",
     category: "diem-tham-quan",
     location: "Xã Bà Nà, TP. Đà Nẵng",
-    image: "/assets/activities/attractions/ba-na-hills.jpg",
+    image: "/nhom01_dulich_booking/assets/activities/attractions/ba-na-hills.jpg",
   },
   {
     id: "hoang-thanh-thang-long",
@@ -80,7 +80,7 @@ export const activitiesData = [
     destination: "Hà Nội",
     category: "diem-tham-quan",
     location: "Ba Đình, TP. Hà Nội",
-    image: "/assets/activities/attractions/hoang-thanh-thang-long.jpg",
+    image: "/nhom01_dulich_booking/assets/activities/attractions/hoang-thanh-thang-long.jpg",
   },
   {
     id: "pho-co-hoi-an",
@@ -88,7 +88,7 @@ export const activitiesData = [
     destination: "Hội An",
     category: "diem-tham-quan",
     location: "TP. Hội An, Quảng Nam",
-    image: "/assets/activities/attractions/pho-co-hoi-an.jpg",
+    image: "/nhom01_dulich_booking/assets/activities/attractions/pho-co-hoi-an.jpg",
   },
 
   // === Trải nghiệm ẩm thực ===
@@ -98,7 +98,7 @@ export const activitiesData = [
     destination: "TP. Hồ Chí Minh",
     category: "trai-nghiem-am-thuc",
     location: "P. Xóm Chiếu, TP. Hồ Chí Minh",
-    image: "/assets/activities/food/ben-thanh-princess-dinner-cruise.png",
+    image: "/nhom01_dulich_booking/assets/activities/food/ben-thanh-princess-dinner-cruise.png",
   },
   {
     id: "pizza-4ps-restaurant",
@@ -106,7 +106,7 @@ export const activitiesData = [
     destination: "TP. Hồ Chí Minh",
     category: "trai-nghiem-am-thuc",
     location: "Thảo Điền, TP. Hồ Chí Minh",
-    image: "/assets/activities/food/pizza-4ps-restaurant.png",
+    image: "/nhom01_dulich_booking/assets/activities/food/pizza-4ps-restaurant.png",
   },
   {
     id: "dmaris-buffet-restaurant",
@@ -114,7 +114,7 @@ export const activitiesData = [
     destination: "TP. Hồ Chí Minh",
     category: "trai-nghiem-am-thuc",
     location: "Tầng 5, Tòa nhà PICO PLAZA",
-    image: "/assets/activities/food/dmaris-buffet-restaurant.png",
+    image: "/nhom01_dulich_booking/assets/activities/food/dmaris-buffet-restaurant.png",
   },
   {
     id: "saigon-street-food-motorbike-tour",
@@ -122,7 +122,7 @@ export const activitiesData = [
     destination: "TP. Hồ Chí Minh",
     category: "trai-nghiem-am-thuc",
     location: "Quận 4, TP. Hồ Chí Minh",
-    image: "/assets/activities/food/saigon-street-food-motorbike-tour.png",
+    image: "/nhom01_dulich_booking/assets/activities/food/saigon-street-food-motorbike-tour.png",
   },
 
   // === Trải nghiệm văn hóa ===
@@ -132,7 +132,7 @@ export const activitiesData = [
     destination: "Hà Nội",
     category: "trai-nghiem-van-hoa",
     location: "Phố cổ Hà Nội",
-    image: "/assets/activities/culture/ao-dai-photoshoot-hanoi.png",
+    image: "/nhom01_dulich_booking/assets/activities/culture/ao-dai-photoshoot-hanoi.png",
   },
   {
     id: "mua-roi-nuoc-thang-long",
@@ -140,7 +140,7 @@ export const activitiesData = [
     destination: "Hà Nội",
     category: "trai-nghiem-van-hoa",
     location: "Nhà hát Múa rối nước Thăng Long",
-    image: "/assets/activities/culture/mua-roi-nuoc-thang-long.png",
+    image: "/nhom01_dulich_booking/assets/activities/culture/mua-roi-nuoc-thang-long.png",
   },
   {
     id: "cheo-viet-nam",
@@ -148,7 +148,7 @@ export const activitiesData = [
     destination: "Hà Nội",
     category: "trai-nghiem-van-hoa",
     location: "Nhà hát Chèo Việt Nam",
-    image: "/assets/activities/culture/cheo-viet-nam.png",
+    image: "/nhom01_dulich_booking/assets/activities/culture/cheo-viet-nam.png",
   },
   {
     id: "lam-gom-bat-trang",
@@ -156,7 +156,7 @@ export const activitiesData = [
     destination: "Hà Nội",
     category: "trai-nghiem-van-hoa",
     location: "Làng gốm Bát Tràng",
-    image: "/assets/activities/culture/lam-gom-bat-trang.png",
+    image: "/nhom01_dulich_booking/assets/activities/culture/lam-gom-bat-trang.png",
   },
 
   // === Trò chơi ===
@@ -166,7 +166,7 @@ export const activitiesData = [
     destination: "Nha Trang",
     category: "tro-choi",
     location: "VinWonders Nha Trang",
-    image: "/assets/activities/games/tau-luon-sieu-toc-vinwonders.png",
+    image: "/nhom01_dulich_booking/assets/activities/games/tau-luon-sieu-toc-vinwonders.png",
   },
   {
     id: "zipline-madagui",
@@ -174,7 +174,7 @@ export const activitiesData = [
     destination: "Đà Lạt",
     category: "tro-choi",
     location: "Khu du lịch Madagui",
-    image: "/assets/activities/games/zipline-madagui.png",
+    image: "/nhom01_dulich_booking/assets/activities/games/zipline-madagui.png",
   },
   {
     id: "atv-bau-trang",
@@ -182,7 +182,7 @@ export const activitiesData = [
     destination: "Phan Thiết",
     category: "tro-choi",
     location: "Khu du lịch Bàu Trắng",
-    image: "/assets/activities/games/atv-bau-trang.png",
+    image: "/nhom01_dulich_booking/assets/activities/games/atv-bau-trang.png",
   },
   {
     id: "truot-mang-datanla",
@@ -190,7 +190,7 @@ export const activitiesData = [
     destination: "Đà Lạt",
     category: "tro-choi",
     location: "Thác Datanla",
-    image: "/assets/activities/games/truot-mang-datanla.png",
+    image: "/nhom01_dulich_booking/assets/activities/games/truot-mang-datanla.png",
   },
 
   // === Tour ===
@@ -200,7 +200,7 @@ export const activitiesData = [
     destination: "TP. Hồ Chí Minh",
     category: "tour",
     location: "Mỹ Tho, Bến Tre",
-    image: "/assets/activities/tours/tour-mien-tay.png",
+    image: "/nhom01_dulich_booking/assets/activities/tours/tour-mien-tay.png",
   },
   {
     id: "tour-3-dao-phu-quoc",
@@ -208,7 +208,7 @@ export const activitiesData = [
     destination: "Phú Quốc",
     category: "tour",
     location: "143 Trần Hưng Đạo",
-    image: "/assets/activities/tours/tour-3-dao-phu-quoc.png",
+    image: "/nhom01_dulich_booking/assets/activities/tours/tour-3-dao-phu-quoc.png",
   },
   {
     id: "tour-hoa-lu-trang-an-hang-mua",
@@ -216,7 +216,7 @@ export const activitiesData = [
     destination: "Ninh Bình",
     category: "tour",
     location: "Hoa Lư, Ninh Bình",
-    image: "/assets/activities/tours/tour-hoa-lu-trang-an-hang-mua.png",
+    image: "/nhom01_dulich_booking/assets/activities/tours/tour-hoa-lu-trang-an-hang-mua.png",
   },
   {
     id: "xe-buyt-2-tang-hcm",
@@ -224,7 +224,7 @@ export const activitiesData = [
     destination: "TP. Hồ Chí Minh",
     category: "tour",
     location: "TP HCM",
-    image: "/assets/activities/tours/xe-buyt-2-tang-hcm.png",
+    image: "/nhom01_dulich_booking/assets/activities/tours/xe-buyt-2-tang-hcm.png",
   },
 ];
 

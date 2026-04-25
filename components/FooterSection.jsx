@@ -90,7 +90,7 @@ export default function FooterSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div>
               <img
-                src="/assets/logo-viego.png"
+                src="/nhom01_dulich_booking/assets/logo-viego.png"
                 alt="VieGo"
                 className="h-16 w-auto object-contain mb-6"
               />
