@@ -1,81 +1,58 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import SectionTitle from "@/components/SectionTitle";
+import HotelsPageHeader from "@/components/hotels/HotelsPageHeader";
+import FooterSection from "@/components/FooterSection";
+import AboutMemberCard from "@/components/about/AboutMemberCard";
+import { aboutMembers } from "@/data/aboutMembers";
 
 export const metadata = {
-  title: "About - VieGo",
+  title: "Về chúng tôi | VieGo",
+  description:
+    "Đội ngũ phát triển website VieGo - nhóm sinh viên đam mê du lịch và công nghệ.",
 };
 
 export default function AboutPage() {
+  const leftMembers = aboutMembers.filter((m) => m.column === "left");
+  const rightMembers = aboutMembers.filter((m) => m.column === "right");
+
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
+    <div className="flex flex-col min-h-screen bg-slate-50">
+      <HotelsPageHeader active="" />
 
-      <main className="flex-1 max-w-4xl mx-auto px-4 py-16 w-full">
-        <SectionTitle
-          title="Về VieGo"
-          subtitle="Chúng tôi là nền tảng booking du lịch hàng đầu Việt Nam"
-        />
+      <main className="flex-1 relative overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 flex items-center justify-center"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/logo-viego.png"
+            alt=""
+            className="w-[min(90vw,900px)] h-auto opacity-[0.06] select-none"
+          />
+        </div>
 
-        <div className="space-y-8 text-gray-600 leading-relaxed">
-          <div className="bg-blue-50 rounded-xl p-6">
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Sứ mệnh của chúng tôi</h3>
-            <p>
-              VieGo ra đời với sứ mệnh kết nối du khách với những trải nghiệm du lịch tuyệt vời
-              nhất trên khắp Việt Nam. Chúng tôi tin rằng mỗi chuyến đi là một câu chuyện đáng
-              được kể lại.
-            </p>
-          </div>
+        <div className="relative max-w-350 mx-auto px-4 md:px-8 lg:px-12 py-10 md:py-16">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-10 md:mb-14">
+            <span className="text-slate-900">About </span>
+            <span className="text-sky-500">us</span>
+          </h1>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center p-6 border rounded-xl">
-              <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
-              <div className="text-gray-500 text-sm">Khách sạn & phòng nghỉ</div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 items-start">
+            <div className="space-y-5 md:space-y-6">
+              {leftMembers.map((member) => (
+                <AboutMemberCard key={member.mssv} member={member} />
+              ))}
             </div>
-            <div className="text-center p-6 border rounded-xl">
-              <div className="text-3xl font-bold text-blue-600 mb-2">200+</div>
-              <div className="text-gray-500 text-sm">Tour du lịch</div>
-            </div>
-            <div className="text-center p-6 border rounded-xl">
-              <div className="text-3xl font-bold text-blue-600 mb-2">50k+</div>
-              <div className="text-gray-500 text-sm">Khách hàng hài lòng</div>
-            </div>
-          </div>
 
-          <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Câu chuyện của chúng tôi</h3>
-            <p className="mb-4">
-              Được thành lập năm 2023, VieGo bắt đầu từ một nhóm nhỏ những người yêu du lịch
-              với mong muốn đơn giản hóa việc lên kế hoạch cho các chuyến đi trong nước.
-            </p>
-            <p>
-              Ngày nay, VieGo tự hào là đối tác tin cậy của hàng nghìn du khách, cung cấp
-              dịch vụ đặt phòng và tour với giá cả minh bạch, dịch vụ chăm sóc khách hàng
-              tận tâm 24/7.
-            </p>
-          </div>
-
-          <div className="bg-gray-50 rounded-xl p-6">
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Giá trị cốt lõi</h3>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold mt-0.5">✓</span>
-                <span><strong>Tin cậy:</strong> Thông tin minh bạch, giá cả rõ ràng, không phát sinh phí ẩn.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold mt-0.5">✓</span>
-                <span><strong>Chất lượng:</strong> Chỉ hợp tác với các đơn vị đã được kiểm duyệt kỹ lưỡng.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold mt-0.5">✓</span>
-                <span><strong>Tiện lợi:</strong> Đặt phòng, tour chỉ trong vài bước đơn giản.</span>
-              </li>
-            </ul>
+            <div className="space-y-5 md:space-y-6 lg:-mt-10">
+              {rightMembers.map((member) => (
+                <AboutMemberCard key={member.mssv} member={member} />
+              ))}
+            </div>
           </div>
         </div>
       </main>
 
-      <Footer />
+      <FooterSection />
     </div>
   );
 }

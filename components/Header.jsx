@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ThemeToggle from "@/components/theme/ThemeToggle";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -13,10 +14,32 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <header
+      className={
+        "sticky top-0 z-50 bg-white transition-all duration-200 " +
+        (isScrolled
+          ? "shadow-md border-b border-gray-100"
+          : "shadow-sm")
+      }
+    >
+      <div
+        className={
+          "max-w-6xl mx-auto px-4 flex items-center justify-between transition-all duration-200 " +
+          (isScrolled ? "py-2.5" : "py-4")
+        }
+      >
         <Link href="/" className="text-2xl font-bold text-blue-600 tracking-tight">
           VieGo
         </Link>
@@ -34,7 +57,8 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-2">
+          <ThemeToggle />
           <Link
             href="/rooms"
             className="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors"

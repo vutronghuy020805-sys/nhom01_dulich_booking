@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg05" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A3E"/>
+      <stop offset="50%" style="stop-color:#2D1B5E"/>
+      <stop offset="100%" style="stop-color:#1A0D35"/>
+    </linearGradient>
+    <linearGradient id="mountainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5B4FA8"/>
+      <stop offset="100%" style="stop-color:#3D3880"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A2E"/>
+      <stop offset="100%" style="stop-color:#1E1560"/>
+    </linearGradient>
+    <linearGradient id="trainGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8E8E8"/>
+      <stop offset="100%" style="stop-color:#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#FF3333"/>
+    </linearGradient>
+    <filter id="trainGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#FFFFFF" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glowBlue">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#7B61FF" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="mainClip05">
+      <rect width="1200" height="675" rx="44"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#mainClip05)">
+    <!-- Background sky -->
+    <rect width="1200" height="675" fill="url(#bg05)"/>
+
+    <!-- Stars in sky -->
+    <circle cx="100" cy="80" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="200" cy="50" r="1" fill="white" opacity="0.7"/>
+    <circle cx="320" cy="100" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="450" cy="60" r="1" fill="white" opacity="0.9"/>
+    <circle cx="580" cy="40" r="2" fill="white" opacity="0.7"/>
+    <circle cx="700" cy="80" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="820" cy="55" r="1" fill="white" opacity="0.6"/>
+    <circle cx="950" cy="70" r="1.5" fill="white" opacity="0.9"/>
+    <circle cx="1080" cy="45" r="2" fill="white" opacity="0.7"/>
+    <circle cx="1150" cy="90" r="1" fill="white" opacity="0.8"/>
+    <circle cx="160" cy="140" r="1" fill="white" opacity="0.5"/>
+    <circle cx="520" cy="120" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="880" cy="130" r="1" fill="white" opacity="0.7"/>
+
+    <!-- Mount Fuji -->
+    <path d="M550 480 L780 140 L1010 480 Z" fill="url(#mountainGrad)"/>
+    <path d="M700 180 L780 140 L860 180 Q820 220 780 230 Q740 220 700 180 Z" fill="white" opacity="0.9"/>
+    <!-- Snow cap details -->
+    <path d="M740 195 Q780 160 820 195 Q800 215 780 220 Q760 215 740 195 Z" fill="white"/>
+    <!-- Fuji texture lines -->
+    <line x1="650" y1="380" x2="780" y2="180" stroke="white" stroke-width="1" opacity="0.1"/>
+    <line x1="910" y1="380" x2="780" y2="180" stroke="white" stroke-width="1" opacity="0.1"/>
+
+    <!-- Smaller mountains behind -->
+    <path d="M300 480 L480 250 L660 480 Z" fill="#3D2B6E" opacity="0.8"/>
+    <path d="M900 480 L1050 280 L1200 480 Z" fill="#3D2B6E" opacity="0.8"/>
+    <path d="M0 480 L100 320 L250 480 Z" fill="#2E2060" opacity="0.7"/>
+
+    <!-- Setting sun / circle behind Fuji -->
+    <circle cx="780" cy="350" r="120" fill="url(#sunGrad)" opacity="0.25"/>
+    <circle cx="780" cy="350" r="80" fill="#FF4444" opacity="0.15"/>
+
+    <!-- Lake reflection -->
+    <rect x="0" y="470" width="1200" height="205" fill="#0D0D30"/>
+    <path d="M0 470 Q300 455 600 470 Q900 485 1200 470" fill="#151540" stroke="none"/>
+    <!-- Reflection lines on water -->
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="white" stroke-width="0.5" opacity="0.05"/>
+    <line x1="0" y1="530" x2="1200" y2="530" stroke="white" stroke-width="0.5" opacity="0.05"/>
+    <!-- Fuji reflection -->
+    <path d="M550 475 L780 590 L1010 475 Z" fill="#3D2B6E" opacity="0.3"/>
+    <path d="M720 478 L780 520 L840 478 Q810 510 780 515 Q750 510 720 478 Z" fill="white" opacity="0.15"/>
+
+    <!-- Cherry blossom tree left side -->
+    <rect x="70" y="280" width="16" height="195" fill="#6B4B3A"/>
+    <rect x="86" y="320" width="80" height="12" rx="6" fill="#6B4B3A" transform="rotate(35, 86, 326)"/>
+    <rect x="40" y="340" width="70" height="10" rx="5" fill="#6B4B3A" transform="rotate(-30, 55, 345)"/>
+    <!-- Blossoms -->
+    <ellipse cx="78" cy="255" rx="65" ry="55" fill="#FFB7C5" opacity="0.85"/>
+    <ellipse cx="125" cy="270" rx="50" ry="45" fill="#FF91A4" opacity="0.8"/>
+    <ellipse cx="55" cy="270" rx="45" ry="42" fill="#FFD0DB" opacity="0.9"/>
+    <ellipse cx="95" cy="235" rx="40" ry="38" fill="#FFB7C5" opacity="0.85"/>
+    <!-- Cherry blossom right side -->
+    <rect x="1100" y="300" width="16" height="175" fill="#6B4B3A"/>
+    <ellipse cx="1090" cy="265" rx="70" ry="55" fill="#FFB7C5" opacity="0.8"/>
+    <ellipse cx="1130" cy="250" rx="55" ry="48" fill="#FF91A4" opacity="0.75"/>
+    <ellipse cx="1060" cy="275" rx="45" ry="40" fill="#FFD0DB" opacity="0.85"/>
+
+    <!-- Falling petals -->
+    <ellipse cx="200" cy="200" rx="4" ry="7" fill="#FFB7C5" opacity="0.7" transform="rotate(25, 200, 200)"/>
+    <ellipse cx="350" cy="150" rx="3" ry="6" fill="#FF91A4" opacity="0.6" transform="rotate(-15, 350, 150)"/>
+    <ellipse cx="480" cy="220" rx="4" ry="7" fill="#FFD0DB" opacity="0.65" transform="rotate(40, 480, 220)"/>
+    <ellipse cx="900" cy="180" rx="4" ry="7" fill="#FFB7C5" opacity="0.6" transform="rotate(-30, 900, 180)"/>
+    <ellipse cx="1020" cy="150" rx="3" ry="6" fill="#FF91A4" opacity="0.7" transform="rotate(20, 1020, 150)"/>
+
+    <!-- Shinkansen train -->
+    <g transform="translate(200, 400)" filter="url(#trainGlow)">
+      <!-- Train body -->
+      <rect x="0" y="0" width="700" height="65" rx="10" fill="url(#trainGrad)"/>
+      <!-- Nose -->
+      <path d="M0 5 Q-80 32 0 60 Z" fill="url(#trainGrad)"/>
+      <!-- Blue stripe -->
+      <rect x="-80" y="22" width="785" height="12" rx="6" fill="#0033CC"/>
+      <rect x="-80" y="38" width="785" height="6" rx="3" fill="#0055FF" opacity="0.6"/>
+      <!-- Windows -->
+      <rect x="40" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <rect x="120" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <rect x="200" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <rect x="280" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <rect x="360" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <rect x="440" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <rect x="520" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <rect x="600" y="8" width="55" height="32" rx="6" fill="#87CEEB" opacity="0.9"/>
+      <!-- Wheel bogies -->
+      <rect x="60" y="60" width="80" height="15" rx="4" fill="#CCCCCC"/>
+      <rect x="220" y="60" width="80" height="15" rx="4" fill="#CCCCCC"/>
+      <rect x="400" y="60" width="80" height="15" rx="4" fill="#CCCCCC"/>
+      <rect x="560" y="60" width="80" height="15" rx="4" fill="#CCCCCC"/>
+      <!-- Speed lines -->
+      <line x1="-200" y1="20" x2="-90" y2="20" stroke="#0033CC" stroke-width="3" opacity="0.5"/>
+      <line x1="-250" y1="32" x2="-90" y2="32" stroke="#0033CC" stroke-width="2" opacity="0.4"/>
+      <line x1="-180" y1="44" x2="-90" y2="44" stroke="#0033CC" stroke-width="2" opacity="0.4"/>
+    </g>
+
+    <!-- Track -->
+    <rect x="0" y="463" width="1200" height="8" rx="4" fill="#555580"/>
+    <rect x="0" y="460" width="1200" height="3" rx="2" fill="#7777AA" opacity="0.5"/>
+  </g>
+
+  <!-- Badge -->
+  <rect x="60" y="58" width="250" height="42" rx="21" fill="#FFB7C5"/>
+  <text x="80" y="85" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#C94A05">🗓️ Thứ ba hàng tuần</text>
+
+  <!-- Main headline - white on dark -->
+  <text x="60" y="175" font-family="'Segoe UI Black', 'Arial Black', sans-serif" font-size="80" font-weight="900" fill="#FFFFFF" letter-spacing="-2">TÀU XE</text>
+  <text x="60" y="262" font-family="'Segoe UI Black', 'Arial Black', sans-serif" font-size="80" font-weight="900" fill="#F47A20" letter-spacing="-2">GIẢM THÊM</text>
+
+  <!-- Subtext -->
+  <text x="62" y="308" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.85)" font-weight="500">Săn vé tiết kiệm mỗi tuần</text>
+
+  <!-- Discount badge -->
+  <rect x="62" y="335" width="260" height="56" rx="28" fill="#F47A20"/>
+  <text x="192" y="371" font-family="'Segoe UI Black', 'Arial Black', sans-serif" font-size="26" font-weight="900" fill="#FFFFFF" text-anchor="middle">⚡ Siêu tiết kiệm</text>
+
+  <!-- CTA -->
+  <rect x="62" y="408" width="190" height="54" rx="27" fill="#FFFFFF" filter="url(#trainGlow)"/>
+  <text x="157" y="442" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#1A1A3E" text-anchor="middle">Mua vé ngay →</text>
+
+  <!-- Japan flag accent -->
+  <text x="65" y="570" font-size="28" opacity="0.5">🇯🇵</text>
+  <text x="110" y="570" font-size="22" opacity="0.4">🌸</text>
+</svg>

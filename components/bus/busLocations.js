@@ -1,0 +1,98 @@
+export const busLocations = [
+  {
+    id: "city-hcm",
+    name: "TP. Hồ Chí Minh",
+    subtitle: "Tất cả các điểm lên xe ở TP. Hồ Chí Minh",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-hanoi",
+    name: "Hà Nội",
+    subtitle: "Tất cả các điểm lên xe ở Hà Nội",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-danang",
+    name: "Đà Nẵng",
+    subtitle: "Tất cả các điểm lên xe ở Đà Nẵng",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-nhatrang",
+    name: "Nha Trang",
+    subtitle: "Tất cả các điểm lên xe ở Nha Trang",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-cantho",
+    name: "Cần Thơ",
+    subtitle: "Tất cả các điểm lên xe ở Cần Thơ",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-vungtau",
+    name: "Vũng Tàu",
+    subtitle: "Tất cả các điểm lên xe ở Vũng Tàu",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-dalat",
+    name: "Đà Lạt",
+    subtitle: "Tất cả các điểm lên xe ở Đà Lạt",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-hue",
+    name: "Huế",
+    subtitle: "Tất cả các điểm lên xe ở Huế",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-haiphong",
+    name: "Hải Phòng",
+    subtitle: "Tất cả các điểm lên xe ở Hải Phòng",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-quynhon",
+    name: "Quy Nhơn",
+    subtitle: "Tất cả các điểm lên xe ở Quy Nhơn",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-phanthiet",
+    name: "Phan Thiết",
+    subtitle: "Tất cả các điểm lên xe ở Phan Thiết",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "bs-mdmoi",
+    name: "Bến xe Miền Đông mới",
+    subtitle: "TP. Hồ Chí Minh, Việt Nam",
+    typeLabel: "BUS_STATION",
+  },
+  {
+    id: "bs-mientay",
+    name: "Bến xe Miền Tây",
+    subtitle: "TP. Hồ Chí Minh, Việt Nam",
+    typeLabel: "BUS_STATION",
+  },
+  {
+    id: "bs-giapbat",
+    name: "Bến xe Giáp Bát",
+    subtitle: "Hà Nội, Việt Nam",
+    typeLabel: "BUS_STATION",
+  },
+  {
+    id: "bs-mydinh",
+    name: "Bến xe Mỹ Đình",
+    subtitle: "Hà Nội, Việt Nam",
+    typeLabel: "BUS_STATION",
+  },
+  {
+    id: "bs-dn",
+    name: "Bến xe Trung tâm Đà Nẵng",
+    subtitle: "Đà Nẵng, Việt Nam",
+    typeLabel: "BUS_STATION",
+  },
+];
