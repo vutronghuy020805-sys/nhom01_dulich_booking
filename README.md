@@ -31,10 +31,10 @@ VieGo là nền tảng booking du lịch với các chức năng:
 - Deploy bằng GitHub Pages
 
 ## 5. Link Figma
-- [Figma view-only](DAN_LINK_FIGMA_O_DAY)
+- Sẽ cập nhật sau
 
 ## 6. Link GitHub Pages
-- [Website đã deploy](DAN_LINK_DEPLOY_O_DAY)
+- Sẽ cập nhật sau khi deploy
 
 ## 7. Hướng dẫn chạy local
 ```bash
