@@ -40,7 +40,7 @@ export default function FlightBookingHeader({ step = 1 }) {
       <div className="max-w-375 mx-auto px-6 lg:px-10 py-3 flex items-center gap-6 md:gap-10">
         <Link href="/flights" className="shrink-0 flex items-center">
           <img
-            src="/assets/logo-viego.png"
+            src="/nhom01_dulich_booking/assets/logo-viego.png"
             alt="VieGo Travel"
             className="w-12 h-12 object-contain brightness-0"
           />

@@ -10,7 +10,7 @@ export default function BookingHeader({ hotel, activeStep = 1 }) {
         <div className="flex items-center gap-4 min-w-0">
           <Link href="/" className="shrink-0 flex items-center">
             <img
-              src="/assets/logo-viego.png"
+              src="/nhom01_dulich_booking/assets/logo-viego.png"
               alt="VieGo Travel"
               className="w-12 h-12 object-contain brightness-0"
             />

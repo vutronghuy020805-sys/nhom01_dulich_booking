@@ -13,7 +13,7 @@ export default function AirportTransferStepHeader({ currentStep = 1 }) {
       <div className="max-w-350 mx-auto px-4 lg:px-10 py-3 flex items-center justify-between gap-4">
         <Link href="/" className="shrink-0 flex items-center">
           <img
-            src="/assets/logo-viego.png"
+            src="/nhom01_dulich_booking/assets/logo-viego.png"
             alt="VieGo Travel"
             className="w-14 h-14 object-contain brightness-0"
           />

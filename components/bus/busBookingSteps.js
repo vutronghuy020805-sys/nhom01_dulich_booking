@@ -54,25 +54,25 @@ export const busBookingGroupVisuals = [
   {
     group: 1,
     layout: "visual-left",
-    src: "/assets/bus-page/how-to-book/step-visual-1.png",
+    src: "/nhom01_dulich_booking/assets/bus-page/how-to-book/step-visual-1.png",
     alt: "Nhập thông tin chuyến đi và xem lịch trình trên VieGo",
   },
   {
     group: 2,
     layout: "visual-right",
-    src: "/assets/bus-page/how-to-book/step-visual-2.png",
+    src: "/nhom01_dulich_booking/assets/bus-page/how-to-book/step-visual-2.png",
     alt: "Xem chi tiết chuyến xe và nhập thông tin hành khách trên VieGo",
   },
   {
     group: 3,
     layout: "visual-left",
-    src: "/assets/bus-page/how-to-book/step-visual-3.png",
+    src: "/nhom01_dulich_booking/assets/bus-page/how-to-book/step-visual-3.png",
     alt: "Kiểm tra đặt chỗ và nhận vé điện tử trên VieGo",
   },
   {
     group: 4,
     layout: "visual-left",
-    src: "/assets/bus-page/how-to-book/step-visual-4.png",
+    src: "/nhom01_dulich_booking/assets/bus-page/how-to-book/step-visual-4.png",
     alt: "Vé điện tử VieGo khi lên xe",
   },
 ];

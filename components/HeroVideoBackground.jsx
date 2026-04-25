@@ -67,10 +67,10 @@ export default function HeroVideoBackground() {
       playsInline
       preload="auto"
       disablePictureInPicture
-      poster="/videos/hero-poster.jpg"
+      poster="/nhom01_dulich_booking/videos/hero-poster.jpg"
       className="absolute inset-0 w-full h-full object-cover pointer-events-none"
     >
-      <source src="/videos/home-hero.mp4" type="video/mp4" />
+      <source src="/nhom01_dulich_booking/videos/home-hero.mp4" type="video/mp4" />
     </video>
   );
 }

@@ -15,7 +15,7 @@ export default function CarRentalResultsHero({
     <section className="relative">
       <div className="relative h-72 md:h-96 w-full bg-slate-200 overflow-hidden">
         <Image
-          src="/assets/car-rental/results-banner.png"
+          src="/nhom01_dulich_booking/assets/car-rental/results-banner.png"
           alt="Thuê xe tự lái VieGo"
           fill
           priority

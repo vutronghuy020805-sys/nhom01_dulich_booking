@@ -17,7 +17,7 @@ export default function BusPageHero() {
           <div
             className="w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-slate-900 shadow-xl bg-cover bg-center"
             style={{
-              backgroundImage: "url('/assets/bus-page/bus-hero-banner.png')",
+              backgroundImage: "url('/nhom01_dulich_booking/assets/bus-page/bus-hero-banner.png')",
             }}
             role="img"
             aria-label="VieGo khuyến mãi vé xe khách"

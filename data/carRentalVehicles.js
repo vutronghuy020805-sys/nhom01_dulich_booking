@@ -1,4 +1,4 @@
-const VEHICLE_BASE = "/assets/car-rental/vehicles";
+const VEHICLE_BASE = "/nhom01_dulich_booking/assets/car-rental/vehicles";
 
 export const carRentalVehicles = [
   {

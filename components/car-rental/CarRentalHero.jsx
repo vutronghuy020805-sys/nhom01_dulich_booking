@@ -58,7 +58,7 @@ export default function CarRentalHero() {
             className="w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-slate-900 shadow-xl bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('/assets/car-rental/hero-voucher.png')",
+                "url('/nhom01_dulich_booking/assets/car-rental/hero-voucher.png')",
             }}
             role="img"
             aria-label="VieGo - Ưu đãi thuê xe du lịch"

@@ -9,14 +9,14 @@ const articles = [
     title:
       'Khám phá trọn vẹn Sun World Vũng Tàu: Địa chỉ, Bảng giá và Bí kíp "chơi cực đã"',
     readTime: "Đọc trong khoảng 10 phút",
-    image: "/assets/articles/article-1.jpg",
+    image: "/nhom01_dulich_booking/assets/articles/article-1.jpg",
     brand: "VieGo",
   },
   {
     id: "article-2",
     title: 'Khám phá Ba Son: "View" sông triệu đô không thể bỏ lỡ',
     readTime: "Đọc trong khoảng 13 phút",
-    image: "/assets/articles/article-2.jpg",
+    image: "/nhom01_dulich_booking/assets/articles/article-2.jpg",
     brand: "VieGo",
   },
   {
@@ -24,7 +24,7 @@ const articles = [
     title:
       'Đi cafe Quận 3 thì đi đâu? Lưu ngay danh sách 9 tọa độ "đắt khách" nhất',
     readTime: "Đọc trong khoảng 18 phút",
-    image: "/assets/articles/article-3.jpg",
+    image: "/nhom01_dulich_booking/assets/articles/article-3.jpg",
     brand: "VieGo",
   },
   {
@@ -32,7 +32,7 @@ const articles = [
     title:
       'Sài Gòn không thiếu chỗ chơi: Trọn bộ tọa độ giải trí "hè cực chất" cho mùa 2026',
     readTime: "Đọc trong khoảng 18 phút",
-    image: "/assets/articles/article-4.jpeg",
+    image: "/nhom01_dulich_booking/assets/articles/article-4.jpeg",
     brand: "VieGo",
   },
   {
@@ -40,7 +40,7 @@ const articles = [
     title:
       "Khám phá săn mây và cáp treo: Trải nghiệm không thể bỏ lỡ cho chuyến đi miền núi",
     readTime: "Đọc trong khoảng 13 phút",
-    image: "/assets/articles/article-5.jpg",
+    image: "/nhom01_dulich_booking/assets/articles/article-5.jpg",
     brand: "VieGo",
   },
   {
@@ -48,7 +48,7 @@ const articles = [
     title:
       "Check-in cột cờ vùng cao: Gợi ý hành trình săn ảnh cực đẹp cho cuối tuần",
     readTime: "Đọc trong khoảng 10 phút",
-    image: "/assets/articles/article-6.jpg",
+    image: "/nhom01_dulich_booking/assets/articles/article-6.jpg",
     brand: "VieGo",
   },
 ];

@@ -99,7 +99,7 @@ export default function LocationFaqSection({ faq }) {
 
           <div className="hidden lg:flex items-start justify-center w-80 shrink-0 pt-8">
             <img
-              src="/assets/faq/faq-illustration.png"
+              src="/nhom01_dulich_booking/assets/faq/faq-illustration.png"
               alt="Câu hỏi thường gặp"
               className="w-full h-auto max-h-80 object-contain"
             />

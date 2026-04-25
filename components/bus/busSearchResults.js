@@ -68,7 +68,7 @@ const OPERATORS = [
     name: "Hoang Thuy",
     vehicleClass: "Phòng Đơn Lớn Nằm 1 Khách - Limousine 22 phòng (WC)",
     vehicleShort: "Phòng Đơn Lớn Nằm - Limousine 22 phòng",
-    image: "/assets/bus-search/hoang-thuy.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/hoang-thuy.jpg",
     ratingBase: 4.5,
   },
   {
@@ -76,7 +76,7 @@ const OPERATORS = [
     name: "Dien Linh Limousine",
     vehicleClass: "Giường nằm nhỏ - Limousine 36 giường",
     vehicleShort: "Giường nằm nhỏ - Limousine 36 giường",
-    image: "/assets/bus-search/dien-linh.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/dien-linh.jpg",
     ratingBase: 4.1,
   },
   {
@@ -84,7 +84,7 @@ const OPERATORS = [
     name: "Tien Oanh Limousine",
     vehicleClass: "Giường nằm - Limousine 34 giường",
     vehicleShort: "Giường nằm - Limousine 34 giường",
-    image: "/assets/bus-search/tien-oanh.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/tien-oanh.jpg",
     ratingBase: 4.3,
   },
   {
@@ -92,7 +92,7 @@ const OPERATORS = [
     name: "Hoa Mai",
     vehicleClass: "Limousine 9 chỗ VIP",
     vehicleShort: "Limousine 9 chỗ VIP",
-    image: "/assets/bus-search/hoa-mai.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/hoa-mai.jpg",
     ratingBase: 4.6,
   },
   {
@@ -100,7 +100,7 @@ const OPERATORS = [
     name: "Huy Hoang",
     vehicleClass: "Limousine 9 chỗ",
     vehicleShort: "Limousine 9 chỗ",
-    image: "/assets/bus-search/huy-hoang.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/huy-hoang.jpg",
     ratingBase: 4.4,
   },
   {
@@ -108,7 +108,7 @@ const OPERATORS = [
     name: "Kim Anh Limousine",
     vehicleClass: "Limousine VIP 22 phòng",
     vehicleShort: "Limousine VIP 22 phòng",
-    image: "/assets/bus-search/kim-anh.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/kim-anh.jpg",
     ratingBase: 4.7,
   },
   {
@@ -116,7 +116,7 @@ const OPERATORS = [
     name: "Phuong Trang (Futa)",
     vehicleClass: "Giường nằm 40 chỗ",
     vehicleShort: "Giường nằm 40 chỗ",
-    image: "/assets/bus-search/phuong-trang.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/phuong-trang.jpg",
     ratingBase: 4.3,
   },
   {
@@ -124,7 +124,7 @@ const OPERATORS = [
     name: "Thanh Vinh",
     vehicleClass: "Ghế ngồi 35 chỗ",
     vehicleShort: "Ghế ngồi 35 chỗ",
-    image: "/assets/bus-search/thanh-vinh.jpg",
+    image: "/nhom01_dulich_booking/assets/bus-search/thanh-vinh.jpg",
     ratingBase: 4.2,
   },
 ];
