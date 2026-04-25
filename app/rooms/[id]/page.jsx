@@ -59,6 +59,10 @@ const rooms = [
   },
 ];
 
+export function generateStaticParams() {
+  return rooms.map((room) => ({ id: room.id }));
+}
+
 export default function RoomDetailPage({ params }) {
   const room = rooms.find((r) => r.id === params.id);
 
