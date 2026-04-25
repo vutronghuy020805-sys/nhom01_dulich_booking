@@ -3,7 +3,7 @@ const repoName = 'nhom01_dulich_booking';
 
 const nextConfig = {
   output: 'export',
-  basePath: `/${repoName}`,
+basePath: `/${repoName}`,
   trailingSlash: true,
   images: {
     unoptimized: true,
