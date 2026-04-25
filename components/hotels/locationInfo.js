@@ -1,0 +1,111 @@
+export const locationInfoBySlug = {
+  "vung-tau": {
+    title: "Thành phố Vũng Tàu",
+    totalStays: "1.136 chỗ nghỉ",
+    popularAreas: "Phường 2, Phường 1",
+    popularHotels: "Annata Beach Hotel, Milan Homestay - The Sóng Vũng Tàu",
+    popularLandmarks: "Bãi Sau, Tượng Chúa Kitô Vua",
+    startingPrice: "106.240 VND/đêm",
+    knownFor: "Bãi biển, sức khỏe, phù hợp cho gia đình",
+    reviewScore: "8.4 từ 109.694 đánh giá",
+    hotelsHeading: "Các khách sạn ở Vũng Tàu",
+    description: [
+      "Nếu hỏi cư dân Sài Gòn đâu là địa điểm du lịch quen thuộc nhất thì câu trả lời phổ biến có lẽ là thành phố biển Vũng Tàu. Chỉ cách TP.HCM chưa đến hai giờ chạy xe, du lịch Vũng Tàu từ lâu đã trở thành một địa điểm nghỉ dưỡng nổi tiếng của người dân các tỉnh thành lân cận.",
+      "Với cát vàng biển xanh, cùng vô vàn món ngon hấp dẫn từ hải sản đến bánh khọt, một khách sạn ở Vũng Tàu hẳn là địa chỉ \"đi trốn\" không thể hoàn hảo hơn. Cho một con thèm biển bất chợt, nếu bạn chẳng muốn đi xa mệt nhọc thì sao không dừng chân nơi phố biển và thoải mái tận hưởng kì nghỉ của mình!",
+      "Du khách có thể lựa chọn nhiều loại hình lưu trú tại Vũng Tàu, từ các resort cao cấp như Marina Bay, Pullman, Imperial cho đến homestay nhỏ xinh ở Bãi Sau, Bãi Trước. Đa phần đều chỉ cách biển vài phút đi bộ, giúp bạn dễ dàng đón bình minh hoặc hoàng hôn trên mặt biển.",
+      "Ngoài bãi biển, Vũng Tàu còn có nhiều điểm check-in nổi tiếng như Tượng Chúa Kitô Vua, Ngọn Hải Đăng, Bạch Dinh và khu Hồ Tràm. Đây là lựa chọn lý tưởng cho gia đình, cặp đôi hoặc nhóm bạn muốn có một kỳ nghỉ ngắn vừa thư giãn vừa khám phá.",
+    ],
+  },
+
+  "vinh-ha-long": {
+    title: "Vịnh Hạ Long",
+    totalStays: "978 chỗ nghỉ",
+    popularAreas: "Bãi Cháy, Hòn Gai",
+    popularHotels: "Wyndham Legend Halong, Mường Thanh Luxury Quảng Ninh",
+    popularLandmarks: "Vịnh Hạ Long, Sun World Hạ Long",
+    startingPrice: "260.000 VND/đêm",
+    knownFor: "Du thuyền, thắng cảnh, nghỉ dưỡng",
+    reviewScore: "8.5 từ 92.310 đánh giá",
+    hotelsHeading: "Các khách sạn ở Hạ Long",
+    description: [
+      "Vịnh Hạ Long là di sản thiên nhiên thế giới được UNESCO công nhận và là một trong những điểm du lịch biển nổi tiếng bậc nhất Việt Nam. Với hàng nghìn hòn đảo đá vôi kỳ vĩ nhấp nhô giữa mặt nước xanh ngọc, Hạ Long mang đến trải nghiệm cảnh quan có một không hai ở miền Bắc.",
+      "Du khách đến đây thường chọn lưu trú tại khu Bãi Cháy hoặc Hòn Gai, nơi tập trung nhiều khách sạn 4-5 sao với view vịnh cực đẹp. Các thương hiệu như Vinpearl, Wyndham, Sheraton, FLC đều có mặt và mang lại dịch vụ nghỉ dưỡng tiêu chuẩn quốc tế.",
+      "Ngoài việc ở khách sạn, nhiều khách còn chọn du thuyền ngủ đêm trên vịnh để khám phá hang động, chèo kayak và tận hưởng bữa tối hải sản giữa thiên nhiên. Hạ Long cũng có hệ thống cáp treo Nữ Hoàng và khu vui chơi Sun World phù hợp cho gia đình có trẻ nhỏ.",
+      "Thời điểm lý tưởng để du lịch Hạ Long là từ tháng 4 đến tháng 10 khi thời tiết khô ráo, trời trong xanh. Chi phí lưu trú khá linh hoạt, từ các homestay bình dân đến resort cao cấp, đáp ứng đa dạng nhu cầu của du khách.",
+    ],
+  },
+
+  "nha-trang": {
+    title: "Nha Trang",
+    totalStays: "1.284 chỗ nghỉ",
+    popularAreas: "Lộc Thọ, Vĩnh Hải",
+    popularHotels: "Brilliant Bay Nha Trang Hotel, Ruby Luxury Hotel",
+    popularLandmarks: "VinWonders Nha Trang, Tháp Bà Ponagar",
+    startingPrice: "189.000 VND/đêm",
+    knownFor: "Biển đẹp, nghỉ dưỡng, lặn ngắm san hô",
+    reviewScore: "8.5 từ 128.420 đánh giá",
+    hotelsHeading: "Các khách sạn ở Nha Trang",
+    description: [
+      "Nha Trang từ lâu đã được mệnh danh là thiên đường biển của miền Trung Việt Nam. Với bờ biển dài uốn cong ôm trọn thành phố, nước biển trong xanh và hàng loạt hòn đảo đẹp như Hòn Tre, Hòn Mun, Hòn Tằm, Nha Trang trở thành điểm đến lý tưởng cho những ai mê biển và ưa khám phá.",
+      "Khu vực Lộc Thọ và Trần Phú là nơi tập trung nhiều khách sạn 4-5 sao nhất, trong đó có các thương hiệu lớn như InterContinental, Sheraton, Novotel, Vinpearl. Đa phần các khách sạn đều có hồ bơi, spa và view biển trực tiếp, phù hợp cho kỳ nghỉ thư giãn.",
+      "Ngoài bãi biển chính, du khách có thể tham gia tour lặn ngắm san hô ở Hòn Mun, vui chơi tại VinWonders trên đảo Hòn Tre, tắm bùn khoáng tại I-Resort hoặc ghé thăm Tháp Bà Ponagar để tìm hiểu văn hóa Chăm.",
+      "Ẩm thực Nha Trang cũng vô cùng phong phú với các món hải sản tươi rói, bún cá, bánh canh chả cá và nem nướng Ninh Hòa. Tất cả tạo nên một kỳ nghỉ trọn vẹn cả về cảnh quan, trải nghiệm lẫn vị giác.",
+    ],
+  },
+
+  "ha-noi": {
+    title: "Hà Nội",
+    totalStays: "2.042 chỗ nghỉ",
+    popularAreas: "Hoàn Kiếm, Ba Đình",
+    popularHotels: "La Siesta Classic Mã Mây, Hanoi Pearl Hotel",
+    popularLandmarks: "Hồ Hoàn Kiếm, Văn Miếu Quốc Tử Giám",
+    startingPrice: "220.000 VND/đêm",
+    knownFor: "Văn hóa, ẩm thực, phố cổ",
+    reviewScore: "8.6 từ 210.553 đánh giá",
+    hotelsHeading: "Các khách sạn ở Hà Nội",
+    description: [
+      "Hà Nội - thủ đô ngàn năm văn hiến của Việt Nam - là sự kết hợp hài hòa giữa nét cổ kính của phố cổ 36 phố phường và vẻ hiện đại của các khu đô thị mới. Đây là điểm đến hấp dẫn du khách trong và ngoài nước với bề dày lịch sử, văn hóa và ẩm thực đặc sắc.",
+      "Khu Hoàn Kiếm là trái tim của Hà Nội, nơi bạn có thể tản bộ quanh Hồ Gươm, ghé thăm đền Ngọc Sơn và khám phá các con phố Hàng Bạc, Hàng Gai, Mã Mây. Khách sạn ở khu vực này rất đa dạng, từ boutique hotel xinh xắn đến khách sạn 5 sao như Sofitel Legend Metropole.",
+      "Với người yêu văn hóa, Hà Nội có Văn Miếu Quốc Tử Giám, Hoàng thành Thăng Long, Lăng Bác và Bảo tàng Dân tộc học. Với người mê ăn uống, phở, bún chả, bún đậu mắm tôm, chả cá Lã Vọng và cà phê trứng là những món phải thử.",
+      "Thời tiết Hà Nội có 4 mùa rõ rệt, đẹp nhất là vào mùa thu (tháng 9-11) với không khí se lạnh và lá vàng. Mùa đông (tháng 12-2) cũng rất lãng mạn nhưng cần mang đủ áo ấm.",
+    ],
+  },
+
+  "phan-thiet": {
+    title: "Phan Thiết",
+    totalStays: "864 chỗ nghỉ",
+    popularAreas: "Mũi Né, Hàm Tiến",
+    popularHotels: "The Cliff Resort & Residences, Pandanus Resort",
+    popularLandmarks: "Đồi Cát Bay, Làng chài Mũi Né",
+    startingPrice: "210.000 VND/đêm",
+    knownFor: "Biển, resort, thể thao nước",
+    reviewScore: "8.3 từ 74.890 đánh giá",
+    hotelsHeading: "Các khách sạn ở Phan Thiết",
+    description: [
+      "Phan Thiết - thủ phủ của tỉnh Bình Thuận - là một trong những điểm đến nghỉ dưỡng biển được yêu thích nhất miền Trung Nam Bộ. Đặc biệt, khu vực Mũi Né với những đồi cát bay độc đáo và bãi biển dài đã trở thành biểu tượng du lịch của vùng.",
+      "Tại đây, du khách có thể tận hưởng chuỗi resort cao cấp ngay sát biển như Anantara, The Cliff, Pandanus, Sea Links với thiết kế sang trọng, hồ bơi vô cực và dịch vụ spa đẳng cấp. Đây cũng là điểm đến lý tưởng cho các hoạt động thể thao nước như lướt ván diều, lướt ván buồm.",
+      "Đồi Cát Bay, Đồi Cát Hồng, Suối Tiên và Làng chài Mũi Né là những điểm check-in không thể bỏ qua khi đến Phan Thiết. Bạn có thể thuê xe địa hình lướt cát hoặc đơn giản là ngắm bình minh, hoàng hôn trên đồi cát mênh mông.",
+      "Phan Thiết có khí hậu nắng quanh năm, ít mưa, rất thích hợp cho kỳ nghỉ thư giãn bất cứ mùa nào. Hải sản ở đây cũng vô cùng tươi ngon với mực một nắng, bánh căn, gỏi cá mai là những đặc sản nổi tiếng.",
+    ],
+  },
+
+  "da-nang": {
+    title: "Đà Nẵng",
+    totalStays: "1.592 chỗ nghỉ",
+    popularAreas: "Mỹ An, Phước Mỹ",
+    popularHotels: "Sala Danang Beach Hotel, Paris Deli Danang Beach Hotel",
+    popularLandmarks: "Biển Mỹ Khê, Cầu Rồng",
+    startingPrice: "175.000 VND/đêm",
+    knownFor: "Biển đẹp, nghỉ dưỡng, du lịch gia đình",
+    reviewScore: "8.7 từ 167.240 đánh giá",
+    hotelsHeading: "Các khách sạn ở Đà Nẵng",
+    description: [
+      "Đà Nẵng - thành phố đáng sống nhất Việt Nam - là điểm đến hội tụ đủ biển, núi và sông. Với bãi biển Mỹ Khê lọt top những bãi biển quyến rũ nhất hành tinh, Đà Nẵng là lựa chọn hàng đầu cho kỳ nghỉ biển của du khách trong và ngoài nước.",
+      "Dọc bờ biển Mỹ An và Phước Mỹ là hàng loạt resort 5 sao đẳng cấp quốc tế như InterContinental Sun Peninsula, Furama, Pullman, Hyatt Regency. Khu vực trung tâm Hải Châu cũng có nhiều khách sạn cao cấp ven sông Hàn, thuận tiện đi lại và khám phá thành phố.",
+      "Đà Nẵng còn nổi tiếng với Cầu Rồng phun lửa, Cầu Vàng ở Bà Nà Hills, bán đảo Sơn Trà và Ngũ Hành Sơn. Từ Đà Nẵng, bạn dễ dàng kết hợp tham quan Hội An (30 phút xe) hoặc Huế (2 giờ xe), tạo thành hành trình miền Trung trọn vẹn.",
+      "Ẩm thực Đà Nẵng rất đáng thử với mì Quảng, bún chả cá, bánh xèo tôm nhảy và bánh tráng cuốn thịt heo. Thành phố sạch, đẹp, an toàn và chi phí hợp lý, rất phù hợp cho gia đình có trẻ nhỏ hoặc người cao tuổi.",
+    ],
+  },
+};
+
+export const getLocationInfo = (slug) => locationInfoBySlug[slug] || null;

@@ -1,0 +1,68 @@
+export const busLatestArticles = [
+  {
+    id: "bus-art-1",
+    title:
+      "Du lịch tháng 4 trong nước: đừng bỏ qua những \"thiên đường\" lý tưởng này!",
+    source: "VieGo VN",
+    readTime: "Đọc trong khoảng 9 phút",
+    image: "/assets/bus-articles/article-1.jpg",
+    slug: "du-lich-thang-4-trong-nuoc-nhung-thien-duong-ly-tuong",
+  },
+  {
+    id: "bus-art-2",
+    title:
+      "Khi nào là thời điểm tốt nhất để đặt vé máy bay? Đối phó với khủng hoảng nhiên liệu toàn cầu",
+    source: "VieGo Besite",
+    readTime: "Đọc trong khoảng 3 phút",
+    image: "/assets/bus-articles/article-2.jpg",
+    slug: "khi-nao-la-thoi-diem-tot-nhat-de-dat-ve-may-bay",
+  },
+  {
+    id: "bus-art-3",
+    title: "Lễ hội pháo hoa quốc tế Đà Nẵng DIFF 2026: Lịch trình & điểm xem đẹp nhất",
+    source: "VieGo Xperience",
+    readTime: "Đọc trong khoảng 6 phút",
+    image: "/assets/bus-articles/article-3.jpg",
+    slug: "le-hoi-phao-hoa-quoc-te-da-nang-diff-2026",
+  },
+  {
+    id: "bus-art-4",
+    title: "Vịnh Lan Hạ (Hải Phòng): Viên ngọc xanh ít người biết cạnh Hạ Long",
+    source: "VieGo VN",
+    readTime: "Đọc trong khoảng 9 phút",
+    image: "/assets/bus-articles/article-4.jpg",
+    slug: "vinh-lan-ha-hai-phong-vien-ngoc-xanh-canh-ha-long",
+  },
+  {
+    id: "bus-art-5",
+    title: "Kinh nghiệm đặt vé xe khách đường dài tiết kiệm hơn",
+    source: "VieGo Editorial",
+    readTime: "Đọc trong khoảng 6 phút",
+    image: "/assets/bus-articles/article-5.jpg",
+    slug: "kinh-nghiem-dat-ve-xe-khach-duong-dai-tiet-kiem",
+  },
+  {
+    id: "bus-art-6",
+    title: "Những lưu ý khi đi xe khách đêm lần đầu",
+    source: "VieGo VN",
+    readTime: "Đọc trong khoảng 5 phút",
+    image: "/assets/bus-articles/article-6.jpg",
+    slug: "nhung-luu-y-khi-di-xe-khach-dem-lan-dau",
+  },
+  {
+    id: "bus-art-7",
+    title: "Top tuyến xe khách nội địa được đặt nhiều nhất mùa du lịch",
+    source: "VieGo VN",
+    readTime: "Đọc trong khoảng 7 phút",
+    image: "/assets/bus-articles/article-7.jpg",
+    slug: "top-tuyen-xe-khach-noi-dia-duoc-dat-nhieu-nhat",
+  },
+  {
+    id: "bus-art-8",
+    title: "Checklist chuẩn bị cho chuyến đi 3 ngày 2 đêm bằng xe khách",
+    source: "VieGo VN",
+    readTime: "Đọc trong khoảng 4 phút",
+    image: "/assets/bus-articles/article-8.jpg",
+    slug: "checklist-chuan-bi-chuyen-di-3-ngay-2-dem-bang-xe-khach",
+  },
+];

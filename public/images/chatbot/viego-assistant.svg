@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Trợ lý VieGo">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <radialGradient id="cheek" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="98" fill="url(#bgGrad)"/>
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- Shoulders / body -->
+  <path d="M32 190 C 40 150, 80 135, 100 135 C 120 135, 160 150, 168 190 Z" fill="url(#shirtGrad)"/>
+  <path d="M90 140 L 100 152 L 110 140" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="90" y="120" width="20" height="18" rx="6" fill="#fde8c9"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="90" r="42" fill="#ffe3c2"/>
+
+  <!-- Hair -->
+  <path d="M58 88 C 58 55, 90 45, 105 50 C 130 45, 145 70, 142 92 C 140 80, 132 72, 120 70 C 118 80, 110 82, 100 80 C 90 82, 75 85, 62 98 C 58 95, 58 92, 58 88 Z" fill="#3b2a1a"/>
+
+  <!-- Cap (brand) -->
+  <path d="M60 78 Q 100 52, 140 78 L 140 88 L 60 88 Z" fill="#0f172a"/>
+  <rect x="60" y="86" width="80" height="6" rx="2" fill="#0b1220"/>
+  <text x="100" y="80" text-anchor="middle" font-family="system-ui, Arial, sans-serif" font-size="10" font-weight="700" fill="#38bdf8">VieGo</text>
+
+  <!-- Ears -->
+  <ellipse cx="59" cy="95" rx="5" ry="8" fill="#ffd8ac"/>
+  <ellipse cx="141" cy="95" rx="5" ry="8" fill="#ffd8ac"/>
+
+  <!-- Cheeks -->
+  <circle cx="78" cy="103" r="7" fill="url(#cheek)"/>
+  <circle cx="122" cy="103" r="7" fill="url(#cheek)"/>
+
+  <!-- Eyes -->
+  <g fill="#0f172a">
+    <ellipse cx="84" cy="94" rx="3.2" ry="4.2"/>
+    <ellipse cx="116" cy="94" rx="3.2" ry="4.2"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="85.2" cy="92.5" r="1.2"/>
+    <circle cx="117.2" cy="92.5" r="1.2"/>
+  </g>
+
+  <!-- Brows -->
+  <path d="M78 86 Q 84 83 90 86" fill="none" stroke="#3b2a1a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M110 86 Q 116 83 122 86" fill="none" stroke="#3b2a1a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M88 110 Q 100 120 112 110" fill="none" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Small headset (friendly bot vibe) -->
+  <path d="M62 88 Q 62 70, 100 68 Q 138 70, 138 88" fill="none" stroke="#e5edf5" stroke-width="3"/>
+  <rect x="58" y="90" width="8" height="12" rx="3" fill="#e5edf5"/>
+  <rect x="134" y="90" width="8" height="12" rx="3" fill="#e5edf5"/>
+  <circle cx="62" cy="96" r="2" fill="#38bdf8"/>
+  <circle cx="138" cy="96" r="2" fill="#38bdf8"/>
+
+  <!-- Tiny luggage tag on chest -->
+  <rect x="94" y="148" width="12" height="8" rx="2" fill="#fbbf24"/>
+  <circle cx="100" cy="148" r="1.2" fill="#0f172a"/>
+</svg>
