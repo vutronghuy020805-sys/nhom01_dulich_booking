@@ -1,8 +1,43 @@
 @import "tailwindcss";
 
+/* Tailwind v4: khai báo variant `dark:` theo class selector cho toàn site. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Palette VieGo — Light */
+  --vg-bg: #f8fafc;           /* nền chính (slate-50) */
+  --vg-surface: #ffffff;      /* card / panel */
+  --vg-surface-2: #f1f5f9;    /* subtle band (slate-100) */
+  --vg-surface-3: #e2e8f0;    /* tertiary band */
+  --vg-border: #e2e8f0;       /* slate-200 */
+  --vg-border-muted: #f1f5f9; /* slate-100 */
+  --vg-text: #0f172a;         /* slate-900 */
+  --vg-text-strong: #020617;  /* slate-950 */
+  --vg-text-muted: #475569;   /* slate-600 */
+  --vg-text-faint: #64748b;   /* slate-500 */
+  --vg-link: #0284c7;         /* sky-600 */
+
+  --background: var(--vg-bg);
+  --foreground: var(--vg-text);
+}
+
+.dark {
+  /* Palette VieGo — Dark: deep navy, dịu mắt, giữ tone thương hiệu sky. */
+  --vg-bg: #0b1220;
+  --vg-surface: #111a2d;
+  --vg-surface-2: #0f1627;
+  --vg-surface-3: #192339;
+  --vg-border: #273349;
+  --vg-border-muted: #1f2a3d;
+  --vg-text: #e6edf5;
+  --vg-text-strong: #f5f8fb;
+  --vg-text-muted: #b1bccd;
+  --vg-text-faint: #8695ab;
+  --vg-link: #38bdf8;          /* sky-400 — nổi hơn trên nền tối */
+
+  --background: var(--vg-bg);
+  --foreground: var(--vg-text);
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -12,15 +47,146 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * Dark-mode overrides cho các utility Tailwind mà site đang dùng hard-code
+ * (bg-white, bg-slate-50, text-slate-900, border-slate-200, …). Bọc bằng
+ * :where(.dark) để giữ specificity thấp — component vẫn có thể thắng bằng
+ * dark: variant hoặc style inline khi cần.
+ */
+:where(.dark) {
+  /* === Backgrounds === */
+  .bg-white { background-color: var(--vg-surface) !important; }
+  .bg-slate-50 { background-color: var(--vg-surface-2) !important; }
+  .bg-slate-100 { background-color: var(--vg-surface-3) !important; }
+  .bg-slate-200 { background-color: #1e2a42 !important; }
+  .bg-gray-50 { background-color: var(--vg-surface-2) !important; }
+  .bg-gray-100 { background-color: var(--vg-surface-3) !important; }
+  .bg-gray-200 { background-color: #1e2a42 !important; }
+
+  /* Hover variants dùng cùng bảng trên */
+  .hover\:bg-white:hover { background-color: var(--vg-surface) !important; }
+  .hover\:bg-slate-50:hover { background-color: var(--vg-surface-2) !important; }
+  .hover\:bg-slate-100:hover { background-color: var(--vg-surface-3) !important; }
+  .hover\:bg-gray-50:hover { background-color: var(--vg-surface-2) !important; }
+  .hover\:bg-gray-100:hover { background-color: var(--vg-surface-3) !important; }
+
+  /* === Text === */
+  .text-slate-900 { color: var(--vg-text-strong) !important; }
+  .text-slate-800 { color: var(--vg-text) !important; }
+  .text-slate-700 { color: #d2dae5 !important; }
+  .text-slate-600 { color: var(--vg-text-muted) !important; }
+  .text-slate-500 { color: var(--vg-text-faint) !important; }
+  .text-slate-400 { color: #7b8ba3 !important; }
+  .text-gray-900 { color: var(--vg-text-strong) !important; }
+  .text-gray-800 { color: var(--vg-text) !important; }
+  .text-gray-700 { color: #d2dae5 !important; }
+  .text-gray-600 { color: var(--vg-text-muted) !important; }
+  .text-gray-500 { color: var(--vg-text-faint) !important; }
+  .text-gray-400 { color: #7b8ba3 !important; }
+  .text-black { color: var(--vg-text-strong) !important; }
+
+  /* === Borders & dividers === */
+  .border-slate-100 { border-color: var(--vg-border-muted) !important; }
+  .border-slate-200 { border-color: var(--vg-border) !important; }
+  .border-slate-300 { border-color: #364360 !important; }
+  .border-gray-100 { border-color: var(--vg-border-muted) !important; }
+  .border-gray-200 { border-color: var(--vg-border) !important; }
+  .border-gray-300 { border-color: #364360 !important; }
+  .divide-slate-100 > :not([hidden]) ~ :not([hidden]) { border-color: var(--vg-border-muted) !important; }
+  .divide-slate-200 > :not([hidden]) ~ :not([hidden]) { border-color: var(--vg-border) !important; }
+  .divide-gray-100 > :not([hidden]) ~ :not([hidden]) { border-color: var(--vg-border-muted) !important; }
+  .divide-gray-200 > :not([hidden]) ~ :not([hidden]) { border-color: var(--vg-border) !important; }
+
+  /* Tone soft brand tints — dịu xuống để không chói trên nền tối */
+  .bg-sky-50 { background-color: rgba(56, 189, 248, 0.08) !important; }
+  .bg-sky-100 { background-color: rgba(56, 189, 248, 0.14) !important; }
+  .text-sky-700 { color: #7dd3fc !important; }
+  .text-sky-600 { color: var(--vg-link) !important; }
+  .hover\:text-sky-700:hover { color: #bae6fd !important; }
+  .bg-rose-50 { background-color: rgba(244, 63, 94, 0.12) !important; }
+  .bg-amber-50 { background-color: rgba(245, 158, 11, 0.12) !important; }
+  .bg-emerald-50 { background-color: rgba(16, 185, 129, 0.12) !important; }
+  .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.14) !important; }
+
+  /* Form control placeholders */
+  input::placeholder,
+  textarea::placeholder { color: #6c7a91 !important; }
+
+  /* Input / select / textarea — mặc định chúng dùng bg-white border-slate-200;
+     overrides trên đã lo. Chỉ cần thêm màu chữ rõ khi user chưa set text color. */
+  input, textarea, select { color: inherit; }
+
+  /* Shadow cho card trong dark: shadow-sm trên nền trắng gần như vô hình,
+     nên tăng chút contrast bằng viền nhẹ. */
+  .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4) !important; }
+  .shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 1px 2px -1px rgba(0, 0, 0, 0.4) !important; }
+  .shadow-md { box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.55), 0 2px 4px -2px rgba(0, 0, 0, 0.4) !important; }
+  .shadow-lg { box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.6), 0 4px 8px -4px rgba(0, 0, 0, 0.5) !important; }
+  .shadow-xl { box-shadow: 0 18px 30px -8px rgba(0, 0, 0, 0.65), 0 6px 12px -6px rgba(0, 0, 0, 0.5) !important; }
+  .shadow-2xl { box-shadow: 0 28px 44px -12px rgba(0, 0, 0, 0.75) !important; }
+}
+
+/* Logos dùng `brightness-0` (solid black) sẽ biến mất trên nền tối,
+ * invert chúng thành trắng trong dark mode. */
+:where(.dark) img.brightness-0 {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Gradients brand (from-sky-500 to-sky-400, from-indigo-900, ...) giữ nguyên
+ * vì vốn đã là accent. Nhưng các gradient sáng dùng làm "section background"
+ * (from-white, to-white, from-sky-50, from-emerald-50, ...) sẽ trở thành nền
+ * trắng chói trong dark mode -> text bị mất contrast. Override các color stop
+ * này về palette tối. Chỉ sửa color stop, không đụng hướng gradient. */
+:where(.dark) {
+  .from-white { --tw-gradient-from: var(--vg-bg) !important; }
+  .to-white { --tw-gradient-to: var(--vg-bg) !important; }
+  .via-white { --tw-gradient-via: var(--vg-bg) !important; }
+
+  .from-slate-50 { --tw-gradient-from: var(--vg-surface-2) !important; }
+  .to-slate-50 { --tw-gradient-to: var(--vg-surface-2) !important; }
+  .via-slate-50 { --tw-gradient-via: var(--vg-surface-2) !important; }
+
+  .from-sky-50 { --tw-gradient-from: var(--vg-surface-2) !important; }
+  .to-sky-50 { --tw-gradient-to: var(--vg-surface-2) !important; }
+  .via-sky-50 { --tw-gradient-via: var(--vg-surface-2) !important; }
+
+  .from-sky-100 { --tw-gradient-from: var(--vg-surface-3) !important; }
+  .to-sky-100 { --tw-gradient-to: var(--vg-surface-3) !important; }
+  .via-sky-100 { --tw-gradient-via: var(--vg-surface-3) !important; }
+
+  .from-sky-200 { --tw-gradient-from: var(--vg-surface-3) !important; }
+  .to-sky-200 { --tw-gradient-to: var(--vg-surface-3) !important; }
+  .via-sky-200 { --tw-gradient-via: var(--vg-surface-3) !important; }
+
+  .from-emerald-50 { --tw-gradient-from: rgba(16, 185, 129, 0.10) !important; }
+  .to-emerald-50 { --tw-gradient-to: rgba(16, 185, 129, 0.10) !important; }
+  .via-emerald-50 { --tw-gradient-via: rgba(16, 185, 129, 0.10) !important; }
+
+  .from-amber-50 { --tw-gradient-from: rgba(245, 158, 11, 0.10) !important; }
+  .to-amber-50 { --tw-gradient-to: rgba(245, 158, 11, 0.10) !important; }
+
+  .from-rose-50 { --tw-gradient-from: rgba(244, 63, 94, 0.10) !important; }
+  .to-rose-50 { --tw-gradient-to: rgba(244, 63, 94, 0.10) !important; }
+
+  .from-indigo-50 { --tw-gradient-from: rgba(99, 102, 241, 0.12) !important; }
+  .to-indigo-50 { --tw-gradient-to: rgba(99, 102, 241, 0.12) !important; }
 }
