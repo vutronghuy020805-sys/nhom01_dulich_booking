@@ -1,10 +1,10 @@
 export const popularLocations = [
-  { slug: "vung-tau", city: "Vũng Tàu", image: "/assets/locations/vungtau.jpg" },
-  { slug: "vinh-ha-long", city: "Vịnh Hạ Long", image: "/assets/locations/halong.jpg" },
-  { slug: "nha-trang", city: "Nha Trang", image: "/assets/locations/nhatrang.jpg" },
-  { slug: "ha-noi", city: "Hà Nội", image: "/assets/locations/hanoi.jpg" },
-  { slug: "phan-thiet", city: "Phan Thiết", image: "/assets/locations/phanthiet.jpg" },
-  { slug: "da-nang", city: "Đà Nẵng", image: "/assets/locations/danang.jpg" },
+  { slug: "vung-tau", city: "Vũng Tàu", image: "/nhom01_dulich_booking/assets/locations/vungtau.jpg" },
+  { slug: "vinh-ha-long", city: "Vịnh Hạ Long", image: "/nhom01_dulich_booking/assets/locations/halong.jpg" },
+  { slug: "nha-trang", city: "Nha Trang", image: "/nhom01_dulich_booking/assets/locations/nhatrang.jpg" },
+  { slug: "ha-noi", city: "Hà Nội", image: "/nhom01_dulich_booking/assets/locations/hanoi.jpg" },
+  { slug: "phan-thiet", city: "Phan Thiết", image: "/nhom01_dulich_booking/assets/locations/phanthiet.jpg" },
+  { slug: "da-nang", city: "Đà Nẵng", image: "/nhom01_dulich_booking/assets/locations/danang.jpg" },
 ];
 
 export const findLocationBySlug = (slug) => {

@@ -958,10 +958,10 @@ export function getActivityDetailBySlug(slug) {
         ? extra.gallery
         : [
             base.image,
-            `/assets/activities/detail/${slug}/2.jpg`,
-            `/assets/activities/detail/${slug}/3.jpg`,
-            `/assets/activities/detail/${slug}/4.jpg`,
-            `/assets/activities/detail/${slug}/5.jpg`,
+            `/nhom01_dulich_booking/assets/activities/detail/${slug}/2.jpg`,
+            `/nhom01_dulich_booking/assets/activities/detail/${slug}/3.jpg`,
+            `/nhom01_dulich_booking/assets/activities/detail/${slug}/4.jpg`,
+            `/nhom01_dulich_booking/assets/activities/detail/${slug}/5.jpg`,
           ],
     openingHours: extra?.openingHours || "Liên hệ để biết giờ mở cửa",
     suitableFor: extra?.suitableFor || ["Gia đình", "Nhóm bạn", "Cặp đôi"],

@@ -5,16 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const destinations = [
-  { id: 1, name: "Đà Nẵng", activities: 931, image: "/assets/destinations/danang.jpg" },
-  { id: 2, name: "Đà Lạt", activities: 443, image: "/assets/destinations/dalat.jpg" },
-  { id: 3, name: "Nha Trang", activities: 613, image: "/assets/destinations/nhatrang.jpg" },
-  { id: 4, name: "Phú Quốc", activities: 362, image: "/assets/destinations/phuquoc.jpg" },
-  { id: 5, name: "Hạ Long", activities: 324, image: "/assets/destinations/halong.jpeg" },
-  { id: 6, name: "Hội An", activities: 261, image: "/assets/destinations/hoian.jpg" },
-  { id: 7, name: "Hà Nội", activities: 812, image: "/assets/destinations/hanoi.jpg" },
-  { id: 8, name: "TP Hồ Chí Minh", activities: 1024, image: "/assets/destinations/hcm.jpeg" },
-  { id: 9, name: "Sa Pa", activities: 287, image: "/assets/destinations/sapa.webp" },
-  { id: 10, name: "Huế", activities: 198, image: "/assets/destinations/hue.jpg" },
+  { id: 1, name: "Đà Nẵng", activities: 931, image: "/nhom01_dulich_booking/assets/destinations/danang.jpg" },
+  { id: 2, name: "Đà Lạt", activities: 443, image: "/nhom01_dulich_booking/assets/destinations/dalat.jpg" },
+  { id: 3, name: "Nha Trang", activities: 613, image: "/nhom01_dulich_booking/assets/destinations/nhatrang.jpg" },
+  { id: 4, name: "Phú Quốc", activities: 362, image: "/nhom01_dulich_booking/assets/destinations/phuquoc.jpg" },
+  { id: 5, name: "Hạ Long", activities: 324, image: "/nhom01_dulich_booking/assets/destinations/halong.jpeg" },
+  { id: 6, name: "Hội An", activities: 261, image: "/nhom01_dulich_booking/assets/destinations/hoian.jpg" },
+  { id: 7, name: "Hà Nội", activities: 812, image: "/nhom01_dulich_booking/assets/destinations/hanoi.jpg" },
+  { id: 8, name: "TP Hồ Chí Minh", activities: 1024, image: "/nhom01_dulich_booking/assets/destinations/hcm.jpeg" },
+  { id: 9, name: "Sa Pa", activities: 287, image: "/nhom01_dulich_booking/assets/destinations/sapa.webp" },
+  { id: 10, name: "Huế", activities: 198, image: "/nhom01_dulich_booking/assets/destinations/hue.jpg" },
 ];
 
 function useItemsPerView() {

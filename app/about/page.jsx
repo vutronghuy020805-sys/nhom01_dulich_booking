@@ -24,7 +24,7 @@ export default function AboutPage() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/logo-viego.png"
+            src="/nhom01_dulich_booking/assets/logo-viego.png"
             alt=""
             className="w-[min(90vw,900px)] h-auto opacity-[0.06] select-none"
           />

@@ -16,7 +16,7 @@ export default function ActivitiesHero({
         className="relative h-[420px] md:h-[480px] w-full bg-cover bg-center flex items-end"
         style={{
           backgroundImage:
-            "url('/assets/activities/hero/activities-hero.png')",
+            "url('/nhom01_dulich_booking/assets/activities/hero/activities-hero.png')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/20" />

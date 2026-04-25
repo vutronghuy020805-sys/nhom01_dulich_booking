@@ -4,21 +4,21 @@ const benefits = [
     title: "Phù hợp",
     description:
       "Với VieGo, nhiều lựa chọn từ xe riêng đến xe buýt sân bay, bạn có thể dễ dàng tìm lựa chọn phương tiện đến sân bay phù hợp nhất.",
-    image: "/assets/airport-transfer/benefits/benefit-fit.png",
+    image: "/nhom01_dulich_booking/assets/airport-transfer/benefits/benefit-fit.png",
   },
   {
     id: "no-worry",
     title: "Không cần lo lắng",
     description:
       "Đặt trước để không phải xếp hàng tại sân bay. Giá cuối cùng đã bao gồm phí cầu đường và đậu xe, bạn không cần phải lo lắng phải trả thêm phí.",
-    image: "/assets/airport-transfer/benefits/benefit-no-worry.png",
+    image: "/nhom01_dulich_booking/assets/airport-transfer/benefits/benefit-no-worry.png",
   },
   {
     id: "best-partner",
     title: "Đối tác tốt nhất",
     description:
       "Sự thoải mái của bạn là ưu tiên của chúng tôi. Vì thế, chúng tôi luôn chọn làm việc cùng những đối tác có nhiều kinh nghiệm tốt nhất trên thị trường.",
-    image: "/assets/airport-transfer/benefits/benefit-best-partner.png",
+    image: "/nhom01_dulich_booking/assets/airport-transfer/benefits/benefit-best-partner.png",
   },
 ];
 

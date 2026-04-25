@@ -3,12 +3,12 @@
 import { useEffect, useState } from "react";
 
 const vouchers = [
-  { id: "v1", image: "/assets/vouchers/voucher-1.svg", alt: "Ưu đãi khuyến mãi 1" },
-  { id: "v2", image: "/assets/vouchers/voucher-2.svg", alt: "Ưu đãi khuyến mãi 2" },
-  { id: "v3", image: "/assets/vouchers/voucher-3.svg", alt: "Ưu đãi khuyến mãi 3" },
-  { id: "v4", image: "/assets/vouchers/voucher-4.svg", alt: "Ưu đãi khuyến mãi 4" },
-  { id: "v5", image: "/assets/vouchers/voucher-5.svg", alt: "Ưu đãi khuyến mãi 5" },
-  { id: "v6", image: "/assets/vouchers/voucher-6.svg", alt: "Ưu đãi khuyến mãi 6" },
+  { id: "v1", image: "/nhom01_dulich_booking/assets/vouchers/voucher-1.svg", alt: "Ưu đãi khuyến mãi 1" },
+  { id: "v2", image: "/nhom01_dulich_booking/assets/vouchers/voucher-2.svg", alt: "Ưu đãi khuyến mãi 2" },
+  { id: "v3", image: "/nhom01_dulich_booking/assets/vouchers/voucher-3.svg", alt: "Ưu đãi khuyến mãi 3" },
+  { id: "v4", image: "/nhom01_dulich_booking/assets/vouchers/voucher-4.svg", alt: "Ưu đãi khuyến mãi 4" },
+  { id: "v5", image: "/nhom01_dulich_booking/assets/vouchers/voucher-5.svg", alt: "Ưu đãi khuyến mãi 5" },
+  { id: "v6", image: "/nhom01_dulich_booking/assets/vouchers/voucher-6.svg", alt: "Ưu đãi khuyến mãi 6" },
 ];
 
 export default function LocationOffersSection() {

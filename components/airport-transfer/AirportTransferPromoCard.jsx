@@ -5,7 +5,7 @@ export default function AirportTransferPromoCard() {
     <div className="relative w-full rounded-2xl overflow-hidden bg-sky-300 shadow-[0_10px_30px_-12px_rgba(15,23,42,0.25)]">
       <div className="relative aspect-16/9 md:aspect-[21/9] lg:aspect-16/9 bg-sky-200">
         <Image
-          src="/assets/airport-transfer/banner/airport-transfer-promo.png"
+          src="/nhom01_dulich_booking/assets/airport-transfer/banner/airport-transfer-promo.png"
           alt="Dịch vụ đưa đón sân bay VieGo"
           fill
           sizes="(min-width: 1024px) 620px, 100vw"
@@ -18,7 +18,7 @@ export default function AirportTransferPromoCard() {
         <div className="absolute top-4 left-4 right-4 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 bg-white/95 backdrop-blur rounded-full px-3 py-1.5 shadow">
             <img
-              src="/assets/logo-viego.png"
+              src="/nhom01_dulich_booking/assets/logo-viego.png"
               alt="VieGo"
               className="w-6 h-6 object-contain"
             />

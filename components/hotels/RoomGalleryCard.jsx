@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function RoomGalleryCard({ images = [], alt = "" }) {
   const [current, setCurrent] = useState(0);
-  const safeImages = images.length > 0 ? images : ["/assets/logo-viego.png"];
+  const safeImages = images.length > 0 ? images : ["/nhom01_dulich_booking/assets/logo-viego.png"];
   const total = safeImages.length;
 
   const prev = () =>

@@ -5,7 +5,7 @@ export default function BusPromoBanner() {
         className="w-full aspect-[3.4/1] rounded-2xl overflow-hidden bg-slate-200 bg-cover bg-center shadow-sm"
         style={{
           backgroundImage:
-            "url('/assets/bus-page/bus-promo-banner.png')",
+            "url('/nhom01_dulich_booking/assets/bus-page/bus-promo-banner.png')",
         }}
         role="img"
         aria-label="VieGo - Du lịch xuyên Việt, deal có hạn giảm đến 50%"

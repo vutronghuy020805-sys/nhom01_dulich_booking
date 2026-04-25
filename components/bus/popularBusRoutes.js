@@ -3,7 +3,7 @@ export const popularBusRoutesColumns = [
     id: "ha-noi",
     fromCity: "Hà Nội",
     fromSlug: "ha-noi",
-    image: "/assets/destinations/hanoi.jpg",
+    image: "/nhom01_dulich_booking/assets/destinations/hanoi.jpg",
     routes: [
       {
         toCity: "Sài Gòn",
@@ -29,7 +29,7 @@ export const popularBusRoutesColumns = [
     id: "sai-gon",
     fromCity: "Sài Gòn",
     fromSlug: "sai-gon",
-    image: "/assets/destinations/hcm.jpeg",
+    image: "/nhom01_dulich_booking/assets/destinations/hcm.jpeg",
     routes: [
       {
         toCity: "Đà Nẵng",
@@ -55,7 +55,7 @@ export const popularBusRoutesColumns = [
     id: "da-nang",
     fromCity: "Đà Nẵng",
     fromSlug: "da-nang",
-    image: "/assets/destinations/danang.jpg",
+    image: "/nhom01_dulich_booking/assets/destinations/danang.jpg",
     routes: [
       {
         toCity: "Sài Gòn",
