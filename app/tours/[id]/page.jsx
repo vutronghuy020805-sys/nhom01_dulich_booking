@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import ProductGallery from "@/components/detail/ProductGallery";
+import ProductReviews from "@/components/detail/ProductReviews";
+import RelatedProducts from "@/components/detail/RelatedProducts";
+import { generateMockReviews, summarizeReviews } from "@/lib/mockReviews";
 
 const tours = [
   {
@@ -15,6 +20,7 @@ const tours = [
       "Ngày 1: Xuất phát từ Hà Nội - Đón tại cảng Tuần Châu - Xuống thuyền - Tham quan hang Sửng Sốt - Kayaking - Tiệc tối trên thuyền - Nghỉ đêm.",
       "Ngày 2: Bình minh trên vịnh - Tham quan làng chài Vung Viêng - Buffet sáng - Trở về cảng - Xe đưa về Hà Nội.",
     ],
+    images: [],
   },
   {
     id: "2",
@@ -28,6 +34,7 @@ const tours = [
       "Buổi sáng: Tham quan Chùa Cầu - Nhà cổ Tấn Ký - Hội quán Phúc Kiến - Thưởng thức Cao Lầu.",
       "Buổi chiều: Tham quan chợ Hội An - Làm đèn lồng - Thuyền thả đèn trên sông Hoài.",
     ],
+    images: [],
   },
   {
     id: "3",
@@ -42,6 +49,7 @@ const tours = [
       "Ngày 2: Bắt đầu trek - Cáp treo lên đỉnh Fansipan - Chinh phục đỉnh cao - Hạ trại nghỉ đêm.",
       "Ngày 3: Xuống núi - Thăm thị trấn Sa Pa - Trở về Hà Nội.",
     ],
+    images: [],
   },
   {
     id: "4",
@@ -55,6 +63,7 @@ const tours = [
       "Ngày 1: Bay vào TP Cà Mau - Tham quan rừng đước - Đi thuyền khám phá kênh rạch - Nghỉ đêm tại nhà dân.",
       "Ngày 2: Đi thuyền ra Mũi Cà Mau - Chụp ảnh cột mốc cực Nam - Thưởng thức hải sản tươi sống - Bay về.",
     ],
+    images: [],
   },
   {
     id: "5",
@@ -70,6 +79,7 @@ const tours = [
       "Ngày 3: Đèo Mã Pì Lèng - Mèo Vạc - Hẻm Tu Sản.",
       "Ngày 4: Trở về Hà Giang - Về Hà Nội.",
     ],
+    images: [],
   },
   {
     id: "6",
@@ -84,6 +94,7 @@ const tours = [
       "Ngày 2: Tour 3 đảo - Snorkeling - Câu cá - BBQ hải sản trên biển.",
       "Ngày 3: Tham quan VinWonders - Mua đặc sản - Bay về.",
     ],
+    images: [],
   },
 ];
 
@@ -91,8 +102,9 @@ export function generateStaticParams() {
   return tours.map((tour) => ({ id: tour.id }));
 }
 
-export default function TourDetailPage({ params }) {
-  const tour = tours.find((t) => t.id === params.id);
+export default async function TourDetailPage({ params }) {
+  const { id } = await params;
+  const tour = tours.find((t) => t.id === id);
 
   if (!tour) {
     return (
@@ -111,18 +123,47 @@ export default function TourDetailPage({ params }) {
     );
   }
 
+  const reviews = generateMockReviews(`tour-${tour.id}`, 4);
+  const reviewSummary = summarizeReviews(reviews);
+
+  const relatedTours = tours
+    .filter((t) => t.id !== tour.id)
+    .slice(0, 4)
+    .map((t) => ({
+      id: t.id,
+      title: t.name,
+      subtitle: `${t.location} · ${t.duration}`,
+      image: t.images?.[0] || "",
+      fallbackIcon: "🗺️",
+      price: t.price,
+      href: `/tours/${t.id}`,
+    }));
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-1 max-w-4xl mx-auto px-4 py-16 w-full">
+      <main className="flex-1 max-w-5xl mx-auto px-4 py-10 md:py-14 w-full">
+        <Breadcrumb
+          items={[
+            { label: "Hoạt động", href: "/activities" },
+            { label: tour.name },
+          ]}
+          className="mb-5"
+        />
         <Link href="/tours" className="text-blue-600 hover:underline text-sm mb-6 inline-block">
           ← Quay lại danh sách tour
         </Link>
 
-        <div className="bg-green-50 h-64 rounded-xl flex items-center justify-center text-6xl mb-8">
-          🗺️
-        </div>
+        {tour.images && tour.images.length > 0 ? (
+          <div className="mb-8">
+            <ProductGallery images={tour.images} alt={tour.name} />
+          </div>
+        ) : (
+          <div className="bg-green-50 h-64 rounded-xl flex items-center justify-center text-6xl mb-8">
+            🗺️
+          </div>
+        )}
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-6">
@@ -163,7 +204,7 @@ export default function TourDetailPage({ params }) {
               <p className="text-gray-500 text-sm mb-6">⏱ {tour.duration}</p>
 
               <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors mb-3">
-                Book Now
+                Đặt tour
               </button>
 
               <p className="text-center text-xs text-gray-400">
@@ -171,6 +212,17 @@ export default function TourDetailPage({ params }) {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 space-y-8">
+          <ProductReviews summary={reviewSummary} reviews={reviews} />
+          {relatedTours.length > 0 ? (
+            <RelatedProducts
+              title="Tour tương tự"
+              subtitle="Gợi ý tour khác bạn có thể thích"
+              items={relatedTours}
+            />
+          ) : null}
         </div>
       </main>
 

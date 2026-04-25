@@ -1,0 +1,178 @@
+export const tabOrder = [
+  "ha-noi",
+  "tp-ho-chi-minh",
+  "da-nang",
+  "hue",
+  "phu-quoc",
+  "nha-trang",
+  "quy-nhon",
+  "phu-yen",
+  "hai-phong",
+  "can-tho",
+  "diem-den-khac",
+];
+
+const DATE = "16 thg 4 2026";
+
+export const domesticFlightDeals = {
+  "ha-noi": {
+    label: "Hà Nội",
+    destinationImage: "/assets/destinations/hanoi.jpg",
+    cards: [
+      { id: "hn-1", route: "TP HCM - Hà Nội", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "hn-2", route: "Đà Nẵng - Hà Nội", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
+      { id: "hn-3", route: "Phú Quốc - Hà Nội", date: DATE, price: 1399000, tripType: "MỘT CHIỀU" },
+      { id: "hn-4", route: "Nha Trang - Hà Nội", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+      { id: "hn-5", route: "Huế - Hà Nội", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "hn-6", route: "Cần Thơ - Hà Nội", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "tp-ho-chi-minh": {
+    label: "TP. Hồ Chí Minh",
+    destinationImage: "/assets/destinations/hcm.jpeg",
+    cards: [
+      { id: "hcm-1", route: "Hà Nội - TP HCM", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-2", route: "Đà Nẵng - TP HCM", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-3", route: "Hải Phòng - TP HCM", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-4", route: "Huế - TP HCM", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-5", route: "Quy Nhơn - TP HCM", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-6", route: "Nha Trang - TP HCM", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "da-nang": {
+    label: "Đà Nẵng",
+    destinationImage: "/assets/destinations/danang.jpg",
+    cards: [
+      { id: "dn-1", route: "Hà Nội - Đà Nẵng", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
+      { id: "dn-2", route: "TP HCM - Đà Nẵng", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
+      { id: "dn-3", route: "Hải Phòng - Đà Nẵng", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "dn-4", route: "Cần Thơ - Đà Nẵng", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "dn-5", route: "Phú Quốc - Đà Nẵng", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
+      { id: "dn-6", route: "Nha Trang - Đà Nẵng", date: DATE, price: 999000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "hue": {
+    label: "Huế",
+    destinationImage: "/assets/destinations/hue.jpg",
+    cards: [
+      { id: "hue-1", route: "Hà Nội - Huế", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "hue-2", route: "TP HCM - Huế", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "hue-3", route: "Đà Nẵng - Huế", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "hue-4", route: "Phú Quốc - Huế", date: DATE, price: 1499000, tripType: "MỘT CHIỀU" },
+      { id: "hue-5", route: "Cần Thơ - Huế", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "phu-quoc": {
+    label: "Phú Quốc",
+    destinationImage: "/assets/destinations/phuquoc.jpg",
+    cards: [
+      { id: "pq-1", route: "Hà Nội - Phú Quốc", date: DATE, price: 1399000, tripType: "MỘT CHIỀU" },
+      { id: "pq-2", route: "TP HCM - Phú Quốc", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
+      { id: "pq-3", route: "Đà Nẵng - Phú Quốc", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
+      { id: "pq-4", route: "Hải Phòng - Phú Quốc", date: DATE, price: 1599000, tripType: "MỘT CHIỀU" },
+      { id: "pq-5", route: "Nha Trang - Phú Quốc", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "pq-6", route: "Cần Thơ - Phú Quốc", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "nha-trang": {
+    label: "Nha Trang",
+    destinationImage: "/assets/destinations/nhatrang.jpg",
+    cards: [
+      { id: "nt-1", route: "Hà Nội - Nha Trang", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+      { id: "nt-2", route: "TP HCM - Nha Trang", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "nt-3", route: "Đà Nẵng - Nha Trang", date: DATE, price: 999000, tripType: "MỘT CHIỀU" },
+      { id: "nt-4", route: "Hải Phòng - Nha Trang", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
+      { id: "nt-5", route: "Phú Quốc - Nha Trang", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "quy-nhon": {
+    label: "Quy Nhơn",
+    destinationImage: "/assets/flight-destinations/quy-nhon.jpg",
+    cards: [
+      { id: "qn-1", route: "Hà Nội - Quy Nhơn", date: DATE, price: 999000, tripType: "MỘT CHIỀU" },
+      { id: "qn-2", route: "TP HCM - Quy Nhơn", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
+      { id: "qn-3", route: "Đà Nẵng - Quy Nhơn", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "qn-4", route: "Hải Phòng - Quy Nhơn", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+      { id: "qn-5", route: "Cần Thơ - Quy Nhơn", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "phu-yen": {
+    label: "Phú Yên",
+    destinationImage: "/assets/flight-destinations/phu-yen.jpg",
+    cards: [
+      { id: "py-1", route: "Hà Nội - Phú Yên", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "py-2", route: "TP HCM - Phú Yên", date: DATE, price: 699000, tripType: "MỘT CHIỀU" },
+      { id: "py-3", route: "Đà Nẵng - Phú Yên", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
+      { id: "py-4", route: "Hải Phòng - Phú Yên", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
+      { id: "py-5", route: "Cần Thơ - Phú Yên", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "hai-phong": {
+    label: "Hải Phòng",
+    destinationImage: "/assets/flight-destinations/hai-phong.jpg",
+    cards: [
+      { id: "hp-1", route: "TP HCM - Hải Phòng", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+      { id: "hp-2", route: "Đà Nẵng - Hải Phòng", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "hp-3", route: "Phú Quốc - Hải Phòng", date: DATE, price: 1599000, tripType: "MỘT CHIỀU" },
+      { id: "hp-4", route: "Nha Trang - Hải Phòng", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
+      { id: "hp-5", route: "Quy Nhơn - Hải Phòng", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "can-tho": {
+    label: "Cần Thơ",
+    destinationImage: "/assets/flight-destinations/can-tho.jpg",
+    cards: [
+      { id: "ct-1", route: "Hà Nội - Cần Thơ", date: DATE, price: 1299000, tripType: "MỘT CHIỀU" },
+      { id: "ct-2", route: "Đà Nẵng - Cần Thơ", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "ct-3", route: "Hải Phòng - Cần Thơ", date: DATE, price: 1399000, tripType: "MỘT CHIỀU" },
+      { id: "ct-4", route: "Phú Quốc - Cần Thơ", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "ct-5", route: "Quy Nhơn - Cần Thơ", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "diem-den-khac": {
+    label: "Điểm đến khác",
+    destinationImage: "/assets/destinations/dalat.jpg",
+    cards: [
+      {
+        id: "other-1",
+        route: "TP HCM - Đà Lạt",
+        date: DATE,
+        price: 899000,
+        tripType: "MỘT CHIỀU",
+        image: "/assets/destinations/dalat.jpg",
+      },
+      {
+        id: "other-2",
+        route: "Hà Nội - Điện Biên",
+        date: DATE,
+        price: 1199000,
+        tripType: "MỘT CHIỀU",
+        image: "/assets/flight-destinations/dien-bien.jpg",
+      },
+      {
+        id: "other-3",
+        route: "Hà Nội - Pleiku",
+        date: DATE,
+        price: 1299000,
+        tripType: "MỘT CHIỀU",
+        image: "/assets/flight-destinations/pleiku.jpg",
+      },
+      {
+        id: "other-4",
+        route: "TP HCM - Buôn Ma Thuột",
+        date: DATE,
+        price: 799000,
+        tripType: "MỘT CHIỀU",
+        image: "/assets/flight-destinations/buon-ma-thuot.jpg",
+      },
+      {
+        id: "other-5",
+        route: "Hà Nội - Côn Đảo",
+        date: DATE,
+        price: 1699000,
+        tripType: "MỘT CHIỀU",
+        image: "/assets/flight-destinations/con-dao.jpg",
+      },
+    ],
+  },
+};

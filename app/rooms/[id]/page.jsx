@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import ProductGallery from "@/components/detail/ProductGallery";
+import ProductReviews from "@/components/detail/ProductReviews";
+import RelatedProducts from "@/components/detail/RelatedProducts";
+import { generateMockReviews, summarizeReviews } from "@/lib/mockReviews";
 
 const rooms = [
   {
@@ -11,6 +16,7 @@ const rooms = [
     description:
       "Phòng rộng rãi với view biển tuyệt đẹp, đầy đủ tiện nghi hiện đại. Diện tích 45m², ban công riêng hướng biển, phù hợp cho cặp đôi hoặc gia đình nhỏ.",
     amenities: ["Wi-Fi miễn phí", "Điều hòa", "TV 55 inch", "Minibar", "Ban công hướng biển", "Bồn tắm"],
+    images: [],
   },
   {
     id: "2",
@@ -20,6 +26,7 @@ const rooms = [
     description:
       "Suite phong cách cổ truyền Hội An, nằm ngay trung tâm phố cổ. Kiến trúc gỗ truyền thống kết hợp tiện nghi hiện đại, mang lại trải nghiệm độc đáo.",
     amenities: ["Wi-Fi miễn phí", "Điều hòa", "TV 65 inch", "Bồn tắm ngoài trời", "Dịch vụ phòng 24/7", "Minibar"],
+    images: [],
   },
   {
     id: "3",
@@ -29,6 +36,7 @@ const rooms = [
     description:
       "Phòng tiêu chuẩn sạch sẽ, tiện nghi, cách Hồ Hoàn Kiếm 5 phút đi bộ. Lý tưởng cho khách du lịch khám phá trung tâm Hà Nội.",
     amenities: ["Wi-Fi miễn phí", "Điều hòa", "TV 43 inch", "Tủ lạnh", "Két an toàn"],
+    images: [],
   },
   {
     id: "4",
@@ -38,6 +46,7 @@ const rooms = [
     description:
       "Bungalow riêng biệt nằm giữa thiên nhiên nhiệt đới, có hồ bơi riêng. Không gian yên tĩnh, lãng mạn, cách bãi biển 50m.",
     amenities: ["Wi-Fi miễn phí", "Hồ bơi riêng", "Điều hòa", "TV 55 inch", "BBQ ngoài trời", "Xe đạp miễn phí"],
+    images: [],
   },
   {
     id: "5",
@@ -47,6 +56,7 @@ const rooms = [
     description:
       "Phòng gia đình rộng rãi với view núi rừng Tây Bắc hùng vĩ. Diện tích 60m², 2 phòng ngủ, phù hợp cho gia đình 4 người.",
     amenities: ["Wi-Fi miễn phí", "Điều hòa + sưởi ấm", "TV 50 inch", "Bếp nhỏ", "View núi", "Bãi đỗ xe"],
+    images: [],
   },
   {
     id: "6",
@@ -56,6 +66,7 @@ const rooms = [
     description:
       "Villa sang trọng ngay bãi biển cát trắng, riêng tư và yên tĩnh. Diện tích 120m² với sân vườn và hồ bơi tràn bờ.",
     amenities: ["Wi-Fi miễn phí", "Hồ bơi tràn bờ", "Sân vườn riêng", "Bếp đầy đủ", "Phòng tắm ngoài trời", "Dịch vụ đầu bếp"],
+    images: [],
   },
 ];
 
@@ -63,8 +74,9 @@ export function generateStaticParams() {
   return rooms.map((room) => ({ id: room.id }));
 }
 
-export default function RoomDetailPage({ params }) {
-  const room = rooms.find((r) => r.id === params.id);
+export default async function RoomDetailPage({ params }) {
+  const { id } = await params;
+  const room = rooms.find((r) => r.id === id);
 
   if (!room) {
     return (
@@ -83,18 +95,46 @@ export default function RoomDetailPage({ params }) {
     );
   }
 
+  const reviews = generateMockReviews(`room-${room.id}`, 4);
+  const reviewSummary = summarizeReviews(reviews);
+
+  const relatedRooms = rooms
+    .filter((r) => r.id !== room.id)
+    .slice(0, 4)
+    .map((r) => ({
+      id: r.id,
+      title: r.name,
+      subtitle: r.location,
+      image: r.images?.[0] || "",
+      price: r.price,
+      href: `/rooms/${r.id}`,
+    }));
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-1 max-w-4xl mx-auto px-4 py-16 w-full">
+      <main className="flex-1 max-w-5xl mx-auto px-4 py-10 md:py-14 w-full">
+        <Breadcrumb
+          items={[
+            { label: "Khách sạn", href: "/hotels" },
+            { label: room.name },
+          ]}
+          className="mb-5"
+        />
         <Link href="/rooms" className="text-blue-600 hover:underline text-sm mb-6 inline-block">
           ← Quay lại danh sách phòng
         </Link>
 
-        <div className="bg-gray-100 h-64 rounded-xl flex items-center justify-center text-6xl mb-8">
-          🏨
-        </div>
+        {room.images && room.images.length > 0 ? (
+          <div className="mb-8">
+            <ProductGallery images={room.images} alt={room.name} />
+          </div>
+        ) : (
+          <div className="bg-gray-100 h-64 rounded-xl flex items-center justify-center text-6xl mb-8">
+            🏨
+          </div>
+        )}
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-6">
@@ -129,7 +169,7 @@ export default function RoomDetailPage({ params }) {
               <p className="text-gray-400 text-sm mb-6">mỗi đêm</p>
 
               <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors mb-3">
-                Book Now
+                Đặt ngay
               </button>
 
               <p className="text-center text-xs text-gray-400">
@@ -137,6 +177,17 @@ export default function RoomDetailPage({ params }) {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 space-y-8">
+          <ProductReviews summary={reviewSummary} reviews={reviews} />
+          {relatedRooms.length > 0 ? (
+            <RelatedProducts
+              title="Chỗ nghỉ tương tự"
+              subtitle="Gợi ý phòng khác bạn có thể thích"
+              items={relatedRooms}
+            />
+          ) : null}
         </div>
       </main>
 

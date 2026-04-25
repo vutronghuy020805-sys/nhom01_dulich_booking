@@ -1,0 +1,82 @@
+export const carRentalLocations = [
+  {
+    id: "city-hcm",
+    name: "Thành phố Hồ Chí Minh",
+    subtitle: "Việt Nam",
+    typeLabel: "City",
+  },
+  { id: "city-hn", name: "Hà Nội", subtitle: "Việt Nam", typeLabel: "City" },
+  { id: "city-dn", name: "Đà Nẵng", subtitle: "Việt Nam", typeLabel: "City" },
+  {
+    id: "city-dalat",
+    name: "Đà Lạt",
+    subtitle: "Lâm Đồng, Việt Nam",
+    typeLabel: "City",
+  },
+  {
+    id: "city-nhatrang",
+    name: "Nha Trang",
+    subtitle: "Khánh Hòa, Việt Nam",
+    typeLabel: "City",
+  },
+  {
+    id: "city-phuquoc",
+    name: "Phú Quốc",
+    subtitle: "Kiên Giang, Việt Nam",
+    typeLabel: "City",
+  },
+  {
+    id: "ap-sgn",
+    name: "Sân bay Tân Sơn Nhất (SGN)",
+    subtitle: "Quận Tân Bình, TP. Hồ Chí Minh",
+    typeLabel: "Airport",
+  },
+  {
+    id: "ap-han",
+    name: "Sân bay Nội Bài (HAN)",
+    subtitle: "Huyện Sóc Sơn, Hà Nội",
+    typeLabel: "Airport",
+  },
+  {
+    id: "ap-dad",
+    name: "Sân bay Đà Nẵng (DAD)",
+    subtitle: "Quận Hải Châu, Đà Nẵng",
+    typeLabel: "Airport",
+  },
+  {
+    id: "ap-cxr",
+    name: "Sân bay Cam Ranh (CXR)",
+    subtitle: "Khánh Hòa, Việt Nam",
+    typeLabel: "Airport",
+  },
+  {
+    id: "ht-landmark81",
+    name: "Vinpearl Landmark 81",
+    subtitle: "Bình Thạnh, TP. Hồ Chí Minh",
+    typeLabel: "Hotel",
+  },
+  {
+    id: "ht-newworld",
+    name: "New World Saigon Hotel",
+    subtitle: "Quận 1, TP. Hồ Chí Minh",
+    typeLabel: "Hotel",
+  },
+  {
+    id: "ht-intercon",
+    name: "InterContinental Hanoi Landmark72",
+    subtitle: "Nam Từ Liêm, Hà Nội",
+    typeLabel: "Hotel",
+  },
+  {
+    id: "ht-novotel",
+    name: "Novotel Danang Premier Han River",
+    subtitle: "Hải Châu, Đà Nẵng",
+    typeLabel: "Hotel",
+  },
+  {
+    id: "ht-dalatpalace",
+    name: "Dalat Palace Heritage Hotel",
+    subtitle: "Đà Lạt, Lâm Đồng",
+    typeLabel: "Hotel",
+  },
+];
