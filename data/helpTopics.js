@@ -112,4 +112,25 @@ export const helpTopics = [
       "Liên hệ đối tác bảo hiểm theo thông tin trong chứng nhận bảo hiểm, cung cấp giấy tờ liên quan (vé, hoá đơn y tế, biên bản...). Thời hạn khiếu nại thường 30 ngày sau sự cố.",
     categoryIds: ["insurance"],
   },
+  {
+    id: "car-rental-deposit",
+    question: "Tôi có cần đặt cọc khi thuê xe tự lái không?",
+    answer:
+      "Đa số đối tác yêu cầu đặt cọc bằng thẻ tín dụng hoặc tiền mặt khi nhận xe. Mức đặt cọc dao động 3-15 triệu tuỳ loại xe và sẽ được hoàn lại khi trả xe nguyên trạng.",
+    categoryIds: ["car-rental"],
+  },
+  {
+    id: "promo-stack",
+    question: "Tôi có thể dùng nhiều mã giảm giá cùng lúc không?",
+    answer:
+      "Mỗi đơn hàng chỉ áp dụng được 1 mã giảm giá. Nếu bạn có nhiều mã, hệ thống sẽ tự gợi ý mã có giá trị cao nhất phù hợp với đơn hàng hiện tại.",
+    categoryIds: ["promotions"],
+  },
+  {
+    id: "promo-expired",
+    question: "Mã giảm giá của tôi hết hạn thì làm sao?",
+    answer:
+      "Mã giảm giá đã hết hạn không thể sử dụng lại. Hãy theo dõi mục 'Ưu đãi' trong tài khoản hoặc fanpage VieGo để cập nhật mã mới được phát hành thường xuyên.",
+    categoryIds: ["promotions", "general"],
+  },
 ];
