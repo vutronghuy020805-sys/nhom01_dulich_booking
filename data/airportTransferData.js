@@ -152,6 +152,24 @@ export const DESTINATIONS = [
     subtitle: "Đà Nẵng, Việt Nam",
     typeLabel: "KHÁCH SẠN",
   },
+  {
+    id: "dest-noithanh-dl",
+    name: "Hồ Xuân Hương",
+    subtitle: "TP. Đà Lạt, Lâm Đồng, Việt Nam",
+    typeLabel: "ĐỊA DANH",
+  },
+  {
+    id: "dest-vinpearlpq",
+    name: "Vinpearl Phú Quốc",
+    subtitle: "Phú Quốc, Kiên Giang, Việt Nam",
+    typeLabel: "KHÁCH SẠN",
+  },
+  {
+    id: "dest-bana-cable",
+    name: "Cáp treo Bà Nà - Núi Chúa",
+    subtitle: "Hòa Vang, Đà Nẵng, Việt Nam",
+    typeLabel: "ĐỊA DANH",
+  },
 ];
 
 export const TRUSTED_PARTNERS = [
