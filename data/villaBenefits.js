@@ -38,4 +38,11 @@ export const villaBenefits = [
     description:
       "Hãy liên hệ với chúng tôi qua điện thoại, email hoặc nền tảng hỗ trợ của VieGo. Đội ngũ hỗ trợ luôn sẵn sàng đồng hành cùng bạn 24/7.",
   },
+  {
+    id: "best-price",
+    iconKey: "payment",
+    title: "Giá tốt nhất, đảm bảo",
+    description:
+      "VieGo cam kết mang đến mức giá cạnh tranh nhất cho mỗi biệt thự và căn hộ. Nếu bạn tìm thấy giá thấp hơn ở nơi khác, hãy báo cho chúng tôi để được hỗ trợ.",
+  },
 ];
