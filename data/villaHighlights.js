@@ -50,4 +50,16 @@ export const villaHighlights = [
     location: "Bà Rịa - Vũng Tàu, Việt Nam",
     image: "/nhom01_dulich_booking/assets/stays/villa-vungtau.jpg",
   },
+  {
+    id: "hue-riverside-villa",
+    title: "Huế Riverside Heritage Villa",
+    location: "TP. Huế, Việt Nam",
+    image: "/nhom01_dulich_booking/assets/locations/hue.jpg",
+  },
+  {
+    id: "quynhon-beachfront-villa",
+    title: "Quy Nhơn Beachfront Pool Villa",
+    location: "Bình Định, Việt Nam",
+    image: "/nhom01_dulich_booking/assets/locations/quynhon.jpg",
+  },
 ];
