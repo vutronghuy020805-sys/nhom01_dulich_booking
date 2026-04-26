@@ -59,6 +59,18 @@ export const carRentalFaqs = [
     answer:
       "VieGo hỗ trợ nhiều hình thức thanh toán linh hoạt như chuyển khoản, thẻ thanh toán, ví điện tử hoặc các hình thức khác tùy dịch vụ. Một số lựa chọn còn có ưu đãi hoặc hỗ trợ trả sau, giúp bạn chủ động hơn khi đặt xe.",
   },
+  {
+    id: "long-distance",
+    question: "Tôi có thể thuê xe để đi liên tỉnh không?",
+    answer:
+      "Hầu hết xe cho thuê trên VieGo đều cho phép sử dụng để di chuyển liên tỉnh. Tuy nhiên, một số đối tác có thể giới hạn quãng đường hoặc khu vực sử dụng. Bạn nên đọc kỹ điều khoản sử dụng và thông báo trước với đối tác về lịch trình dự kiến.",
+  },
+  {
+    id: "fuel-policy",
+    question: "Chính sách nhiên liệu khi thuê xe tự lái như thế nào?",
+    answer:
+      "Đa số đối tác áp dụng chính sách 'nhận xe đầy bình – trả xe đầy bình'. Bạn cần đổ xăng đầy trước khi trả xe, hoặc thanh toán phí nhiên liệu chênh lệch theo bảng giá của đối tác. Thông tin chi tiết được hiển thị trong điều khoản trước khi xác nhận đặt xe.",
+  },
 ];
 
 export default carRentalFaqs;
