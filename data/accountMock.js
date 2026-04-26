@@ -68,6 +68,33 @@ export const transactions = [
     amount: 420000,
     status: "cancelled",
   },
+  {
+    id: "VG-2026-0128-F8",
+    service: "car-rental",
+    serviceLabel: "Thuê xe",
+    title: "Toyota Vios · Đà Nẵng · 3 ngày",
+    paidAt: "2026-01-28",
+    amount: 2250000,
+    status: "success",
+  },
+  {
+    id: "VG-2025-1215-G3",
+    service: "hotel",
+    serviceLabel: "Khách sạn",
+    title: "Vinpearl Phú Quốc · 4 đêm",
+    paidAt: "2025-12-15",
+    amount: 7600000,
+    status: "success",
+  },
+  {
+    id: "VG-2025-1108-H7",
+    service: "flight",
+    serviceLabel: "Vé máy bay",
+    title: "VJ-624 TP.HCM → Phú Quốc (khứ hồi)",
+    paidAt: "2025-11-08",
+    amount: 1990000,
+    status: "success",
+  },
 ];
 
 export const refundRequests = [
