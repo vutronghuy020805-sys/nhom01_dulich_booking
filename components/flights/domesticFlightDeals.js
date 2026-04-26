@@ -38,6 +38,9 @@ export const domesticFlightDeals = {
       { id: "hcm-4", route: "Huế - TP HCM", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
       { id: "hcm-5", route: "Quy Nhơn - TP HCM", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
       { id: "hcm-6", route: "Nha Trang - TP HCM", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-7", route: "Vinh - TP HCM", date: DATE, price: 999000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-8", route: "Đồng Hới - TP HCM", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-9", route: "Đà Lạt - TP HCM", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
     ],
   },
   "da-nang": {
