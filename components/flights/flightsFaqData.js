@@ -17,6 +17,12 @@ export const flightsFaqLeft = [
     answer:
       "Tùy từng hãng bay, bạn thường có thể đặt vé trước từ vài tháng đến gần một năm so với ngày khởi hành. Hãy kiểm tra lịch mở bán của hãng trên VieGo để tranh thủ giá tốt ngay khi vé được mở.",
   },
+  {
+    id: "baggage-allowance",
+    question: "Tiêu chuẩn hành lý xách tay và ký gửi như thế nào?",
+    answer:
+      "Mỗi hãng hàng không có quy định riêng về kích thước và trọng lượng hành lý. Hành lý xách tay thường được giới hạn 7-10kg, trong khi hành lý ký gửi từ 20-30kg tùy hạng vé. Bạn nên kiểm tra kỹ thông tin trên trang đặt vé hoặc website hãng bay trước chuyến đi.",
+  },
 ];
 
 export const flightsFaqRight = [
@@ -37,5 +43,11 @@ export const flightsFaqRight = [
     question: "VieGo có tính phí khi dùng thẻ tín dụng không?",
     answer:
       "Phí thanh toán bằng thẻ tín dụng phụ thuộc vào phương thức bạn chọn, ngân hàng phát hành và các chương trình khuyến mãi đang áp dụng. Bạn có thể xem chi tiết ở bước thanh toán trước khi xác nhận đặt vé.",
+  },
+  {
+    id: "child-infant",
+    question: "Trẻ em và em bé có cần mua vé riêng không?",
+    answer:
+      "Trẻ em từ 2-12 tuổi cần mua vé riêng với mức giá thường thấp hơn vé người lớn. Em bé dưới 2 tuổi thường được miễn vé hoặc tính phí rất thấp nếu ngồi cùng người lớn. Hãy chọn đúng số lượng trẻ em / em bé khi đặt vé trên VieGo để áp dụng đúng giá.",
   },
 ];

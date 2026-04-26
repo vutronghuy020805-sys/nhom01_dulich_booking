@@ -9,6 +9,7 @@ export const tabOrder = [
   "phu-yen",
   "hai-phong",
   "can-tho",
+  "da-lat",
   "diem-den-khac",
 ];
 
@@ -37,6 +38,9 @@ export const domesticFlightDeals = {
       { id: "hcm-4", route: "Huế - TP HCM", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
       { id: "hcm-5", route: "Quy Nhơn - TP HCM", date: DATE, price: 799000, tripType: "MỘT CHIỀU" },
       { id: "hcm-6", route: "Nha Trang - TP HCM", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-7", route: "Vinh - TP HCM", date: DATE, price: 999000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-8", route: "Đồng Hới - TP HCM", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+      { id: "hcm-9", route: "Đà Lạt - TP HCM", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
     ],
   },
   "da-nang": {
@@ -129,6 +133,17 @@ export const domesticFlightDeals = {
       { id: "ct-5", route: "Quy Nhơn - Cần Thơ", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
     ],
   },
+  "da-lat": {
+    label: "Đà Lạt",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/dalat.jpg",
+    cards: [
+      { id: "dl-1", route: "Hà Nội - Đà Lạt", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+      { id: "dl-2", route: "TP HCM - Đà Lạt", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "dl-3", route: "Đà Nẵng - Đà Lạt", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "dl-4", route: "Hải Phòng - Đà Lạt", date: DATE, price: 1399000, tripType: "MỘT CHIỀU" },
+      { id: "dl-5", route: "Vinh - Đà Lạt", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+    ],
+  },
   "diem-den-khac": {
     label: "Điểm đến khác",
     destinationImage: "/nhom01_dulich_booking/assets/destinations/dalat.jpg",
@@ -172,6 +187,22 @@ export const domesticFlightDeals = {
         price: 1699000,
         tripType: "MỘT CHIỀU",
         image: "/nhom01_dulich_booking/assets/flight-destinations/con-dao.jpg",
+      },
+      {
+        id: "other-6",
+        route: "TP HCM - Tuy Hòa",
+        date: DATE,
+        price: 699000,
+        tripType: "MỘT CHIỀU",
+        image: "/nhom01_dulich_booking/assets/flight-destinations/phu-yen.jpg",
+      },
+      {
+        id: "other-7",
+        route: "Hà Nội - Vinh",
+        date: DATE,
+        price: 899000,
+        tripType: "MỘT CHIỀU",
+        image: "/nhom01_dulich_booking/assets/destinations/hanoi.jpg",
       },
     ],
   },

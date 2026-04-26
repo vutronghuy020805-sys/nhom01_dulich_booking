@@ -18,6 +18,10 @@ export const CITIES = {
   pxu: { code: "PXU", displayName: "Pleiku", aliases: ["Pleiku"] },
   bmv: { code: "BMV", displayName: "Buôn Ma Thuột", aliases: ["Buôn Ma Thuột"] },
   vcs: { code: "VCS", displayName: "Côn Đảo", aliases: ["Côn Đảo"] },
+  vii: { code: "VII", displayName: "Vinh", aliases: ["Vinh"] },
+  vdh: { code: "VDH", displayName: "Đồng Hới", aliases: ["Đồng Hới"] },
+  tbb2: { code: "TBB", displayName: "Tuy Hòa", aliases: ["Tuy Hòa"] },
+  cxr2: { code: "CXR", displayName: "Cam Ranh", aliases: ["Cam Ranh"] },
 };
 
 const aliasIndex = {};
