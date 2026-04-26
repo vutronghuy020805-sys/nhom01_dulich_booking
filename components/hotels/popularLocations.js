@@ -5,6 +5,9 @@ export const popularLocations = [
   { slug: "ha-noi", city: "Hà Nội", image: "/nhom01_dulich_booking/assets/locations/hanoi.jpg" },
   { slug: "phan-thiet", city: "Phan Thiết", image: "/nhom01_dulich_booking/assets/locations/phanthiet.jpg" },
   { slug: "da-nang", city: "Đà Nẵng", image: "/nhom01_dulich_booking/assets/locations/danang.jpg" },
+  { slug: "da-lat", city: "Đà Lạt", image: "/nhom01_dulich_booking/assets/locations/dalat.jpg" },
+  { slug: "hue", city: "Huế", image: "/nhom01_dulich_booking/assets/locations/hue.jpg" },
+  { slug: "quy-nhon", city: "Quy Nhơn", image: "/nhom01_dulich_booking/assets/locations/quynhon.jpg" },
 ];
 
 export const findLocationBySlug = (slug) => {
