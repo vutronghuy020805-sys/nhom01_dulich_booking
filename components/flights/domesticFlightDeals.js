@@ -9,6 +9,7 @@ export const tabOrder = [
   "phu-yen",
   "hai-phong",
   "can-tho",
+  "da-lat",
   "diem-den-khac",
 ];
 
@@ -127,6 +128,17 @@ export const domesticFlightDeals = {
       { id: "ct-3", route: "Hải Phòng - Cần Thơ", date: DATE, price: 1399000, tripType: "MỘT CHIỀU" },
       { id: "ct-4", route: "Phú Quốc - Cần Thơ", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
       { id: "ct-5", route: "Quy Nhơn - Cần Thơ", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
+    ],
+  },
+  "da-lat": {
+    label: "Đà Lạt",
+    destinationImage: "/nhom01_dulich_booking/assets/destinations/dalat.jpg",
+    cards: [
+      { id: "dl-1", route: "Hà Nội - Đà Lạt", date: DATE, price: 1199000, tripType: "MỘT CHIỀU" },
+      { id: "dl-2", route: "TP HCM - Đà Lạt", date: DATE, price: 599000, tripType: "MỘT CHIỀU" },
+      { id: "dl-3", route: "Đà Nẵng - Đà Lạt", date: DATE, price: 899000, tripType: "MỘT CHIỀU" },
+      { id: "dl-4", route: "Hải Phòng - Đà Lạt", date: DATE, price: 1399000, tripType: "MỘT CHIỀU" },
+      { id: "dl-5", route: "Vinh - Đà Lạt", date: DATE, price: 1099000, tripType: "MỘT CHIỀU" },
     ],
   },
   "diem-den-khac": {
