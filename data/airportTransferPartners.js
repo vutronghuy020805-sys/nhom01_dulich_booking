@@ -27,6 +27,9 @@ export const airportTransferPartners = [
   { id: "kayak", name: "Kayak", logo: favicon("kayak.com") },
   { id: "lime", name: "Lime", logo: favicon("li.me") },
   { id: "revel", name: "Revel", logo: favicon("gorevel.com") },
+  { id: "cabify", name: "Cabify", logo: favicon("cabify.com") },
+  { id: "freenow", name: "FreeNow", logo: favicon("free-now.com") },
+  { id: "klook", name: "Klook", logo: favicon("klook.com") },
 ];
 
 export default airportTransferPartners;
