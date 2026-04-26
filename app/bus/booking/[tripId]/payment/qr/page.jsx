@@ -1,5 +1,6 @@
+import { Suspense } from "react";
 import { busLocations } from "@/components/bus/busLocations";
-import PendingFeatureStub from "@/components/common/PendingFeatureStub";
+import BusQrPageClient from "@/components/bus/BusQrPageClient";
 
 export function generateStaticParams() {
   const ids = busLocations.map((l) => l.id);
@@ -18,5 +19,9 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 export default function Page() {
-  return <PendingFeatureStub />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50" />}>
+      <BusQrPageClient />
+    </Suspense>
+  );
 }
