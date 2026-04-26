@@ -103,7 +103,11 @@ export default function DestinationsSection() {
                   className="shrink-0 px-2"
                   style={{ width: `${slideWidthPct}%` }}
                 >
-                  <div className="relative w-full aspect-3/4 rounded-3xl overflow-hidden bg-gray-100 shadow-sm group cursor-pointer">
+                  <Link
+                    href="/flights"
+                    aria-label={`Xem vé máy bay đến ${dest.name}`}
+                    className="relative block w-full aspect-3/4 rounded-3xl overflow-hidden bg-gray-100 shadow-sm group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  >
                     <Image
                       src={dest.image}
                       alt={dest.name}
@@ -120,7 +124,7 @@ export default function DestinationsSection() {
                         {dest.activities} hoạt động
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>
