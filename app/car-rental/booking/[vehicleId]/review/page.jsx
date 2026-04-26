@@ -1,8 +1,17 @@
-export function generateStaticParams() { return [{ vehicleId: "demo" }]; }
+import { Suspense } from "react";
+import { carRentalVehicles } from "@/data/carRentalVehicles";
+import CarRentalReviewPageClient from "@/components/car-rental/CarRentalReviewPageClient";
+
+export function generateStaticParams() {
+  return carRentalVehicles.map((v) => ({ vehicleId: v.id }));
+}
+
 export const dynamicParams = false;
 
-import PendingFeatureStub from "@/components/common/PendingFeatureStub";
-
 export default function Page() {
-  return <PendingFeatureStub />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50" />}>
+      <CarRentalReviewPageClient />
+    </Suspense>
+  );
 }
