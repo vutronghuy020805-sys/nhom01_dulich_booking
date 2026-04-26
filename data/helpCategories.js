@@ -10,4 +10,6 @@ export const helpCategories = [
   { id: "bus", label: "Vé xe khách", icon: "bus", color: "emerald" },
   { id: "combo", label: "Vé máy bay + Khách sạn", icon: "combo", color: "fuchsia" },
   { id: "insurance", label: "Bảo hiểm", icon: "shield", color: "indigo" },
+  { id: "car-rental", label: "Thuê xe tự lái", icon: "car", color: "orange" },
+  { id: "promotions", label: "Ưu đãi và mã giảm giá", icon: "pay", color: "pink" },
 ];
