@@ -2,7 +2,7 @@ export const aboutMembers = [
   {
     name: "Đinh Thị Như Ngọc",
     mssv: "24126150",
-    role: "UI / Frontend",
+    role: "UI / Frontend — Khách sạn",
     github: "",
     image: "/nhom01_dulich_booking/assets/about/dinh-thi-nhu-ngoc.png",
     column: "left",
@@ -10,7 +10,7 @@ export const aboutMembers = [
   {
     name: "Dương Gia Khánh",
     mssv: "24126098",
-    role: "Frontend",
+    role: "Frontend — Vé máy bay",
     github: "",
     image: "/nhom01_dulich_booking/assets/about/duong-gia-khanh.png",
     column: "left",
@@ -18,7 +18,7 @@ export const aboutMembers = [
   {
     name: "Nguyễn Thị Ngọc Hạnh",
     mssv: "24126059",
-    role: "Frontend",
+    role: "Frontend — Vé xe khách / Thuê xe",
     github: "",
     image: "/nhom01_dulich_booking/assets/about/nguyen-thi-ngoc-hanh.png",
     column: "left",
@@ -26,7 +26,7 @@ export const aboutMembers = [
   {
     name: "Tạ Bùi Thanh Huyền",
     mssv: "24126091",
-    role: "UI / Frontend",
+    role: "UI / Frontend — Hoạt động",
     github: "github.com/tthuyen2810",
     image: "/nhom01_dulich_booking/assets/about/ta-bui-thanh-huyen.png",
     column: "right",
@@ -42,7 +42,7 @@ export const aboutMembers = [
   {
     name: "Đỗ Hữu Nghĩa",
     mssv: "24126049",
-    role: "Frontend",
+    role: "Frontend — Đưa đón sân bay / Blog",
     github: "",
     image: "/nhom01_dulich_booking/assets/about/do-huu-nghia.png",
     column: "right",
@@ -50,7 +50,7 @@ export const aboutMembers = [
   {
     name: "Nguyễn Ngọc Anh",
     mssv: "24126901",
-    role: "Frontend",
+    role: "Frontend — Tài khoản / Đặt chỗ",
     github: "",
     image: "/nhom01_dulich_booking/assets/about/nguyen-ngoc-anh.png",
     column: "right",
