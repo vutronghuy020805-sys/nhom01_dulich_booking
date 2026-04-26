@@ -89,6 +89,28 @@ export const airportTransferVehicles = [
     price: 799000,
     image: `${VEHICLE_IMAGE_BASE}/toyota-fortuner.jpg`,
   },
+  {
+    id: "compact-eco",
+    name: "Compact Eco",
+    tier: "Eco",
+    provider: "VieGo Green",
+    rating: 4.5,
+    passengers: 2,
+    baggage: 2,
+    price: 269000,
+    image: `${VEHICLE_IMAGE_BASE}/kia-morning.jpg`,
+  },
+  {
+    id: "luxury-sedan",
+    name: "Luxury Sedan",
+    tier: "Premium",
+    provider: "VieGo Luxe",
+    rating: 4.9,
+    passengers: 3,
+    baggage: 3,
+    price: 519000,
+    image: `${VEHICLE_IMAGE_BASE}/corolla-cross.jpg`,
+  },
 ];
 
 export function getVehicleById(id) {
