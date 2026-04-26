@@ -50,4 +50,16 @@ export const apartmentHighlights = [
     location: "Bình Thuận, Việt Nam",
     image: "/nhom01_dulich_booking/assets/alternative-stays/phanthiet-bungalow.jpg",
   },
+  {
+    id: "dalat-pine-loft",
+    title: "Đà Lạt Pine Forest Loft",
+    location: "Lâm Đồng, Việt Nam",
+    image: "/nhom01_dulich_booking/assets/locations/dalat.jpg",
+  },
+  {
+    id: "hue-imperial-suite",
+    title: "Huế Imperial View Suite",
+    location: "TP. Huế, Việt Nam",
+    image: "/nhom01_dulich_booking/assets/locations/hue.jpg",
+  },
 ];
