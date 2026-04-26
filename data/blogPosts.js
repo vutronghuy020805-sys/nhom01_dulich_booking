@@ -722,6 +722,11 @@ export const blogSearchSuggestions = [
   "Vũng Tàu gần Sài Gòn",
   "mẹo săn vé máy bay",
   "checklist hành lý",
+  "kinh nghiệm Đà Lạt mùa hoa",
+  "trekking Sa Pa cho người mới",
+  "Côn Đảo 3 ngày 2 đêm",
+  "ẩm thực đường phố Huế",
+  "Quy Nhơn check-in biển",
 ];
 
 export default blogPosts;
