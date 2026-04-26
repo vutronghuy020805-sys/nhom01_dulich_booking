@@ -20,4 +20,18 @@ export const busCoupons = [
     subline: "Áp dụng cho lần đặt đầu tiên qua VieGo",
     code: "VIEGOBANMOI",
   },
+  {
+    icon: "🚌",
+    category: "Vé xe khách:",
+    headline: "Giảm 50.000 cho chuyến đi cuối tuần",
+    subline: "Áp dụng cho chuyến đi thứ 6 đến chủ nhật",
+    code: "VIEGOWEEKEND",
+  },
+  {
+    icon: "🚗",
+    category: "Thuê xe:",
+    headline: "Giảm 15% cho lần thuê xe tự lái đầu tiên",
+    subline: "Áp dụng cho khách hàng mới qua VieGo",
+    code: "VIEGORENT15",
+  },
 ];
