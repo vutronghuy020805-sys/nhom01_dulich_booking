@@ -59,6 +59,24 @@ export const AIRPORTS = [
     subtitle: "Nghệ An, Việt Nam",
     typeLabel: "SÂN BAY",
   },
+  {
+    id: "ap-bmv",
+    name: "Sân bay Buôn Ma Thuột (BMV)",
+    subtitle: "Đắk Lắk, Việt Nam",
+    typeLabel: "SÂN BAY",
+  },
+  {
+    id: "ap-vdh",
+    name: "Sân bay Đồng Hới (VDH)",
+    subtitle: "Quảng Bình, Việt Nam",
+    typeLabel: "SÂN BAY",
+  },
+  {
+    id: "ap-vcs",
+    name: "Sân bay Côn Đảo (VCS)",
+    subtitle: "Bà Rịa - Vũng Tàu, Việt Nam",
+    typeLabel: "SÂN BAY",
+  },
 ];
 
 export const DESTINATIONS = [
