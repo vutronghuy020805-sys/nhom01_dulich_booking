@@ -1,5 +1,6 @@
+import { Suspense } from "react";
 import { getAllHotelDetailParams } from "@/components/hotels/hotelResults";
-import PendingFeatureStub from "@/components/common/PendingFeatureStub";
+import BookingStep1Client from "@/components/booking/BookingStep1Client";
 
 export function generateStaticParams() {
   return getAllHotelDetailParams().map(({ slug, hotelSlug }) => ({
@@ -11,5 +12,9 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 export default function Page() {
-  return <PendingFeatureStub />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50" />}>
+      <BookingStep1Client />
+    </Suspense>
+  );
 }
