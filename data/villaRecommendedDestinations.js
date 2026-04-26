@@ -50,4 +50,22 @@ export const villaRecommendedDestinations = [
     slug: "mui-ne",
     image: "/nhom01_dulich_booking/assets/hotels/phanthiet-1.jpg",
   },
+  {
+    id: "ha-long",
+    name: "Hạ Long",
+    slug: "ha-long",
+    image: "/nhom01_dulich_booking/assets/destinations/halong.jpeg",
+  },
+  {
+    id: "sa-pa",
+    name: "Sa Pa",
+    slug: "sa-pa",
+    image: "/nhom01_dulich_booking/assets/destinations/sapa.webp",
+  },
+  {
+    id: "hue",
+    name: "Huế",
+    slug: "hue",
+    image: "/nhom01_dulich_booking/assets/destinations/hue.jpg",
+  },
 ];
