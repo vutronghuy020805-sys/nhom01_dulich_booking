@@ -24,7 +24,7 @@ const topRightMenu = [
 
 // Pill hover style dùng chung: padding cố định -> không nhảy layout
 const navPillClass =
-  "shrink-0 whitespace-nowrap px-4 py-2 rounded-full transition-all duration-200 hover:bg-white/10 hover:backdrop-blur-md";
+  "shrink-0 whitespace-nowrap px-3 py-2 rounded-full transition-all duration-200 hover:bg-white/10 hover:backdrop-blur-md";
 
 export default function Hero() {
   return (
@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col h-full w-full">
         {/* Header */}
         <header className="pt-4 pb-2 w-full">
-          <div className="w-full max-w-[1500px] mx-auto px-10 flex items-start justify-between gap-6">
+          <div className="w-full max-w-425 mx-auto px-6 xl:px-10 flex items-start justify-between gap-6">
             {/* Left: logo + service menu */}
             <div className="flex flex-col gap-2">
               {/*
@@ -54,7 +54,7 @@ export default function Hero() {
                 className="w-28 h-28 object-contain mix-blend-screen"
               />
 
-              <nav className="flex items-center flex-wrap gap-1 text-white text-[15px] mt-1">
+              <nav className="flex items-center gap-1 text-white text-[15px] mt-1">
                 {serviceMenu.map((item, idx) => (
                   <Link
                     key={item.label}
@@ -114,7 +114,7 @@ export default function Hero() {
         </header>
 
         {/* Title + search */}
-        <div className="flex-1 flex flex-col justify-center w-full max-w-[1500px] mx-auto px-10 pb-14">
+        <div className="flex-1 flex flex-col justify-center w-full max-w-425 mx-auto px-6 xl:px-10 pb-14">
           <MotionReveal
             as="h1"
             variants={fadeInDown}
