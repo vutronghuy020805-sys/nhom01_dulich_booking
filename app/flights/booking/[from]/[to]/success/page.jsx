@@ -1,5 +1,6 @@
+import { Suspense } from "react";
 import { CITIES } from "@/components/flights/flightCities";
-import PendingFeatureStub from "@/components/common/PendingFeatureStub";
+import FlightSuccessPageClient from "@/components/flights/FlightSuccessPageClient";
 
 export function generateStaticParams() {
   const slugs = Object.keys(CITIES);
@@ -15,5 +16,9 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 export default function Page() {
-  return <PendingFeatureStub />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50" />}>
+      <FlightSuccessPageClient />
+    </Suspense>
+  );
 }
