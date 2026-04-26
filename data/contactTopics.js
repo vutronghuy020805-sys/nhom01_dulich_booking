@@ -77,4 +77,28 @@ export const contactTopicTabs = [
       },
     ],
   },
+  {
+    id: "payment",
+    label: "Thanh toán & Ví",
+    topics: [
+      {
+        id: "payment-failed",
+        question: "Thanh toán bị lỗi nhưng tài khoản đã trừ tiền?",
+        answer:
+          "Hệ thống sẽ tự động hoàn tiền về phương thức thanh toán gốc trong 3-7 ngày làm việc. Nếu sau 7 ngày chưa thấy hoàn tiền, vui lòng liên hệ hotline để được hỗ trợ.",
+      },
+      {
+        id: "viegopay-topup",
+        question: "Cách nạp tiền vào ví VieGoPay?",
+        answer:
+          "Mở 'Tài khoản' → 'VieGoPay' → 'Nạp tiền' → chọn số tiền và phương thức (chuyển khoản, thẻ, ví điện tử). Tiền sẽ vào ví ngay sau khi xác nhận thanh toán.",
+      },
+      {
+        id: "invoice-request",
+        question: "Tôi có thể yêu cầu xuất hoá đơn VAT không?",
+        answer:
+          "Có. Vào chi tiết booking → 'Yêu cầu hoá đơn' → điền thông tin công ty. VieGo sẽ phát hành hoá đơn điện tử trong 3-5 ngày làm việc và gửi qua email.",
+      },
+    ],
+  },
 ];
