@@ -296,6 +296,45 @@ export const chatbotFaq = [
       links: [{ label: "Chính sách quyền riêng tư", href: "/privacy-policy" }],
     },
   },
+  {
+    id: "viego-points",
+    title: "Điểm thưởng VieGo Points hoạt động thế nào?",
+    keywords: [
+      "viego points",
+      "diem thuong",
+      "loyalty",
+      "tich diem",
+      "đổi điểm",
+      "điểm thưởng",
+      "tích điểm",
+    ],
+    answer: {
+      paragraphs: [
+        "Mỗi đơn hàng thành công sẽ tích điểm VieGo Points dựa trên giá trị đơn. Bạn có thể dùng điểm để giảm giá cho đơn tiếp theo hoặc đổi voucher.",
+        "Chi tiết tỷ lệ tích điểm và cách đổi quà có trong mục VieGo Points trong tài khoản.",
+      ],
+      links: [{ label: "Tìm hiểu VieGo Points", href: "/help" }],
+    },
+  },
+  {
+    id: "promo-code",
+    title: "Cách áp dụng mã giảm giá khi đặt?",
+    keywords: [
+      "ma giam gia",
+      "promo code",
+      "voucher",
+      "coupon",
+      "giảm giá",
+      "mã khuyến mãi",
+    ],
+    answer: {
+      paragraphs: [
+        "Ở bước thanh toán, bạn nhập mã vào ô 'Mã giảm giá' rồi bấm Áp dụng. Hệ thống sẽ kiểm tra điều kiện và trừ trực tiếp vào tổng đơn nếu hợp lệ.",
+        "Mỗi đơn chỉ áp dụng được 1 mã. Nếu mã không có hiệu lực, hãy kiểm tra điều kiện sử dụng và hạn dùng.",
+      ],
+      links: [{ label: "Xem ưu đãi hiện có", href: "/help" }],
+    },
+  },
 ];
 
 // Các câu hỏi gợi ý nhanh hiển thị khi mở chat.
@@ -306,6 +345,8 @@ export const quickSuggestions = [
   { id: "q-payment", label: "Phương thức thanh toán", topicId: "payment" },
   { id: "q-contact", label: "Liên hệ hỗ trợ", topicId: "contact" },
   { id: "q-bus", label: "Cách đặt vé xe khách", topicId: "bus" },
+  { id: "q-points", label: "VieGo Points là gì?", topicId: "viego-points" },
+  { id: "q-promo", label: "Áp dụng mã giảm giá", topicId: "promo-code" },
 ];
 
 export const fallbackAnswer = {
