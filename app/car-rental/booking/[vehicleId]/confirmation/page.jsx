@@ -1,5 +1,6 @@
+import { Suspense } from "react";
 import { carRentalVehicles } from "@/data/carRentalVehicles";
-import PendingFeatureStub from "@/components/common/PendingFeatureStub";
+import CarRentalConfirmationPageClient from "@/components/car-rental/CarRentalConfirmationPageClient";
 
 export function generateStaticParams() {
   return carRentalVehicles.map((v) => ({ vehicleId: v.id }));
@@ -8,5 +9,9 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 export default function Page() {
-  return <PendingFeatureStub />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50" />}>
+      <CarRentalConfirmationPageClient />
+    </Suspense>
+  );
 }
