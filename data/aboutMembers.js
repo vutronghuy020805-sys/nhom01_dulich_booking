@@ -4,7 +4,7 @@ export const aboutMembers = [
     mssv: "24126150",
     role: "",
     github: "",
-    image: "/nhom01_dulich_booking/assets/about/dinh-thi-nhu-ngoc.jpg",
+    image: "/nhom01_dulich_booking/assets/about/dinh-thi-nhu-ngoc.png",
     column: "left",
   },
   {
@@ -12,7 +12,7 @@ export const aboutMembers = [
     mssv: "24126098",
     role: "",
     github: "",
-    image: "/nhom01_dulich_booking/assets/about/duong-gia-khanh.jpg",
+    image: "/nhom01_dulich_booking/assets/about/duong-gia-khanh.png",
     column: "left",
   },
   {
@@ -20,7 +20,7 @@ export const aboutMembers = [
     mssv: "24126059",
     role: "",
     github: "",
-    image: "/nhom01_dulich_booking/assets/about/nguyen-thi-ngoc-hanh.jpg",
+    image: "/nhom01_dulich_booking/assets/about/nguyen-thi-ngoc-hanh.png",
     column: "left",
   },
   {
@@ -28,7 +28,7 @@ export const aboutMembers = [
     mssv: "24126091",
     role: "",
     github: "",
-    image: "/nhom01_dulich_booking/assets/about/ta-bui-thanh-huyen.jpg",
+    image: "/nhom01_dulich_booking/assets/about/ta-bui-thanh-huyen.png",
     column: "right",
   },
   {
@@ -36,7 +36,7 @@ export const aboutMembers = [
     mssv: "24126090",
     role: "",
     github: "",
-    image: "/nhom01_dulich_booking/assets/about/vu-trong-huy.jpg",
+    image: "/nhom01_dulich_booking/assets/about/vu-trong-huy.png",
     column: "right",
   },
   {
@@ -44,7 +44,7 @@ export const aboutMembers = [
     mssv: "24126049",
     role: "",
     github: "",
-    image: "/nhom01_dulich_booking/assets/about/do-huu-nghia.jpg",
+    image: "/nhom01_dulich_booking/assets/about/do-huu-nghia.png",
     column: "right",
   },
   {
@@ -52,7 +52,7 @@ export const aboutMembers = [
     mssv: "24126901",
     role: "",
     github: "",
-    image: "/nhom01_dulich_booking/assets/about/nguyen-ngoc-anh.jpg",
+    image: "/nhom01_dulich_booking/assets/about/nguyen-ngoc-anh.png",
     column: "right",
   },
 ];
