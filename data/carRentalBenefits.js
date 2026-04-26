@@ -34,6 +34,13 @@ export const carRentalBenefits = [
       "Dễ dàng đặt xe ngay mà không cần thanh toán toàn bộ. Tận hưởng hạn mức linh hoạt, trả góp từ 1–12 tháng với lãi suất ưu đãi – tiện lợi và chủ động tài chính hơn bao giờ hết.",
     icon: "wallet-card",
   },
+  {
+    id: "doorstep-delivery",
+    title: "Giao xe tận nơi miễn phí",
+    description:
+      "Tiết kiệm thời gian di chuyển với dịch vụ giao xe tận nơi tại khách sạn, sân bay hoặc địa chỉ bạn yêu cầu trong nội thành. Áp dụng cho các đối tác hỗ trợ và khu vực phù hợp.",
+    icon: "car-key",
+  },
 ];
 
 export default carRentalBenefits;
