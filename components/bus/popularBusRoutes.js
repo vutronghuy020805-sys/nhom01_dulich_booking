@@ -77,4 +77,30 @@ export const popularBusRoutesColumns = [
       },
     ],
   },
+  {
+    id: "can-tho",
+    fromCity: "Cần Thơ",
+    fromSlug: "can-tho",
+    image: "/nhom01_dulich_booking/assets/destinations/hcm.jpeg",
+    routes: [
+      {
+        toCity: "Sài Gòn",
+        toSlug: "sai-gon",
+        price: "172.500 VND",
+        href: "/bus/search?from=can-tho&to=sai-gon",
+      },
+      {
+        toCity: "Cà Mau",
+        toSlug: "ca-mau",
+        price: "138.000 VND",
+        href: "/bus/search?from=can-tho&to=ca-mau",
+      },
+      {
+        toCity: "Châu Đốc",
+        toSlug: "chau-doc",
+        price: "115.000 VND",
+        href: "/bus/search?from=can-tho&to=chau-doc",
+      },
+    ],
+  },
 ];
