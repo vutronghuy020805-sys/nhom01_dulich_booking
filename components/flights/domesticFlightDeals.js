@@ -188,6 +188,22 @@ export const domesticFlightDeals = {
         tripType: "MỘT CHIỀU",
         image: "/nhom01_dulich_booking/assets/flight-destinations/con-dao.jpg",
       },
+      {
+        id: "other-6",
+        route: "TP HCM - Tuy Hòa",
+        date: DATE,
+        price: 699000,
+        tripType: "MỘT CHIỀU",
+        image: "/nhom01_dulich_booking/assets/flight-destinations/phu-yen.jpg",
+      },
+      {
+        id: "other-7",
+        route: "Hà Nội - Vinh",
+        date: DATE,
+        price: 899000,
+        tripType: "MỘT CHIỀU",
+        image: "/nhom01_dulich_booking/assets/destinations/hanoi.jpg",
+      },
     ],
   },
 };
