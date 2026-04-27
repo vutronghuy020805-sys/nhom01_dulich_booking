@@ -19,6 +19,15 @@ const cityTabs = [
   "Phú Quốc",
 ];
 
+const cityToLocationSlug = {
+  "Đà Nẵng": "da-nang",
+  "Nha Trang": "nha-trang",
+  "Phan Thiết": "phan-thiet",
+  "Vũng Tàu": "vung-tau",
+  "Hà Nội": "ha-noi",
+  "Hạ Long": "vinh-ha-long",
+};
+
 const hotelsByCity = {
   "Đà Nẵng": [
     {
@@ -404,15 +413,23 @@ export default function HotelChoicesSection() {
                 className="flex transition-transform duration-500 ease-out"
                 style={{ transform: `translateX(-${translatePct}%)` }}
               >
-                {hotels.map((hotel) => (
-                  <div
-                    key={hotel.id}
-                    className="shrink-0 px-2"
-                    style={{ width: `${slideWidthPct}%` }}
-                  >
-                    <HotelChoiceCard hotel={hotel} />
-                  </div>
-                ))}
+                {hotels.map((hotel) => {
+                  const locationSlug = cityToLocationSlug[activeCity];
+                  const href = locationSlug
+                    ? `/hotels/${locationSlug}`
+                    : "/hotels";
+                  return (
+                    <div
+                      key={hotel.id}
+                      className="shrink-0 px-2"
+                      style={{ width: `${slideWidthPct}%` }}
+                    >
+                      <Link href={href} className="block h-full">
+                        <HotelChoiceCard hotel={hotel} />
+                      </Link>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
