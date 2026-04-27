@@ -14,8 +14,9 @@ export default function FlightDealCard({ card, image }) {
   query.set("price", String(card.price));
   if (iso) query.set("date", iso);
   if (card.tripType) query.set("tripType", card.tripType.toLowerCase().replace(/\s+/g, "-"));
+  if (parsed) query.set("flightId", `${parsed.from.slug}-${parsed.to.slug}-featured`);
   const href = parsed
-    ? `/flights/search/${parsed.from.slug}/${parsed.to.slug}?${query.toString()}`
+    ? `/flights/booking/${parsed.from.slug}/${parsed.to.slug}?${query.toString()}`
     : "#";
 
   const handleFavorite = (e) => {
