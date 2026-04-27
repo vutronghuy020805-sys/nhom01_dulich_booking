@@ -109,7 +109,7 @@ export default function CarRentalSearchForm() {
     params.set("startTime", fmtTime(startHour, startMinute));
     params.set("endDate", toIso(endDate));
     params.set("endTime", fmtTime(endHour, endMinute));
-    router.push(`/car-rental/booking/toyota-vios?${params.toString()}`);
+    router.push(`/car-rental/search?${params.toString()}`);
   };
 
   const fieldClasses =
