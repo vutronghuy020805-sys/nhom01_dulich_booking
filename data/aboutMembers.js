@@ -41,9 +41,9 @@ export const aboutMembers = [
   },
   {
     name: "Đỗ Hữu Nghĩa",
-    mssv: "24126049",
+    mssv: "24126149",
     role: "Frontend — Đưa đón sân bay / Blog",
-    github: "github.com/24126049-coder",
+    github: "github.com/nghiadhxyz",
     image: "/nhom01_dulich_booking/assets/about/do-huu-nghia.png",
     column: "right",
   },

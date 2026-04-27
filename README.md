@@ -11,13 +11,13 @@
 
 | Họ và tên | MSSV | Vai trò |
 | --- | --- | --- |
-| Vũ Trọng Huy | 24126090 | Frontend / Logic / Deploy |
-| Tạ Bùi Thanh Huyền | 24126091 | UI / Frontend |
-| Đinh Thị Như Ngọc | 24126150 | UI / Frontend |
-| Dương Gia Khánh | 24126098 | Frontend |
-| Nguyễn Thị Ngọc Hạnh | 24126059 | Frontend |
-| Đỗ Hữu Nghĩa | 24126149 | Frontend |
-| Nguyễn Ngọc Anh | 24126901 | Frontend |
+| Vũ Trọng Huy | 24126090 | UI |
+| Tạ Bùi Thanh Huyền | 24126091 | UI |
+| Đinh Thị Như Ngọc | 24126150 | UI |
+| Dương Gia Khánh | 24126098 | UI |
+| Nguyễn Thị Ngọc Hạnh | 24126059 | UI |
+| Đỗ Hữu Nghĩa | 24126149 | UI |
+| Nguyễn Ngọc Anh | 24126901 | UI |
 
 > Các thành viên có thể chỉnh lại cột **Vai trò** cho khớp với phân công thực tế của nhóm.
 
