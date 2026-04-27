@@ -11,13 +11,13 @@
 
 | Họ và tên | MSSV | Vai trò |
 | --- | --- | --- |
-| Vũ Trọng Huy | 24126090 | UI |
-| Tạ Bùi Thanh Huyền | 24126091 | UI |
-| Đinh Thị Như Ngọc | 24126150 | UI |
-| Dương Gia Khánh | 24126098 | UI |
-| Nguyễn Thị Ngọc Hạnh | 24126059 | UI |
-| Đỗ Hữu Nghĩa | 24126149 | UI |
-| Nguyễn Ngọc Anh | 24126901 | UI |
+| Vũ Trọng Huy | 24126090 | Figma, Word, PPT, Code |
+| Tạ Bùi Thanh Huyền | 24126091 | Figma, Word, PPT, Code |
+| Đinh Thị Như Ngọc | 24126150 | Figma, Word, PPT, Code |
+| Dương Gia Khánh | 24126098 | Figma, Word, PPT, Code |
+| Nguyễn Thị Ngọc Hạnh | 24126059 | Figma, Word, PPT, Code |
+| Đỗ Hữu Nghĩa | 24126149 | Figma, Word, PPT, Code |
+| Nguyễn Ngọc Anh | 24126901 | Figma, Word, PPT, Code |
 
 > Các thành viên có thể chỉnh lại cột **Vai trò** cho khớp với phân công thực tế của nhóm.
 
