@@ -2,7 +2,7 @@ export const aboutMembers = [
   {
     name: "Đinh Thị Như Ngọc",
     mssv: "24126150",
-    role: "UI / Frontend — Khách sạn",
+    role: "Figma, Word, PPT, Code",
     github: "github.com/24126150-web",
     image: "/nhom01_dulich_booking/assets/about/dinh-thi-nhu-ngoc.png",
     column: "left",
@@ -10,7 +10,7 @@ export const aboutMembers = [
   {
     name: "Dương Gia Khánh",
     mssv: "24126098",
-    role: "Frontend — Vé máy bay",
+    role: "Figma, Word, PPT, Code",
     github: "github.com/24126098-bit",
     image: "/nhom01_dulich_booking/assets/about/duong-gia-khanh.png",
     column: "left",
@@ -18,7 +18,7 @@ export const aboutMembers = [
   {
     name: "Nguyễn Thị Ngọc Hạnh",
     mssv: "24126059",
-    role: "Frontend — Vé xe khách / Thuê xe",
+    role: "Figma, Word, PPT, Code",
     github: "github.com/24126059-netizen",
     image: "/nhom01_dulich_booking/assets/about/nguyen-thi-ngoc-hanh.png",
     column: "left",
@@ -26,7 +26,7 @@ export const aboutMembers = [
   {
     name: "Tạ Bùi Thanh Huyền",
     mssv: "24126091",
-    role: "UI / Frontend — Hoạt động",
+    role: "Figma, Word, PPT, Code",
     github: "github.com/tthuyen2810",
     image: "/nhom01_dulich_booking/assets/about/ta-bui-thanh-huyen.png",
     column: "right",
@@ -34,7 +34,7 @@ export const aboutMembers = [
   {
     name: "Vũ Trọng Huy",
     mssv: "24126090",
-    role: "Frontend / Logic / Deploy",
+    role: "Figma, Word, PPT, Code",
     github: "github.com/vutronghuy020805-sys",
     image: "/nhom01_dulich_booking/assets/about/vu-trong-huy.png",
     column: "right",
@@ -42,7 +42,7 @@ export const aboutMembers = [
   {
     name: "Đỗ Hữu Nghĩa",
     mssv: "24126149",
-    role: "Frontend — Đưa đón sân bay / Blog",
+    role: "Figma, Word, PPT, Code",
     github: "github.com/nghiadhxyz",
     image: "/nhom01_dulich_booking/assets/about/do-huu-nghia.png",
     column: "right",
@@ -50,7 +50,7 @@ export const aboutMembers = [
   {
     name: "Nguyễn Ngọc Anh",
     mssv: "24126901",
-    role: "Frontend — Tài khoản / Đặt chỗ",
+    role: "Figma, Word, PPT, Code",
     github: "github.com/nanhnho",
     image: "/nhom01_dulich_booking/assets/about/nguyen-ngoc-anh.png",
     column: "right",
