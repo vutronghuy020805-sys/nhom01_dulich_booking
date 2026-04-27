@@ -1,9 +1,20 @@
+import { Suspense } from "react";
 import { activitiesData as _gsp } from "@/data/activitiesData";
-export function generateStaticParams() { return _gsp.map((a) => ({ slug: a.id })); }
+import ActivityConfirmationPageClient from "@/components/activities/confirmation/ActivityConfirmationPageClient";
+
+export function generateStaticParams() {
+  return _gsp.map((a) => ({ slug: a.id }));
+}
 export const dynamicParams = false;
 
-import PendingFeatureStub from "@/components/common/PendingFeatureStub";
+export const metadata = {
+  title: "Xác nhận đặt vé | VieGo",
+};
 
 export default function Page() {
-  return <PendingFeatureStub />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50" />}>
+      <ActivityConfirmationPageClient />
+    </Suspense>
+  );
 }
