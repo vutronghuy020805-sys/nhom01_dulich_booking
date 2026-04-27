@@ -1,8 +1,14 @@
+import Link from "next/link";
+
 export default function TravelActivityCard({ activity }) {
   const hasDiscount = Boolean(activity.oldPrice);
 
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+    <Link
+      href="/activities"
+      className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+      aria-label={`Xem hoạt động: ${activity.title}`}
+    >
       <div className="relative w-full h-52 bg-gray-100 overflow-hidden">
         <img
           src={activity.image}
@@ -40,6 +46,6 @@ export default function TravelActivityCard({ activity }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
