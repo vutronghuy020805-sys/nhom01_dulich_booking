@@ -1,5 +1,5 @@
 function bookingHref(fromId, toId) {
-  return `/bus/booking/${fromId}__${toId}__1?from=${fromId}&to=${toId}`;
+  return `/bus/search/${fromId}/${toId}`;
 }
 
 export const popularBusRoutesColumns = [

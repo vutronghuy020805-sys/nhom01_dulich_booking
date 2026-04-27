@@ -160,13 +160,10 @@ export default function BusSearchForm({ initialToId = null, initialFromId = null
   const handleSearch = () => {
     if (!from?.id || !to?.id || from.id === to.id) return;
     const params = new URLSearchParams();
-    params.set("from", from.id);
-    params.set("to", to.id);
     params.set("departureDate", toIso(departureDate));
     if (returnDate) params.set("returnDate", toIso(returnDate));
     params.set("seats", String(seats));
-    const tripId = `${from.id}__${to.id}__1`;
-    router.push(`/bus/booking/${tripId}?${params.toString()}`);
+    router.push(`/bus/search/${from.id}/${to.id}?${params.toString()}`);
   };
 
   const fieldClasses =
