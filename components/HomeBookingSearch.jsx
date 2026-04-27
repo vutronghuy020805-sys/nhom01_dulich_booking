@@ -19,6 +19,7 @@ import {
   formatShortDate,
   slugifyDestination,
 } from "./shared/hotelSearchData";
+import { findCityByName } from "./flights/flightCities";
 
 const serviceTabs = [
   { label: "Khách sạn", icon: "/nhom01_dulich_booking/assets/icons/hotel.png" },
@@ -617,6 +618,8 @@ function FlightMultiCityRows() {
    FLIGHT SEARCH FORM
    ====================================================================== */
 function FlightSearchForm() {
+  const router = useRouter();
+
   const chevron = (
     <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5">
       <path d="M6 9l6 6 6-6" />
@@ -715,6 +718,16 @@ function FlightSearchForm() {
     setTo(from);
     setActiveField(null);
     setQuery("");
+  };
+
+  const handleFlightSearch = () => {
+    if (!from || !to) return;
+    const fromCity = findCityByName(from.name);
+    const toCity = findCityByName(to.name);
+    const fromSlug = fromCity ? fromCity.slug : from.code.toLowerCase();
+    const toSlug = toCity ? toCity.slug : to.code.toLowerCase();
+    if (fromSlug === toSlug) return;
+    router.push(`/flights/search/${fromSlug}/${toSlug}`);
   };
 
   return (
@@ -1022,6 +1035,7 @@ function FlightSearchForm() {
         <button
           type="button"
           aria-label="Tìm kiếm"
+          onClick={handleFlightSearch}
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors w-16 h-16 rounded-full flex items-center justify-center shrink-0 self-center shadow-2xl"
         >
           <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-8 h-8 object-contain" />
