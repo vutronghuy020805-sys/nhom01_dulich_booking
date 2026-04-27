@@ -3,20 +3,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import { parseRouteString } from "./flightCities";
-import { parseVnDealDate } from "./flightResultsData";
 
 export default function FlightDealCard({ card, image }) {
   const [favorite, setFavorite] = useState(false);
 
   const parsed = parseRouteString(card.route);
-  const iso = parseVnDealDate(card.date);
-  const query = new URLSearchParams();
-  query.set("price", String(card.price));
-  if (iso) query.set("date", iso);
-  if (card.tripType) query.set("tripType", card.tripType.toLowerCase().replace(/\s+/g, "-"));
-  if (parsed) query.set("flightId", `${parsed.from.slug}-${parsed.to.slug}-featured`);
   const href = parsed
-    ? `/flights/booking/${parsed.from.slug}/${parsed.to.slug}?${query.toString()}`
+    ? `/flights/search/${parsed.from.slug}/${parsed.to.slug}`
     : "#";
 
   const handleFavorite = (e) => {
