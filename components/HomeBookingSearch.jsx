@@ -135,7 +135,6 @@ function HotelSearchForm() {
   const handleSelect = (destination) => {
     setLocationQuery(destination.name);
     setIsDropdownOpen(false);
-    router.push(`/hotels/${destination.slug}`);
   };
 
   const handleSearch = () => {
@@ -191,12 +190,6 @@ function HotelSearchForm() {
                 setIsDropdownOpen(true);
               }}
               onFocus={() => setIsDropdownOpen(true)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  e.preventDefault();
-                  handleSearch();
-                }
-              }}
               placeholder="Thành phố, căn hộ, biệt thự, hoặc nơi đến"
               className="flex-1 min-w-0 outline-none text-gray-800 placeholder-gray-400 text-[15px] bg-transparent"
             />
