@@ -185,7 +185,7 @@ export default function BusResultsClient({ bestResults = [], allResults = [] }) 
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-5">
+    <div className="grid grid-cols-1 lg:grid-cols-[300px_minmax(0,1fr)] gap-5">
       <FilterSidebar onReset={chips.length > 0 ? handleReset : null}>
         <FilterSection title="Loại xe">
           <CategoryFilter
