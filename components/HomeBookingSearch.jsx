@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import HotelDatePicker from "./HotelDatePicker";
 import GuestRoomDropdown from "./GuestRoomDropdown";
 import FlightLocationDropdown from "./FlightLocationDropdown";
@@ -16,6 +17,7 @@ import AirportTransferTimePicker from "./AirportTransferTimePicker";
 import {
   vietnamDestinations,
   formatShortDate,
+  slugifyDestination,
 } from "./shared/hotelSearchData";
 
 const serviceTabs = [
@@ -78,6 +80,7 @@ function getAirportShortLabel(a) {
    HOTEL SEARCH FORM
    ====================================================================== */
 function HotelSearchForm() {
+  const router = useRouter();
   const [activeChip, setActiveChip] = useState(0);
   const [locationQuery, setLocationQuery] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -132,6 +135,18 @@ function HotelSearchForm() {
   const handleSelect = (destination) => {
     setLocationQuery(destination.name);
     setIsDropdownOpen(false);
+    router.push(`/hotels/${destination.slug}`);
+  };
+
+  const handleSearch = () => {
+    const text = locationQuery.trim();
+    if (!text) return;
+    const match = vietnamDestinations.find(
+      (d) => d.name.toLowerCase() === text.toLowerCase()
+    );
+    const slug = match ? match.slug : slugifyDestination(text);
+    if (!slug) return;
+    router.push(`/hotels/${slug}`);
   };
 
   return (
@@ -176,6 +191,12 @@ function HotelSearchForm() {
                 setIsDropdownOpen(true);
               }}
               onFocus={() => setIsDropdownOpen(true)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  handleSearch();
+                }
+              }}
               placeholder="Thành phố, căn hộ, biệt thự, hoặc nơi đến"
               className="flex-1 min-w-0 outline-none text-gray-800 placeholder-gray-400 text-[15px] bg-transparent"
             />
@@ -294,6 +315,7 @@ function HotelSearchForm() {
         <button
           type="button"
           aria-label="Tìm kiếm"
+          onClick={handleSearch}
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-12 flex items-center justify-center shrink-0 rounded-r-full"
         >
           <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-8 h-8 object-contain" />
