@@ -1388,8 +1388,10 @@ const carRentalLocations = [
 ];
 
 function CarRentalForm() {
+  const router = useRouter();
   const [rentalMode, setRentalMode] = useState("self-drive"); // "self-drive" | "with-driver"
   const [location, setLocation] = useState("");
+  const [pickedLocation, setPickedLocation] = useState(null);
   const [isLocationOpen, setIsLocationOpen] = useState(false);
   const locationWrapperRef = useRef(null);
 
@@ -1449,7 +1451,20 @@ function CarRentalForm() {
 
   const handleSelectLocation = (item) => {
     setLocation(item.name);
+    setPickedLocation(item);
     setIsLocationOpen(false);
+  };
+
+  const handleSearch = () => {
+    if (!pickedLocation?.id) return;
+    const params = new URLSearchParams();
+    params.set("driverOption", rentalMode);
+    params.set("location", pickedLocation.id);
+    params.set("startDate", toIsoDate(rentalStartDate));
+    params.set("startTime", fmtTime(startHour, startMinute));
+    params.set("endDate", toIsoDate(rentalEndDate));
+    params.set("endTime", fmtTime(endHour, endMinute));
+    router.push(`/car-rental/search?${params.toString()}`);
   };
 
   const handleDateSelect = (date) => {
@@ -1527,6 +1542,7 @@ function CarRentalForm() {
               value={location}
               onChange={(e) => {
                 setLocation(e.target.value);
+                setPickedLocation(null);
                 setIsLocationOpen(true);
               }}
               onFocus={() => setIsLocationOpen(true)}
@@ -1653,7 +1669,9 @@ function CarRentalForm() {
         <button
           type="button"
           aria-label="Tìm kiếm"
-          className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
+          onClick={handleSearch}
+          disabled={!pickedLocation?.id}
+          className="bg-[#55B6FF] hover:bg-[#3fa5f5] disabled:bg-sky-200 disabled:cursor-not-allowed transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
         >
           <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
