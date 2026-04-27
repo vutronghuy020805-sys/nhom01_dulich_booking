@@ -127,6 +127,14 @@ body {
   .bg-emerald-50 { background-color: rgba(16, 185, 129, 0.12) !important; }
   .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.14) !important; }
 
+  /* Hover variants — đồng bộ với bảng trên để text không lọt vào nền sáng (sky-50 mặc định) */
+  .hover\:bg-sky-50:hover { background-color: rgba(56, 189, 248, 0.08) !important; }
+  .hover\:bg-sky-100:hover { background-color: rgba(56, 189, 248, 0.14) !important; }
+  .hover\:bg-rose-50:hover { background-color: rgba(244, 63, 94, 0.12) !important; }
+  .hover\:bg-amber-50:hover { background-color: rgba(245, 158, 11, 0.12) !important; }
+  .hover\:bg-emerald-50:hover { background-color: rgba(16, 185, 129, 0.12) !important; }
+  .hover\:bg-indigo-50:hover { background-color: rgba(99, 102, 241, 0.14) !important; }
+
   /* Form control placeholders */
   input::placeholder,
   textarea::placeholder { color: #6c7a91 !important; }
