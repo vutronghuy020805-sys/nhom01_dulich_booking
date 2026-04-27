@@ -94,14 +94,14 @@ body {
   .text-slate-800 { color: var(--vg-text) !important; }
   .text-slate-700 { color: #d2dae5 !important; }
   .text-slate-600 { color: var(--vg-text-muted) !important; }
-  .text-slate-500 { color: var(--vg-text-faint) !important; }
-  .text-slate-400 { color: #7b8ba3 !important; }
+  .text-slate-500 { color: #a3b0c5 !important; }
+  .text-slate-400 { color: #b8c2d4 !important; }
   .text-gray-900 { color: var(--vg-text-strong) !important; }
   .text-gray-800 { color: var(--vg-text) !important; }
   .text-gray-700 { color: #d2dae5 !important; }
   .text-gray-600 { color: var(--vg-text-muted) !important; }
-  .text-gray-500 { color: var(--vg-text-faint) !important; }
-  .text-gray-400 { color: #7b8ba3 !important; }
+  .text-gray-500 { color: #a3b0c5 !important; }
+  .text-gray-400 { color: #b8c2d4 !important; }
   .text-black { color: var(--vg-text-strong) !important; }
 
   /* === Borders & dividers === */
