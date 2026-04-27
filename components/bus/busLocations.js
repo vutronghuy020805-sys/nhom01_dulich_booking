@@ -66,6 +66,30 @@ export const busLocations = [
     typeLabel: "CITY_GEO",
   },
   {
+    id: "city-quangngai",
+    name: "Quảng Ngãi",
+    subtitle: "Tất cả các điểm lên xe ở Quảng Ngãi",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-gialai",
+    name: "Gia Lai",
+    subtitle: "Tất cả các điểm lên xe ở Gia Lai",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-camau",
+    name: "Cà Mau",
+    subtitle: "Tất cả các điểm lên xe ở Cà Mau",
+    typeLabel: "CITY_GEO",
+  },
+  {
+    id: "city-chaudoc",
+    name: "Châu Đốc",
+    subtitle: "Tất cả các điểm lên xe ở Châu Đốc",
+    typeLabel: "CITY_GEO",
+  },
+  {
     id: "bs-mdmoi",
     name: "Bến xe Miền Đông mới",
     subtitle: "TP. Hồ Chí Minh, Việt Nam",
