@@ -21,7 +21,7 @@ export default function ActivitiesHero({
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/20" />
 
-        <div className="relative z-10 w-full max-w-350 mx-auto px-4 lg:px-10 pb-16 md:pb-20">
+        <div className="relative z-30 w-full max-w-350 mx-auto px-4 lg:px-10 pb-16 md:pb-20">
           <ActivitiesSearchBar
             destination={destination}
             onDestinationChange={onDestinationChange}
