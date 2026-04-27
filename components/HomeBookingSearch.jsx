@@ -10,6 +10,7 @@ import PassengerDropdown from "./PassengerDropdown";
 import SeatClassDropdown, { SEAT_CLASSES } from "./SeatClassDropdown";
 import BusLocationDropdown from "./BusLocationDropdown";
 import BusPassengerDropdown from "./BusPassengerDropdown";
+import { busLocations as canonicalBusLocations } from "./bus/busLocations";
 import CarRentalLocationDropdown from "./CarRentalLocationDropdown";
 import CarRentalTimePicker from "./CarRentalTimePicker";
 import AirportTransferLocationDropdown from "./AirportTransferLocationDropdown";
@@ -1050,28 +1051,15 @@ function FlightSearchForm() {
 /* ======================================================================
    BUS TICKET FORM — "Vé xe khách" mode
    ====================================================================== */
-const busLocations = [
-  { id: "city-hcm", name: "TP Hồ Chí Minh", subtitle: "Tất cả các điểm lên xe ở TP Hồ Chí Minh", typeLabel: "CITY_GEO" },
-  { id: "city-dalat", name: "Đà Lạt", subtitle: "Tất cả các điểm lên xe ở Đà Lạt", typeLabel: "CITY_GEO" },
-  { id: "city-brvt", name: "Bà Rịa - Vũng Tàu", subtitle: "Tất cả các điểm lên xe ở Bà Rịa - Vũng Tàu", typeLabel: "CITY_GEO" },
-  { id: "city-danang", name: "Đà Nẵng", subtitle: "Tất cả các điểm lên xe ở Đà Nẵng", typeLabel: "CITY_GEO" },
-  { id: "city-phanthiet", name: "Phan Thiết", subtitle: "Tất cả các điểm lên xe ở Phan Thiết", typeLabel: "CITY_GEO" },
-  { id: "city-nhatrang", name: "Nha Trang", subtitle: "Tất cả các điểm lên xe ở Nha Trang", typeLabel: "CITY_GEO" },
-  { id: "city-hue", name: "Huế", subtitle: "Tất cả các điểm lên xe ở Huế", typeLabel: "CITY_GEO" },
-  { id: "city-hanoi", name: "Hà Nội", subtitle: "Tất cả các điểm lên xe ở Hà Nội", typeLabel: "CITY_GEO" },
-  { id: "city-cantho", name: "Cần Thơ", subtitle: "Tất cả các điểm lên xe ở Cần Thơ", typeLabel: "CITY_GEO" },
-  { id: "bs-mdmoi", name: "Bến xe Miền Đông mới", subtitle: "TP Hồ Chí Minh, Việt Nam", typeLabel: "BUS_STATION" },
-  { id: "bs-mientay", name: "Bến xe Miền Tây", subtitle: "TP Hồ Chí Minh, Việt Nam", typeLabel: "BUS_STATION" },
-  { id: "bs-dalat", name: "Bến xe Đà Lạt", subtitle: "Lâm Đồng, Việt Nam", typeLabel: "BUS_STATION" },
-  { id: "bs-dn", name: "Bến xe Trung tâm Đà Nẵng", subtitle: "Đà Nẵng, Việt Nam", typeLabel: "BUS_STATION" },
-  { id: "bs-nt", name: "Bến xe phía Nam Nha Trang", subtitle: "Khánh Hòa, Việt Nam", typeLabel: "BUS_STATION" },
-  { id: "tr-saigon", name: "Ga Sài Gòn", subtitle: "TP Hồ Chí Minh, Việt Nam", typeLabel: "TRAIN_STATION" },
-  { id: "tr-hanoi", name: "Ga Hà Nội", subtitle: "Hà Nội, Việt Nam", typeLabel: "TRAIN_STATION" },
-  { id: "tr-danang", name: "Ga Đà Nẵng", subtitle: "Đà Nẵng, Việt Nam", typeLabel: "TRAIN_STATION" },
-  { id: "tr-nhatrang", name: "Ga Nha Trang", subtitle: "Khánh Hòa, Việt Nam", typeLabel: "TRAIN_STATION" },
-];
+const busLocations = canonicalBusLocations;
+
+function toIsoDate(d) {
+  const pad = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
 
 function BusTicketForm() {
+  const router = useRouter();
   const [from, setFrom] = useState(null);
   const [to, setTo] = useState(null);
   const [activeField, setActiveField] = useState(null); // 'from' | 'to' | null
@@ -1135,6 +1123,17 @@ function BusTicketForm() {
     else if (activeField === "to") setTo(item);
     setActiveField(null);
     setQuery("");
+  };
+
+  const handleSearch = () => {
+    if (!from?.id || !to?.id || from.id === to.id) return;
+    const params = new URLSearchParams();
+    params.set("departureDate", toIsoDate(busDepartureDate));
+    if (busIsRoundTrip && busReturnDate) {
+      params.set("returnDate", toIsoDate(busReturnDate));
+    }
+    params.set("seats", String(passengers));
+    router.push(`/bus/search/${from.id}/${to.id}?${params.toString()}`);
   };
 
   const q = query.trim().toLowerCase();
@@ -1356,7 +1355,9 @@ function BusTicketForm() {
         <button
           type="button"
           aria-label="Tìm kiếm"
-          className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-10 flex items-center justify-center shrink-0 rounded-r-full"
+          onClick={handleSearch}
+          disabled={!from?.id || !to?.id || from.id === to.id}
+          className="bg-[#55B6FF] hover:bg-[#3fa5f5] disabled:bg-sky-200 disabled:cursor-not-allowed transition-colors px-10 flex items-center justify-center shrink-0 rounded-r-full"
         >
           <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
