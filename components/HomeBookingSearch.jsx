@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import HotelDatePicker from "./HotelDatePicker";
 import GuestRoomDropdown from "./GuestRoomDropdown";
@@ -11,6 +11,14 @@ import SeatClassDropdown, { SEAT_CLASSES } from "./SeatClassDropdown";
 import BusLocationDropdown from "./BusLocationDropdown";
 import BusPassengerDropdown from "./BusPassengerDropdown";
 import { busLocations as canonicalBusLocations } from "./bus/busLocations";
+import SearchSuggestionsDropdown from "./search/SearchSuggestionsDropdown";
+import {
+  activitiesData,
+  ACTIVITY_DESTINATIONS,
+  ACTIVITY_CATEGORIES,
+} from "@/data/activitiesData";
+import { matchScore, normalizeVi } from "@/lib/searchUtils";
+import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import CarRentalLocationDropdown from "./CarRentalLocationDropdown";
 import CarRentalTimePicker from "./CarRentalTimePicker";
 import AirportTransferLocationDropdown from "./AirportTransferLocationDropdown";
@@ -1684,25 +1692,112 @@ function CarRentalForm() {
    ACTIVITIES FORM — "Hoạt động" mode
    ====================================================================== */
 function ActivitiesForm() {
+  const router = useRouter();
   const [query, setQuery] = useState("");
+  const [suggestOpen, setSuggestOpen] = useState(false);
+  const wrapperRef = useRef(null);
+  const debouncedQuery = useDebouncedValue(query, 200);
 
-  const categories = [
-    { label: "Điểm tham quan", icon: "/nhom01_dulich_booking/assets/icons/activity-sight.png" },
-    { label: "Trải nghiệm ẩm thực", icon: "/nhom01_dulich_booking/assets/icons/activity-food.png" },
-    { label: "Trải nghiệm văn hóa", icon: "/nhom01_dulich_booking/assets/icons/activity-culture.png" },
-    { label: "Trò chơi", icon: "/nhom01_dulich_booking/assets/icons/activity-games.png" },
-    { label: "Tour", icon: "/nhom01_dulich_booking/assets/icons/activity-tour.png" },
-  ];
+  const suggestions = useMemo(() => {
+    const q = normalizeVi(debouncedQuery);
+    if (!q) return [];
+    const items = [];
+    ACTIVITY_DESTINATIONS.forEach((d) => {
+      const s = matchScore(d, q);
+      if (s >= 0) {
+        items.push({
+          id: `dest-${d}`,
+          title: d,
+          subtitle: "Điểm đến",
+          kind: "destination",
+          value: d,
+          score: s + 10,
+        });
+      }
+    });
+    activitiesData.forEach((a) => {
+      const s = Math.max(
+        matchScore(a.title, q),
+        matchScore(a.location, q),
+        matchScore(a.destination, q)
+      );
+      if (s >= 0) {
+        items.push({
+          id: `act-${a.id}`,
+          slug: a.id,
+          title: a.title,
+          subtitle: `${a.destination} · ${a.location}`,
+          kind: "activity",
+          value: a.title,
+          score: s,
+        });
+      }
+    });
+    items.sort((a, b) => b.score - a.score);
+    return items.slice(0, 8);
+  }, [debouncedQuery]);
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+        setSuggestOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  const handleSelectSuggestion = (item) => {
+    setSuggestOpen(false);
+    if (item.kind === "activity") {
+      router.push(`/activities/${item.slug}`);
+    } else {
+      const params = new URLSearchParams();
+      params.set("destination", item.value);
+      router.push(`/activities?${params.toString()}`);
+    }
+  };
+
+  const handleSearch = () => {
+    setSuggestOpen(false);
+    const trimmed = query.trim();
+    if (trimmed) {
+      const params = new URLSearchParams();
+      params.set("keyword", trimmed);
+      router.push(`/activities?${params.toString()}`);
+    } else {
+      router.push("/activities");
+    }
+  };
+
+  const handleCategoryClick = (categoryId) => {
+    const params = new URLSearchParams();
+    params.set("category", categoryId);
+    router.push(`/activities?${params.toString()}`);
+  };
 
   return (
     <div className="flex flex-col items-center gap-6">
       {/* Search */}
-      <div className="w-full bg-white rounded-full flex items-stretch shadow-2xl">
+      <div
+        className="w-full bg-white rounded-full flex items-stretch shadow-2xl relative"
+        ref={wrapperRef}
+      >
         <div className="flex-1 flex items-center px-8 py-4">
           <input
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setSuggestOpen(true);
+            }}
+            onFocus={() => setSuggestOpen(true)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                handleSearch();
+              }
+            }}
             placeholder="Bạn có ý tưởng gì cho chuyến đi tiếp theo không?"
             className="flex-1 min-w-0 bg-transparent outline-none text-gray-800 text-[15px] placeholder-gray-400"
           />
@@ -1710,10 +1805,19 @@ function ActivitiesForm() {
         <button
           type="button"
           aria-label="Tìm kiếm"
+          onClick={handleSearch}
           className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
         >
           <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
+
+        <SearchSuggestionsDropdown
+          items={suggestions}
+          query={query}
+          open={suggestOpen && query.trim().length > 0}
+          onClose={() => setSuggestOpen(false)}
+          onSelect={handleSelectSuggestion}
+        />
       </div>
 
       {/* Guidance */}
@@ -1723,10 +1827,11 @@ function ActivitiesForm() {
 
       {/* Categories */}
       <div className="flex items-center justify-center flex-wrap gap-3">
-        {categories.map(({ label, icon }) => (
+        {ACTIVITY_CATEGORIES.map(({ id, label, icon }) => (
           <button
-            key={label}
+            key={id}
             type="button"
+            onClick={() => handleCategoryClick(id)}
             className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-black/40 hover:bg-white/20 transition-colors text-white font-medium backdrop-blur-sm"
           >
             <img src={icon} alt="" className="w-5 h-5 object-contain shrink-0" />

@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import ActivitiesHero from "./ActivitiesHero";
 import ActivitiesGrid from "./ActivitiesGrid";
 import WhyChooseVieGoSection from "./WhyChooseVieGoSection";
@@ -41,16 +42,48 @@ const SORT_MAP = {
 };
 
 export default function ActivitiesClient() {
-  const [activeCategory, setActiveCategory] = useState(
-    ACTIVITY_CATEGORIES[0].id
-  );
-  const [selectedDestination, setSelectedDestination] = useState("");
-  const [searchKeyword, setSearchKeyword] = useState("");
-  const [appliedKeyword, setAppliedKeyword] = useState("");
+  const searchParams = useSearchParams();
+  const spString = searchParams?.toString() ?? "";
+
+  const initialCategory = (() => {
+    const cat = searchParams?.get("category") || "";
+    return ACTIVITY_CATEGORIES.find((c) => c.id === cat)?.id ||
+      ACTIVITY_CATEGORIES[0].id;
+  })();
+  const initialDestination = searchParams?.get("destination") || "";
+  const initialKeyword = searchParams?.get("keyword") || "";
+
+  const [activeCategory, setActiveCategory] = useState(initialCategory);
+  const [selectedDestination, setSelectedDestination] =
+    useState(initialDestination);
+  const [searchKeyword, setSearchKeyword] = useState(initialKeyword);
+  const [appliedKeyword, setAppliedKeyword] = useState(initialKeyword);
   const [priceRange, setPriceRange] = useState("");
   const [rating, setRating] = useState("");
   const [sort, setSort] = useState("popular");
   const [page, setPage] = useState(1);
+
+  useEffect(() => {
+    if (!searchParams) return;
+    const cat = searchParams.get("category") || "";
+    const validCat = ACTIVITY_CATEGORIES.find((c) => c.id === cat)?.id;
+    if (validCat && validCat !== activeCategory) {
+      setActiveCategory(validCat);
+      setPage(1);
+    }
+    const dest = searchParams.get("destination") || "";
+    if (dest !== selectedDestination) {
+      setSelectedDestination(dest);
+      setPage(1);
+    }
+    const kw = searchParams.get("keyword") || "";
+    if (kw !== appliedKeyword) {
+      setSearchKeyword(kw);
+      setAppliedKeyword(kw);
+      setPage(1);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [spString]);
 
   const filteredByBase = useMemo(
     () =>

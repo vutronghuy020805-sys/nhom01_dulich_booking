@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import HotelsPageHeader from "@/components/hotels/HotelsPageHeader";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import FooterSection from "@/components/FooterSection";
@@ -21,7 +22,9 @@ export default function ActivitiesPage() {
         </div>
 
         <MotionReveal>
-          <ActivitiesClient />
+          <Suspense fallback={null}>
+            <ActivitiesClient />
+          </Suspense>
         </MotionReveal>
       </main>
 
