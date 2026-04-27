@@ -8,7 +8,7 @@ export default function HotelDetailGallery({ hotel }) {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-      <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-80 md:h-[460px]">
+      <div className="relative rounded-2xl overflow-hidden bg-gray-100 h-80 md:h-auto md:aspect-[3/2]">
         <img
           src={cover}
           alt={hotel.name}
@@ -22,7 +22,7 @@ export default function HotelDetailGallery({ hotel }) {
           return (
             <div
               key={idx}
-              className="relative rounded-2xl overflow-hidden bg-gray-100 h-40 md:h-[225px]"
+              className="relative rounded-2xl overflow-hidden bg-gray-100 h-40 md:h-auto md:aspect-[3/2]"
             >
               <img
                 src={src}
