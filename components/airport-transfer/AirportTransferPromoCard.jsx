@@ -14,28 +14,6 @@ export default function AirportTransferPromoCard() {
         />
 
         <div className="absolute inset-0 bg-linear-to-r from-sky-900/30 via-sky-700/10 to-transparent" />
-
-        <div className="absolute top-4 left-4 right-4 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 bg-white/95 backdrop-blur rounded-full px-3 py-1.5 shadow">
-            <img
-              src="/nhom01_dulich_booking/assets/logo-viego.png"
-              alt="VieGo"
-              className="w-6 h-6 object-contain"
-            />
-            <span className="text-xs font-bold text-slate-800">
-              Đưa đón sân bay
-            </span>
-          </div>
-        </div>
-
-        <div className="absolute bottom-5 left-5 md:left-6">
-          <div className="text-white text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight drop-shadow">
-            DỊCH VỤ<br />ĐƯA ĐÓN
-          </div>
-          <span className="inline-flex items-center mt-3 bg-emerald-500 text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full shadow">
-            Đặt trước ngay!
-          </span>
-        </div>
       </div>
 
       <p className="absolute bottom-2 right-3 text-[10px] text-white/70">
