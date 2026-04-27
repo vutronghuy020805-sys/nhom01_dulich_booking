@@ -136,23 +136,28 @@ export default function ActivitiesSearchBar({
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="w-full bg-white/95 backdrop-blur rounded-full shadow-lg border border-white/60 px-5 py-3.5 flex items-center gap-3 text-left"
+          className="w-full backdrop-blur rounded-full shadow-lg border px-5 py-3.5 flex items-center gap-3 text-left"
+          style={{
+            backgroundColor: "rgba(255,255,255,0.95)",
+            borderColor: "rgba(255,255,255,0.6)",
+          }}
         >
           <PinIcon />
           <span
             className={
               "flex-1 truncate text-sm md:text-base " +
-              (destination ? "font-semibold text-slate-900" : "text-slate-500")
+              (destination ? "font-semibold" : "")
             }
+            style={{ color: destination ? "#0f172a" : "#64748b" }}
           >
             {destination || "Chọn một điểm đến"}
           </span>
           <svg
             viewBox="0 0 24 24"
             className={
-              "w-4 h-4 text-slate-500 transition-transform " +
-              (open ? "rotate-180" : "")
+              "w-4 h-4 transition-transform " + (open ? "rotate-180" : "")
             }
+            style={{ color: "#64748b" }}
             fill="none"
             stroke="currentColor"
             strokeWidth="2.2"
@@ -206,7 +211,13 @@ export default function ActivitiesSearchBar({
 
       <div className="flex-[1.5] min-w-0 flex items-stretch gap-3">
         <div className="relative flex-1 min-w-0">
-          <div className="bg-white/95 backdrop-blur rounded-full shadow-lg border border-white/60 px-5 py-3.5 flex items-center gap-3">
+          <div
+            className="backdrop-blur rounded-full shadow-lg border px-5 py-3.5 flex items-center gap-3"
+            style={{
+              backgroundColor: "rgba(255,255,255,0.95)",
+              borderColor: "rgba(255,255,255,0.6)",
+            }}
+          >
             <SearchIcon />
             <input
               type="text"
@@ -217,7 +228,8 @@ export default function ActivitiesSearchBar({
               }}
               onFocus={() => setSuggestOpen(true)}
               placeholder="Tìm kiếm địa điểm hoặc hoạt động"
-              className="flex-1 min-w-0 bg-transparent outline-none text-sm md:text-base text-slate-900 placeholder:text-slate-400"
+              className="flex-1 min-w-0 bg-transparent outline-none text-sm md:text-base placeholder:text-slate-400"
+              style={{ color: "#0f172a" }}
             />
           </div>
 
