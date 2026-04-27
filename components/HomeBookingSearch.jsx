@@ -1873,6 +1873,7 @@ const transferDestinations = [
 ];
 
 function AirportTransferForm() {
+  const router = useRouter();
   const [fromAirport, setFromAirport] = useState(null);
   const [toLocation, setToLocation] = useState(null);
   const [activeField, setActiveField] = useState(null); // 'from' | 'to' | null
@@ -1927,6 +1928,16 @@ function AirportTransferForm() {
     else if (activeField === "to") setToLocation(item);
     setActiveField(null);
     setQuery("");
+  };
+
+  const handleSearch = () => {
+    if (!fromAirport?.id || !toLocation?.id) return;
+    const params = new URLSearchParams();
+    params.set("from", fromAirport.id);
+    params.set("to", toLocation.id);
+    params.set("date", toIsoDate(pickupDate));
+    params.set("time", fmtTime(pickupHour, pickupMinute));
+    router.push(`/airport-transfer/results?${params.toString()}`);
   };
 
   const qLower = query.trim().toLowerCase();
@@ -2109,7 +2120,9 @@ function AirportTransferForm() {
         <button
           type="button"
           aria-label="Tìm kiếm"
-          className="bg-[#55B6FF] hover:bg-[#3fa5f5] transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
+          onClick={handleSearch}
+          disabled={!fromAirport?.id || !toLocation?.id}
+          className="bg-[#55B6FF] hover:bg-[#3fa5f5] disabled:bg-sky-200 disabled:cursor-not-allowed transition-colors px-8 flex items-center justify-center shrink-0 rounded-r-full"
         >
           <img src="/nhom01_dulich_booking/assets/icons/search.png" alt="" className="w-7 h-7 object-contain" />
         </button>
