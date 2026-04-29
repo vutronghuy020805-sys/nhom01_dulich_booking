@@ -32,7 +32,8 @@ export default function LoginForm() {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           placeholder="User name"
-          className="w-full pl-6 pr-14 py-3.5 rounded-full bg-sky-100/70 text-gray-800 placeholder-gray-500 italic outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white/90 transition"
+          style={{ color: "#111827" }}
+          className="w-full pl-6 pr-14 py-3.5 rounded-full bg-sky-100/70 placeholder-gray-500 italic outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white/90 transition"
         />
         <span className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-500">
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -48,7 +49,8 @@ export default function LoginForm() {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="123456"
-        className="w-full px-6 py-3.5 rounded-full bg-sky-100/70 text-gray-800 placeholder-gray-500 italic outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white/90 transition"
+        style={{ color: "#111827" }}
+        className="w-full px-6 py-3.5 rounded-full bg-sky-100/70 placeholder-gray-500 italic outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white/90 transition"
       />
 
       {/* Error */}
